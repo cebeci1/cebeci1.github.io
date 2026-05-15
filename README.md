@@ -1,6 +1,6 @@
 # cebeci1.github.io
 Zafer CEBECI | ZaiC Design &amp; Studio | Full Stack Vibe Coding | Apps Developer Website
-
+![ZaiC Logo](ZAIC_logo.mp4)
 # 🌍 Zafer CEBECI | ZaiC Design & Studio
 ## 🛠️ Full Stack Vibe Coding & Apps Developer
 
