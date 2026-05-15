@@ -10,8 +10,7 @@ Dijital dünyaya nostalji, müzik ve yapay zeka estetiği katmak için buradayı
 ---
 
 ### 🚀 Projelerim / My Projects
-
-#### 🎵 [ZaiC Player: Retro & Modern](https://play.google.com/store/apps/details?id=com.zaic.player)
+#### 🎵 <img src="app_icon.png" width="30" align="center"> [ZaiC Player: Retro & Modern](https://play.google.com/store/apps/details?id=com.zaic.player)
 Dijital çağ için eşsiz bir gramofon deneyimi. 16 dil desteği ve aslına uygun antika tasarımıyla Play Store'da!
 
 #### 🤖 [ZaiC AI Assistant (Asistan-V3)](https://asistan-v3.onrender.com)
