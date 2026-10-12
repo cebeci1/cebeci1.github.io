@@ -1,0 +1,249 @@
+============================================================
+TÜRKÇE
+============================================================
+
+SON KULLANICI LİSANS SÖZLEŞMESİ (EULA) VE SORUMLULUK REDDİ — ZaiC Ezan & Vakit & Shahid
+
+1. TARAFLAR VE KABUL
+1.1. Bu Son Kullanıcı Lisans Sözleşmesi ("Sözleşme"), ZaiC Ezan & Vakit & Shahid mobil uygulamasını ("Uygulama") kullanan kişi ("Kullanıcı") ile Uygulamayı "ZaiC Design & Studio" adı altında geliştiren ve yayınlayan Zafer Cebeci ("Geliştirici") arasında akdedilmiştir.
+1.2. Kullanıcı, Uygulamayı kullanmaya başlamadan önce bu Sözleşmeyi onaylayarak tüm hükümlerini okuduğunu, anladığını ve kabul ettiğini beyan eder. Sözleşmeyi kabul etmeyen Kullanıcı Uygulamayı kullanmamalı ve cihazından kaldırmalıdır.
+
+2. HİZMETİN NİTELİĞİ VE DİNİ İÇERİK UYARISI
+2.1. Uygulama; namaz vakitleri, kıble yönü, Kur'an-ı Kerim okuma, zikir ve hatim takibi gibi ibadete yardımcı araçlar sunar.
+2.2. Namaz vakitleri, Diyanet İşleri Başkanlığı ve AlAdhan gibi üçüncü taraf kaynaklardan alınır veya astronomik hesaplamayla üretilir. Vakitler, kaynağa ve hesaplama yöntemine göre birkaç dakika farklılık gösterebilir; ibadetlerinizde bulunduğunuz yerin resmi takvimini ve yerel caminizin vakitlerini esas alınız.
+2.3. Kıble yönü, cihazın konum ve manyetik sensör (pusula) doğruluğuna bağlıdır; metal cisimler, elektronik cihazlar ve kalibrasyon eksikliği hatalı sonuç verebilir.
+2.4. Uygulama dini bir merci değildir. İçerikler bilgilendirme amaçlıdır; ibadet, fıkıh ve diğer dini konularda yetkili âlimlere ve resmi kurumlara başvurunuz.
+2.5. Uygulama; Diyanet İşleri Başkanlığı, AlAdhan veya başka herhangi bir kurum ve kuruluşla bağlantılı değildir, onları temsil etmez ve onlar tarafından onaylanmamıştır. Bu kurumların adları yalnızca veri kaynağını belirtmek için kullanılır.
+
+3. SORUMLULUĞUN SINIRLANDIRILMASI
+3.1. Uygulama "olduğu gibi" ve "mevcut haliyle" sunulur; kesintisiz, hatasız veya belirli bir amaca uygun çalışacağı garanti edilmez.
+3.2. Geliştirici; bildirimlerin gecikmesi veya hiç gelmemesi, cihaz kısıtlamaları (pil optimizasyonu, üretici yazılımı, sessiz mod vb.), internet kesintileri ya da üçüncü taraf hizmetlerdeki (Diyanet, AlAdhan, Supabase, Cloudflare, Google AdMob, Google Play vb.) aksaklıklar nedeniyle ortaya çıkan vakit, kıble veya bildirim hatalarından ve bunların sonuçlarından sorumlu tutulamaz.
+3.3. Kur'an-ı Kerim meali/tefsiri, hadis ve dua içerikleri üçüncü taraf kaynaklardan sağlanır. Geliştirici bu içeriklerin doğruluğu için makul özeni gösterir; ancak kaynaktan gelen metin hatalarından sorumlu değildir. Fark ettiğiniz hataları cebeci.zafer@gmail.com adresine bildirmeniz rica olunur.
+3.4. Bu maddedeki sorumluluk sınırlamaları; Geliştiricinin kast veya ağır ihmalinden doğan sorumluluğu, yürürlükteki mevzuat uyarınca sınırlandırılamayan haller ve tüketicinin kanundan doğan emredici hakları bakımından uygulanmaz.
+
+4. HATİM KARDEŞLİĞİ VE KULLANICI İÇERİKLERİ
+4.1. Hatim Kardeşliği ve benzeri çevrim içi özellikler, Kullanıcıların oluşturduğu ve diğer Kullanıcıların görebildiği içerikler (grup adları, kullanıcı adları, mesajlar, notlar vb.) barındırabilir. Bu içeriklerin hukuki sorumluluğu, içeriği oluşturan Kullanıcıya aittir.
+4.2. Aşağıdaki içerik ve davranışlar yasaktır:
+ a) Hakaret, küfür, taciz, tehdit veya zorbalık;
+ b) Herhangi bir kişiyi, grubu, dini, mezhebi, etnik kökeni veya inancı aşağılayan, nefreti ya da şiddeti teşvik eden içerikler;
+ c) Müstehcen, cinsel içerikli veya şiddet içeren materyaller;
+ d) Yasa dışı faaliyetleri teşvik eden içerikler, dolandırıcılık, spam ve izinsiz reklam;
+ e) Başkalarının kişisel verilerini, iletişim bilgilerini veya özel bilgilerini izinsiz paylaşmak;
+ f) Başkalarının telif ve diğer fikri haklarını ihlal eden içerikler;
+ g) Başka bir kişiyi veya kurumu taklit etmek ya da kendini yanıltıcı biçimde tanıtmak.
+4.3. Kullanıcılar, bu kurallara aykırı içerik veya kullanıcıları uygulama içindeki bildirme işleviyle ya da cebeci.zafer@gmail.com adresi üzerinden bildirebilir ve diğer kullanıcıları engelleyebilir. Geliştirici, bildirimleri makul süre içinde inceler.
+4.4. Geliştirici, bu Sözleşmeye aykırı içerikleri önceden bildirimde bulunmaksızın kaldırma, ilgili Kullanıcının bu özelliklere erişimini kısıtlama veya hesabını kapatma hakkına sahiptir.
+4.5. Kullanıcı, paylaştığı içeriklerin Uygulama içinde saklanması ve diğer grup üyelerine gösterilmesi için, yalnızca hizmetin sunulmasıyla sınırlı, ücretsiz ve münhasır olmayan bir kullanım iznini Geliştiriciye verir.
+
+5. KİŞİSEL VERİLER VE GİZLİLİK
+5.1. Tema, dil, il/ilçe seçimi ve benzeri tercihler cihazınızda saklanır. Konum izni verirseniz konumunuz namaz vakitlerini ve kıble yönünü hesaplamak için kullanılır; vakit verisinin alınabilmesi için konumunuz veya seçtiğiniz il/ilçe bilgisi ilgili vakit servisine iletilebilir.
+5.2. Hatim Kardeşliği gibi çevrim içi özellikleri kullanmanız halinde, bu özelliklerin çalışması için gereken veriler (ör. kullanıcı adı, grup üyelikleri, hatim/cüz ilerlemesi ve paylaştığınız içerikler) Geliştirici adına hizmet veren altyapı sağlayıcılarında (ör. Supabase, Cloudflare) saklanır. Bu veriler bakımından veri sorumlusu Geliştiricidir. Bu özellikleri kullanmak isteğe bağlıdır.
+5.3. Reklam (Google AdMob) ve satın alma (Google Play) hizmetleri; reklam kimliği, cihaz ve kullanım bilgileri gibi verileri kendi gizlilik politikaları çerçevesinde işleyebilir.
+5.4. Hangi verilerin hangi amaçla işlendiği, kimlere ve hangi ülkelere aktarıldığı, saklama süreleri ve 6698 sayılı Kişisel Verilerin Korunması Kanunu kapsamındaki haklarınız Gizlilik Politikası ve KVKK Aydınlatma Metninde açıklanmıştır: https://cebeci1.github.io/ezan/gizlilik.txt
+5.5. Çevrim içi özellikler için oluşturulan hesabınızın ve ilgili verilerinizin silinmesini Uygulama içinden veya cebeci.zafer@gmail.com adresi üzerinden talep edebilirsiniz.
+
+6. LİSANS VE FİKRİ HAKLAR
+6.1. Geliştirici, Kullanıcıya Uygulamayı bu Sözleşmeye uygun olarak kişisel cihazlarında kullanmak üzere kişisel, ticari olmayan, devredilemez, münhasır olmayan ve geri alınabilir bir lisans verir.
+6.2. Uygulamanın yazılımı, kaynak kodu, tasarımı, arayüzü, görselleri, logosu ve "ZaiC" adı üzerindeki tüm fikri ve sınai haklar Geliştiriciye aittir. Kur'an-ı Kerim meal ve tefsirleri, hadis ve dua metinleri, vakit verileri gibi üçüncü taraf içerikler üzerindeki haklar ilgili hak sahiplerine aittir.
+6.3. Yürürlükteki mevzuatın açıkça izin verdiği haller saklı kalmak kaydıyla Kullanıcı; Uygulamayı tersine mühendisliğe tabi tutamaz veya kaynak koduna erişmeye çalışamaz; Uygulamayı ya da herhangi bir parçasını kopyalayamaz, değiştiremez, türev eserini oluşturamaz; Uygulamayı resmi uygulama mağazaları dışında, ücretli veya ücretsiz olarak dağıtamaz; Uygulamanın kodlarını, tasarımlarını veya varlıklarını başka bir yerde yayınlayamaz; Uygulamanın sunucularına ve altyapısına yetkisiz erişmeye, aşırı yük bindirmeye veya güvenlik önlemlerini aşmaya çalışamaz.
+6.4. Bu maddeye aykırılık halinde lisans kendiliğinden sona erer. Geliştiricinin 5846 sayılı Fikir ve Sanat Eserleri Kanunu ve ilgili mevzuattan doğan hukuki ve cezai başvuru hakları saklıdır.
+
+7. REKLAMLAR VE UYGULAMA İÇİ SATIN ALIMLAR
+7.1. Uygulama ücretsiz olarak sunulur. Sunucu, altyapı ve diğer hizmet giderlerinin karşılanabilmesi amacıyla Uygulamada Google AdMob reklamları gösterilebilir ve "Reklamları Kaldır" veya Premium gibi uygulama içi satın alımlar sunulabilir.
+7.2. Satın alımlar Google Play üzerinden yapılır; ödeme, faturalandırma ve iade işlemleri Google Play koşullarına tabidir. Satın alımlar, işlemin yapıldığı Google hesabına bağlıdır.
+7.3. Satın alınan dijital içerikler anında teslim edildiğinden, Mesafeli Sözleşmeler Yönetmeliği'nin 15. maddesi uyarınca cayma hakkı kullanılamaz. Google Play iade politikası ile tüketici mevzuatından doğan diğer haklarınız saklıdır.
+7.4. Abonelik olarak sunulan ürünlerde yenileme, iptal ve ücret bilgileri satın alma ekranında ayrıca gösterilir; abonelikler Google Play hesabınızdan iptal edilebilir.
+
+8. SÜRE, FESİH VE HİZMETTE DEĞİŞİKLİK
+8.1. Kullanıcı, Uygulamayı cihazından kaldırarak bu Sözleşmeyi dilediği zaman sona erdirebilir.
+8.2. Geliştirici, Uygulamanın özelliklerini değiştirme, geliştirme, geçici olarak askıya alma veya Uygulamanın yayınını sonlandırma hakkını saklı tutar. Satın alınmış ürünlere ilişkin tüketici hakları saklıdır.
+8.3. Geliştirici, bu Sözleşmeye aykırı davranan Kullanıcının Uygulamaya veya çevrim içi özelliklere erişimini sona erdirebilir.
+
+9. SÖZLEŞME DEĞİŞİKLİKLERİ
+Geliştirici bu Sözleşmeyi güncelleyebilir. Güncel sürüm her zaman Uygulama içinden erişilebilir. Kullanıcıların haklarını önemli ölçüde etkileyen değişikliklerde Uygulama içinde yeniden onay istenir.
+
+10. UYGULANACAK HUKUK VE YETKİLİ MERCİLER
+10.1. Bu Sözleşme Türkiye Cumhuriyeti hukukuna tabidir.
+10.2. Tüketici işlemlerinden doğan uyuşmazlıklarda, 6502 sayılı Tüketicinin Korunması Hakkında Kanun uyarınca her yıl belirlenen parasal sınırlar dahilinde tüketici hakem heyetlerine, bu sınırları aşan uyuşmazlıklarda tüketici mahkemelerine başvurulabilir. Tüketicinin kendi yerleşim yerindeki mercilere başvurma hakkı saklıdır.
+10.3. Yetki sözleşmesi yapılmasının hukuken mümkün olduğu hallerde İstanbul Merkez (Çağlayan) Mahkemeleri ve İcra Daireleri yetkilidir.
+10.4. Türkiye dışında yaşayan Kullanıcıların, ikamet ettikleri ülkenin emredici tüketici mevzuatından doğan hakları saklıdır.
+
+11. DİL
+Bu Sözleşme Türkçe, İngilizce ve Arapça olarak sunulmuştur. Metinler arasında farklılık olması halinde Türkçe metin esas alınır.
+
+12. İLETİŞİM
+Sözleşme, gizlilik, içerik bildirimi ve diğer tüm konular için: cebeci.zafer@gmail.com
+
+GELİŞTİRİCİDEN NOT
+(Bu bölüm sözleşme hükmü değildir.)
+Bu uygulama, aylarca süren fikir, tasarım ve kodlama emeğinin, çoğu zaman sabahlara kadar süren çalışmaların ürünüdür; kullanıcıların hayır duası ve ahiret yatırımı niyetiyle yapılmıştır. Reklam ve satın alımlar, uygulamanın ayakta kalabilmesi için gereken sunucu ve hizmet giderlerini karşılamak içindir. Uygulamanın ve kodlarının izinsiz kopyalanmaması ve paylaşılmaması, emeğe saygının ve kul hakkının gereğidir. Dualarınızı bekleriz.
+
+Son güncelleme: Ekim 2026 (Sürüm 2026-10-12)
+
+
+============================================================
+ENGLISH
+============================================================
+
+END USER LICENSE AGREEMENT (EULA) AND DISCLAIMER — ZaiC Ezan & Vakit & Shahid
+
+1. PARTIES AND ACCEPTANCE
+1.1. This End User License Agreement ("Agreement") is entered into between the person using the ZaiC Ezan & Vakit & Shahid mobile application ("App") ("User") and Zafer Cebeci, who develops and publishes the App under the name "ZaiC Design & Studio" ("Developer").
+1.2. By approving this Agreement before starting to use the App, the User declares that they have read, understood and accepted all of its terms. A User who does not accept this Agreement should not use the App and should remove it from their device.
+
+2. NATURE OF THE SERVICE AND RELIGIOUS CONTENT NOTICE
+2.1. The App provides tools that support worship, such as prayer times, Qibla direction, Quran reading, dhikr and khatm tracking.
+2.2. Prayer times are obtained from third-party sources such as the Presidency of Religious Affairs of Türkiye (Diyanet) and AlAdhan, or produced by astronomical calculation. Times may differ by a few minutes depending on the source and calculation method; for your worship, rely on the official calendar of your location and the times of your local mosque.
+2.3. Qibla direction depends on the accuracy of the device's location and magnetic sensor (compass); metal objects, electronic devices and lack of calibration may cause incorrect results.
+2.4. The App is not a religious authority. Content is for information only; for worship, fiqh and other religious matters, consult qualified scholars and official institutions.
+2.5. The App is not affiliated with, does not represent and is not endorsed by the Presidency of Religious Affairs, AlAdhan or any other institution or organization. Their names are used solely to identify data sources.
+
+3. LIMITATION OF LIABILITY
+3.1. The App is provided "as is" and "as available"; no guarantee is given that it will operate uninterrupted, error-free or fit for a particular purpose.
+3.2. The Developer shall not be liable for errors in prayer times, Qibla direction or notifications, or their consequences, arising from delayed or missing notifications, device restrictions (battery optimization, manufacturer software, silent mode, etc.), internet outages or disruptions in third-party services (Diyanet, AlAdhan, Supabase, Cloudflare, Google AdMob, Google Play, etc.).
+3.3. Quran translation/tafsir, hadith and dua content is provided from third-party sources. The Developer takes reasonable care regarding the accuracy of this content but is not liable for textual errors originating from the source. Please report any errors you notice to cebeci.zafer@gmail.com.
+3.4. The limitations in this section do not apply to liability arising from the Developer's intent or gross negligence, to cases where liability cannot be limited under applicable law, or to the mandatory statutory rights of consumers.
+
+4. KHATM BROTHERHOOD AND USER CONTENT
+4.1. Khatm Brotherhood (Hatim Kardeşliği) and similar online features may contain content created by Users and visible to other Users (group names, usernames, messages, notes, etc.). Legal responsibility for such content lies with the User who created it.
+4.2. The following content and behavior are prohibited:
+ a) Insults, profanity, harassment, threats or bullying;
+ b) Content that demeans any person, group, religion, sect, ethnic origin or belief, or that promotes hatred or violence;
+ c) Obscene, sexual or violent material;
+ d) Content promoting illegal activity, fraud, spam and unauthorized advertising;
+ e) Sharing other people's personal data, contact details or private information without permission;
+ f) Content that infringes others' copyrights or other intellectual property rights;
+ g) Impersonating another person or organization, or misrepresenting oneself.
+4.3. Users can report content or users that violate these rules through the in-app reporting function or by email to cebeci.zafer@gmail.com, and can block other users. The Developer reviews reports within a reasonable time.
+4.4. The Developer may, without prior notice, remove content that violates this Agreement, restrict the relevant User's access to these features or close their account.
+4.5. The User grants the Developer a free, non-exclusive permission, limited solely to providing the service, to store the content they share within the App and display it to other group members.
+
+5. PERSONAL DATA AND PRIVACY
+5.1. Preferences such as theme, language and province/district selection are stored on your device. If you grant location permission, your location is used to calculate prayer times and Qibla direction; your location or selected province/district may be sent to the relevant prayer-time service to obtain time data.
+5.2. If you use online features such as Khatm Brotherhood, the data needed for these features to work (e.g. username, group memberships, khatm/juz progress and content you share) is stored with infrastructure providers acting on behalf of the Developer (e.g. Supabase, Cloudflare). The Developer is the data controller for this data. Using these features is optional.
+5.3. Advertising (Google AdMob) and purchase (Google Play) services may process data such as the advertising ID, device and usage information under their own privacy policies.
+5.4. Which data is processed and for what purposes, to whom and to which countries it is transferred, retention periods and your rights under the Turkish Personal Data Protection Law No. 6698 (KVKK) are explained in the Privacy Policy: https://cebeci1.github.io/ezan/gizlilik.txt
+5.5. You can request deletion of your account and related data created for online features from within the App or by email to cebeci.zafer@gmail.com.
+
+6. LICENSE AND INTELLECTUAL PROPERTY
+6.1. The Developer grants the User a personal, non-commercial, non-transferable, non-exclusive and revocable license to use the App on their personal devices in accordance with this Agreement.
+6.2. All intellectual and industrial property rights in the App's software, source code, design, interface, graphics, logo and the "ZaiC" name belong to the Developer. Rights in third-party content such as Quran translations and tafsir, hadith and dua texts and prayer-time data belong to their respective owners.
+6.3. Except where expressly permitted by applicable law, the User may not: reverse engineer the App or attempt to access its source code; copy, modify or create derivative works of the App or any part of it; distribute the App outside official app stores, whether for a fee or free of charge; publish the App's code, designs or assets elsewhere; or attempt to gain unauthorized access to, overload or circumvent the security measures of the App's servers and infrastructure.
+6.4. In case of breach of this section, the license terminates automatically. The Developer's civil and criminal remedies under the Turkish Law on Intellectual and Artistic Works No. 5846 and other applicable legislation are reserved.
+
+7. ADS AND IN-APP PURCHASES
+7.1. The App is offered free of charge. To cover server, infrastructure and other service costs, the App may display Google AdMob ads and offer in-app purchases such as "Remove Ads" or Premium.
+7.2. Purchases are made through Google Play; payment, billing and refunds are subject to Google Play's terms. Purchases are tied to the Google account used for the transaction.
+7.3. Since purchased digital content is delivered instantly, the right of withdrawal cannot be exercised pursuant to Article 15 of the Turkish Distance Contracts Regulation. Google Play's refund policy and your other rights under consumer law remain reserved.
+7.4. For products offered as subscriptions, renewal, cancellation and price information is shown separately on the purchase screen; subscriptions can be cancelled from your Google Play account.
+
+8. TERM, TERMINATION AND CHANGES TO THE SERVICE
+8.1. The User may terminate this Agreement at any time by removing the App from their device.
+8.2. The Developer reserves the right to change, improve or temporarily suspend the App's features, or to discontinue its publication. Consumer rights regarding purchased products are reserved.
+8.3. The Developer may terminate the access of a User who breaches this Agreement to the App or its online features.
+
+9. CHANGES TO THE AGREEMENT
+The Developer may update this Agreement. The current version is always accessible within the App. For changes that significantly affect Users' rights, renewed approval will be requested within the App.
+
+10. GOVERNING LAW AND JURISDICTION
+10.1. This Agreement is governed by the laws of the Republic of Türkiye.
+10.2. For disputes arising from consumer transactions, consumers may apply to consumer arbitration committees within the monetary limits determined annually under the Consumer Protection Law No. 6502, and to consumer courts for disputes exceeding those limits. The consumer's right to apply to the authorities at their place of residence is reserved.
+10.3. Where a jurisdiction agreement is legally permissible, the Istanbul Central (Çağlayan) Courts and Enforcement Offices shall have jurisdiction.
+10.4. Users residing outside Türkiye retain the rights granted to them by the mandatory consumer protection laws of their country of residence.
+
+11. LANGUAGE
+This Agreement is provided in Turkish, English and Arabic. In case of any discrepancy between the texts, the Turkish text shall prevail.
+
+12. CONTACT
+For questions about this Agreement, privacy, content reports and all other matters: cebeci.zafer@gmail.com
+
+A NOTE FROM THE DEVELOPER
+(This section is not a contractual term.)
+This App is the result of months of ideas, design and coding work, often lasting until morning, and was made with charitable intentions — hoping for the users' prayers and as an investment for the hereafter. Ads and purchases are intended to cover the server and service costs needed to keep the App running. Not copying or sharing the App and its code without permission is a matter of respecting this effort and the rights of others (kul hakkı). We would be grateful for your prayers.
+
+Last updated: October 2026 (Version 2026-10-12)
+
+
+============================================================
+العربية
+============================================================
+
+اتفاقية ترخيص المستخدم النهائي (EULA) وإخلاء المسؤولية — ZaiC Ezan & Vakit & Shahid
+
+1. الأطراف والقبول
+1.1. أُبرمت اتفاقية ترخيص المستخدم النهائي هذه ("الاتفاقية") بين الشخص الذي يستخدم تطبيق الهاتف المحمول ZaiC Ezan & Vakit & Shahid ("التطبيق") ("المستخدم")، وبين ظافر جبيجي الذي يطوّر التطبيق وينشره باسم "ZaiC Design & Studio" ("المطوِّر").
+1.2. بموافقة المستخدم على هذه الاتفاقية قبل البدء في استخدام التطبيق، يُقرّ بأنه قرأ جميع أحكامها وفهمها وقبلها. وعلى المستخدم الذي لا يقبل هذه الاتفاقية ألّا يستخدم التطبيق وأن يحذفه من جهازه.
+
+2. طبيعة الخدمة وتنبيه بشأن المحتوى الديني
+2.1. يقدّم التطبيق أدوات مساعِدة على العبادة، مثل مواقيت الصلاة، واتجاه القبلة، وقراءة القرآن الكريم، والذكر، ومتابعة الختمة.
+2.2. تُؤخذ مواقيت الصلاة من مصادر خارجية مثل رئاسة الشؤون الدينية التركية (Diyanet) و AlAdhan، أو تُحسب فلكياً. وقد تختلف المواقيت ببضع دقائق بحسب المصدر وطريقة الحساب؛ فاعتمدوا في عباداتكم على التقويم الرسمي لمكانكم وعلى مواقيت مسجدكم المحلي.
+2.3. يعتمد اتجاه القبلة على دقة موقع الجهاز وحسّاسه المغناطيسي (البوصلة)؛ وقد تؤدي الأجسام المعدنية والأجهزة الإلكترونية وعدم المعايرة إلى نتائج غير صحيحة.
+2.4. التطبيق ليس مرجعاً دينياً. المحتوى لأغراض التوعية فقط؛ وفي مسائل العبادة والفقه وسائر الشؤون الدينية يُرجى الرجوع إلى العلماء المؤهَّلين والجهات الرسمية.
+2.5. التطبيق غير تابع لرئاسة الشؤون الدينية أو AlAdhan أو أي مؤسسة أو جهة أخرى، ولا يمثّلها، ولم يحصل على اعتمادها. وتُذكر أسماء هذه الجهات فقط لبيان مصدر البيانات.
+
+3. تحديد المسؤولية
+3.1. يُقدَّم التطبيق "كما هو" و"حسب توفّره"؛ ولا يُضمن عمله دون انقطاع أو خلوّه من الأخطاء أو ملاءمته لغرض معيّن.
+3.2. لا يتحمّل المطوِّر المسؤولية عن أخطاء المواقيت أو اتجاه القبلة أو الإشعارات أو عن نتائجها، الناشئة عن تأخّر الإشعارات أو عدم وصولها، أو قيود الجهاز (تحسين البطارية، برمجيات الشركة المصنِّعة، الوضع الصامت وغيرها)، أو انقطاع الإنترنت، أو الأعطال في خدمات الجهات الخارجية (Diyanet، AlAdhan، Supabase، Cloudflare، Google AdMob، Google Play وغيرها).
+3.3. تُقدَّم محتويات ترجمة معاني القرآن الكريم وتفسيره والأحاديث والأدعية من مصادر خارجية. ويبذل المطوِّر العناية المعقولة بشأن صحة هذه المحتويات، لكنه غير مسؤول عن الأخطاء النصية الواردة من المصدر. نرجو الإبلاغ عن أي خطأ تلاحظونه عبر البريد الإلكتروني: cebeci.zafer@gmail.com
+3.4. لا تسري حدود المسؤولية الواردة في هذا البند على المسؤولية الناشئة عن عمد المطوِّر أو إهماله الجسيم، ولا على الحالات التي لا يجوز فيها تحديد المسؤولية بموجب القانون النافذ، ولا على الحقوق القانونية الآمرة للمستهلك.
+
+4. «ختم القرآن الجماعي» (Hatim Kardeşliği) ومحتوى المستخدمين
+4.1. قد تتضمّن ميزة «ختم القرآن الجماعي» والميزات المماثلة عبر الإنترنت محتوى ينشئه المستخدمون ويراه مستخدمون آخرون (أسماء المجموعات، أسماء المستخدمين، الرسائل، الملاحظات وغيرها). وتقع المسؤولية القانونية عن هذا المحتوى على المستخدم الذي أنشأه.
+4.2. يُحظر المحتوى والسلوك التالي:
+ أ) الإهانة أو الشتم أو التحرّش أو التهديد أو التنمّر؛
+ ب) المحتوى الذي يحطّ من قدر أي شخص أو جماعة أو دين أو مذهب أو أصل عرقي أو معتقد، أو يحرّض على الكراهية أو العنف؛
+ ج) المواد الفاحشة أو الجنسية أو العنيفة؛
+ د) المحتوى الذي يروّج لأنشطة غير قانونية، والاحتيال، والرسائل المزعجة، والإعلانات غير المصرَّح بها؛
+ هـ) نشر البيانات الشخصية للآخرين أو بيانات الاتصال بهم أو معلوماتهم الخاصة دون إذن؛
+ و) المحتوى الذي ينتهك حقوق النشر أو غيرها من حقوق الملكية الفكرية للآخرين؛
+ ز) انتحال شخصية شخص أو جهة أخرى، أو تقديم النفس بصورة مضلِّلة.
+4.3. يمكن للمستخدمين الإبلاغ عن المحتوى أو المستخدمين المخالفين لهذه القواعد عبر وظيفة الإبلاغ داخل التطبيق أو عبر البريد الإلكتروني (cebeci.zafer@gmail.com)، كما يمكنهم حظر المستخدمين الآخرين. ويراجع المطوِّر البلاغات خلال مدة معقولة.
+4.4. يحق للمطوِّر، دون إشعار مسبق، إزالة المحتوى المخالف لهذه الاتفاقية، أو تقييد وصول المستخدم المعني إلى هذه الميزات، أو إغلاق حسابه.
+4.5. يمنح المستخدمُ المطوِّرَ إذناً مجانياً وغير حصري، مقصوراً على تقديم الخدمة فقط، لتخزين المحتوى الذي يشاركه داخل التطبيق وعرضه على أعضاء المجموعة الآخرين.
+
+5. البيانات الشخصية والخصوصية
+5.1. تُحفظ التفضيلات مثل المظهر واللغة واختيار المحافظة/المنطقة على جهازك. وإذا منحت إذن الموقع، يُستخدم موقعك لحساب مواقيت الصلاة واتجاه القبلة؛ وقد يُرسَل موقعك أو المحافظة/المنطقة المختارة إلى خدمة المواقيت المعنية للحصول على بيانات المواقيت.
+5.2. إذا استخدمت ميزات عبر الإنترنت مثل «ختم القرآن الجماعي»، تُخزَّن البيانات اللازمة لعمل هذه الميزات (مثل اسم المستخدم، وعضويات المجموعات، وتقدّم الختمة/الأجزاء، والمحتوى الذي تشاركه) لدى مزوِّدي البنية التحتية العاملين نيابةً عن المطوِّر (مثل Supabase و Cloudflare). والمطوِّر هو المسؤول عن معالجة هذه البيانات. واستخدام هذه الميزات اختياري.
+5.3. قد تعالج خدمات الإعلانات (Google AdMob) والشراء (Google Play) بيانات مثل معرّف الإعلانات ومعلومات الجهاز والاستخدام وفق سياسات الخصوصية الخاصة بها.
+5.4. تُبيَّن في سياسة الخصوصية البياناتُ التي تُعالَج وأغراضُ معالجتها، والجهاتُ والدولُ التي تُنقل إليها، ومددُ الاحتفاظ بها، وحقوقُك بموجب قانون حماية البيانات الشخصية التركي رقم 6698 (KVKK):
+https://cebeci1.github.io/ezan/gizlilik.txt
+5.5. يمكنك طلب حذف حسابك وبياناتك المرتبطة بالميزات عبر الإنترنت من داخل التطبيق أو عبر البريد الإلكتروني (cebeci.zafer@gmail.com).
+
+6. الترخيص والملكية الفكرية
+6.1. يمنح المطوِّر المستخدمَ ترخيصاً شخصياً وغير تجاري وغير قابل للتنازل وغير حصري وقابلاً للإلغاء، لاستخدام التطبيق على أجهزته الشخصية وفقاً لهذه الاتفاقية.
+6.2. جميع حقوق الملكية الفكرية والصناعية في برمجيات التطبيق وشيفرته المصدرية وتصميمه وواجهته ورسومه وشعاره واسم "ZaiC" مملوكة للمطوِّر. أما الحقوق في محتويات الجهات الخارجية، مثل ترجمات معاني القرآن الكريم وتفاسيره ونصوص الأحاديث والأدعية وبيانات المواقيت، فهي لأصحابها.
+6.3. باستثناء ما يجيزه القانون النافذ صراحةً، لا يجوز للمستخدم: إخضاع التطبيق للهندسة العكسية أو محاولة الوصول إلى شيفرته المصدرية؛ أو نسخ التطبيق أو أي جزء منه أو تعديله أو إنشاء أعمال مشتقة منه؛ أو توزيع التطبيق خارج متاجر التطبيقات الرسمية، بمقابل أو مجاناً؛ أو نشر شيفرات التطبيق أو تصاميمه أو مكوّناته في مكان آخر؛ أو محاولة الوصول غير المصرَّح به إلى خوادم التطبيق وبنيته التحتية أو إثقالها أو تجاوز إجراءاتها الأمنية.
+6.4. عند مخالفة هذا البند ينتهي الترخيص تلقائياً. وتبقى حقوق المطوِّر في اللجوء إلى الطرق المدنية والجزائية بموجب قانون المصنَّفات الفكرية والفنية التركي رقم 5846 وسائر التشريعات ذات الصلة محفوظة.
+
+7. الإعلانات والمشتريات داخل التطبيق
+7.1. يُقدَّم التطبيق مجاناً. ولتغطية تكاليف الخوادم والبنية التحتية والخدمات الأخرى، قد يعرض التطبيق إعلانات Google AdMob ويقدّم مشتريات داخل التطبيق مثل "إزالة الإعلانات" أو Premium.
+7.2. تتم المشتريات عبر Google Play؛ وتخضع عمليات الدفع والفوترة والاسترداد لشروط Google Play. وترتبط المشتريات بحساب Google الذي أُجريت به العملية.
+7.3. نظراً لأن المحتوى الرقمي المشترى يُسلَّم فوراً، فلا يمكن ممارسة حق العدول وفقاً للمادة 15 من لائحة العقود عن بُعد التركية. وتبقى سياسة الاسترداد في Google Play وحقوقك الأخرى بموجب قانون حماية المستهلك محفوظة.
+7.4. في المنتجات المقدَّمة كاشتراك، تُعرض معلومات التجديد والإلغاء والسعر بشكل منفصل في شاشة الشراء؛ ويمكن إلغاء الاشتراكات من حسابك في Google Play.
+
+8. المدة والإنهاء والتغييرات في الخدمة
+8.1. يمكن للمستخدم إنهاء هذه الاتفاقية في أي وقت بحذف التطبيق من جهازه.
+8.2. يحتفظ المطوِّر بحق تغيير ميزات التطبيق أو تطويرها أو تعليقها مؤقتاً أو إيقاف نشر التطبيق. وتبقى حقوق المستهلك المتعلقة بالمنتجات المشتراة محفوظة.
+8.3. يحق للمطوِّر إنهاء وصول المستخدم المخالف لهذه الاتفاقية إلى التطبيق أو إلى ميزاته عبر الإنترنت.
+
+9. تعديلات الاتفاقية
+يجوز للمطوِّر تحديث هذه الاتفاقية. والنسخة الحالية متاحة دائماً داخل التطبيق. وفي التغييرات التي تؤثر تأثيراً جوهرياً في حقوق المستخدمين، تُطلب الموافقة من جديد داخل التطبيق.
+
+10. القانون الواجب التطبيق والجهات المختصة
+10.1. تخضع هذه الاتفاقية لقوانين جمهورية تركيا.
+10.2. في النزاعات الناشئة عن معاملات المستهلكين، يجوز للمستهلك اللجوء إلى لجان تحكيم المستهلك ضمن الحدود المالية المحدَّدة سنوياً بموجب قانون حماية المستهلك رقم 6502، وإلى محاكم المستهلك في النزاعات التي تتجاوز تلك الحدود. ويبقى حق المستهلك في اللجوء إلى الجهات المختصة في مكان إقامته محفوظاً.
+10.3. حيثما يجوز قانوناً الاتفاق على الاختصاص، تختص محاكم ودوائر التنفيذ في إسطنبول المركزية (Çağlayan / جاغالاي).
+10.4. يحتفظ المستخدمون المقيمون خارج تركيا بالحقوق التي تمنحها لهم قوانين حماية المستهلك الآمرة في بلد إقامتهم.
+
+11. اللغة
+تُقدَّم هذه الاتفاقية باللغات التركية والإنجليزية والعربية. وفي حال وجود أي اختلاف بين النصوص، يُعتمد النص التركي.
+
+12. التواصل
+للاستفسارات المتعلقة بهذه الاتفاقية والخصوصية والإبلاغ عن المحتوى وسائر المسائل:
+cebeci.zafer@gmail.com
+
+كلمة من المطوِّر
+(هذا القسم ليس من أحكام الاتفاقية.)
+هذا التطبيق ثمرة أشهر من الأفكار والتصميم والبرمجة، امتدّ كثير منها حتى ساعات الفجر، وقد صُنع بنيّة الخير، رجاءَ دعاء المستخدمين واستثماراً للآخرة. والإعلانات والمشتريات مخصّصة لتغطية تكاليف الخوادم والخدمات اللازمة لاستمرار التطبيق. وإنّ عدم نسخ التطبيق وشيفراته أو نشرها دون إذن من احترام هذا الجهد ومن حفظ حقوق العباد. ولا تنسونا من صالح دعائكم.
+
+آخر تحديث: أكتوبر 2026 (الإصدار 2026-10-12)
