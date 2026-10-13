@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Gizlilik Politikası — Shahid</title>
+<meta name="description" content="Shahid - Ezan &amp; Vakit uygulaması Gizlilik Politikası &amp; KVKK Aydınlatma Metni (TR/EN/AR)">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --green:#1F6E4A;--green-light:#2a8c5f;--green-dark:#174f36;
+  --gold:#C9A23B;--gold-light:#e0c36a;--gold-dark:#a07e20;
+  --cream:#F7F6F2;--cream-dark:#EDE9DF;
+  --text:#2c2c2c;--text-light:#5a5a5a;
+  --card-bg:#FFFFFF;--shadow:0 2px 12px rgba(0,0,0,.08);
+  --radius:12px;
+}
+html{scroll-behavior:smooth;font-size:15px}
+body{
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  background:var(--cream);color:var(--text);line-height:1.7;min-height:100vh;
+}
+
+/* HERO */
+.hero{
+  background:linear-gradient(170deg,var(--green-dark) 0%,var(--green) 40%,var(--green-light) 100%);
+  text-align:center;padding:2rem 1rem 0;position:relative;overflow:hidden;
+}
+.hero-logo{width:110px;height:110px;border-radius:50%;
+  border:3px solid var(--gold);box-shadow:0 0 24px rgba(201,162,59,.45);
+  margin-bottom:.75rem;background:#0a1a12;object-fit:contain;padding:6px;}
+.hero h1{color:#fff;font-size:1.6rem;font-weight:700;letter-spacing:1px;margin-bottom:.15rem}
+.hero .app-tagline{color:#fff;opacity:.85;font-size:.9rem;font-weight:500;margin-bottom:.4rem}
+.hero .subtitle{color:var(--gold-light);font-size:.85rem;margin-bottom:1.2rem}
+.shield-banner{display:block;width:100%;max-width:700px;margin:0 auto;height:auto}
+.shield-banner .shield{fill:var(--green-dark);opacity:.5}
+.shield-banner .lock{fill:var(--gold);opacity:.75}
+.shield-banner .line{stroke:var(--gold);stroke-width:1.5;opacity:.4;fill:none}
+.shield-banner .dot{fill:var(--gold);opacity:.7}
+
+/* MARKA ŞERİDİ */
+.brand-strip{
+  background:linear-gradient(90deg,
+    rgba(201,162,59,.08) 0%,
+    rgba(201,162,59,.18) 50%,
+    rgba(201,162,59,.08) 100%);
+  border-top:1px solid rgba(201,162,59,.35);
+  border-bottom:1px solid rgba(201,162,59,.35);
+  padding:.7rem 1rem;text-align:center;
+  font-size:.82rem;color:var(--green-dark);
+  letter-spacing:.2px;line-height:1.5;
+}
+.brand-strip strong{color:var(--green);font-weight:700}
+.brand-strip .brand-name{color:var(--gold-dark);font-weight:700}
+.brand-strip em{font-style:normal;color:var(--text-light);font-size:.78rem}
+.brand-strip .brand-dot{
+  display:inline-block;color:var(--gold);
+  margin:0 .5rem;font-size:.75rem;vertical-align:middle;
+}
+.brand-strip[data-lang="tr"] .lang-en,
+.brand-strip[data-lang="tr"] .lang-ar,
+.brand-strip[data-lang="en"] .lang-tr,
+.brand-strip[data-lang="en"] .lang-ar,
+.brand-strip[data-lang="ar"] .lang-tr,
+.brand-strip[data-lang="ar"] .lang-en{display:none}
+.brand-strip .lang-ar{direction:rtl}
+
+/* TABS */
+.tab-nav{
+  position:sticky;top:0;z-index:100;display:flex;justify-content:center;gap:0;
+  background:var(--green);box-shadow:0 2px 8px rgba(0,0,0,.15);
+}
+.tab-btn{
+  flex:1;max-width:140px;padding:.75rem .5rem;background:transparent;border:none;
+  color:rgba(255,255,255,.65);font-size:.95rem;font-weight:600;cursor:pointer;
+  border-bottom:3px solid transparent;transition:.2s;
+}
+.tab-btn:hover{color:#fff;background:rgba(255,255,255,.07)}
+.tab-btn.active{color:var(--gold-light);border-bottom-color:var(--gold)}
+
+.container{max-width:780px;margin:0 auto;padding:1rem .75rem 2rem}
+.tab-content{display:none}
+.tab-content.active{display:block}
+
+/* TOC */
+.toc{
+  background:var(--card-bg);border-radius:var(--radius);box-shadow:var(--shadow);
+  padding:1.2rem 1.2rem 1rem;margin-bottom:1.5rem;border-left:4px solid var(--gold);
+}
+.toc h3{color:var(--green);font-size:1rem;margin-bottom:.6rem;display:flex;align-items:center;gap:.4rem}
+.toc ol{padding-left:1.3rem}
+.toc li{margin-bottom:.3rem;font-size:.88rem}
+.toc a{color:var(--green);text-decoration:none;border-bottom:1px dotted var(--gold)}
+.toc a:hover{color:var(--gold-dark);border-bottom-style:solid}
+
+/* CARDS */
+.clause-card{
+  background:var(--card-bg);border-radius:var(--radius);box-shadow:var(--shadow);
+  padding:1.3rem 1.2rem;margin-bottom:1.1rem;border-top:3px solid var(--green);
+  scroll-margin-top:60px;
+}
+.clause-card h2{
+  color:var(--green);font-size:1.05rem;font-weight:700;margin-bottom:.7rem;
+  display:flex;align-items:center;gap:.5rem;line-height:1.4;
+}
+.clause-num{
+  display:inline-flex;align-items:center;justify-content:center;
+  min-width:30px;height:30px;border-radius:50%;background:var(--gold);
+  color:#fff;font-size:.85rem;font-weight:700;flex-shrink:0;
+}
+.clause-card p{margin-bottom:.55rem;font-size:.92rem;color:var(--text)}
+.clause-card p strong{color:var(--green-dark)}
+.clause-card ul{margin:.4rem 0 .6rem 1.2rem;font-size:.9rem}
+.clause-card li{margin-bottom:.35rem}
+.clause-card .email-link{color:var(--green);word-break:break-all}
+
+/* INFO BOX */
+.info-box{
+  background:linear-gradient(135deg,rgba(201,162,59,.08),rgba(31,110,74,.06));
+  border-left:3px solid var(--gold);border-radius:8px;
+  padding:.8rem 1rem;margin:.6rem 0;font-size:.88rem;
+}
+.tab-content[dir="rtl"] .info-box{border-left:none;border-right:3px solid var(--gold)}
+
+/* FOOTER */
+.footer{
+  text-align:center;padding:1.5rem 1rem;border-top:2px solid var(--cream-dark);margin-top:1rem;
+}
+.footer p{font-size:.82rem;color:var(--text-light);margin-bottom:.3rem}
+.footer a{color:var(--green);text-decoration:none;border-bottom:1px dotted var(--gold)}
+.footer a:hover{color:var(--gold-dark)}
+.footer .version{color:var(--gold-dark);font-weight:600;font-size:.8rem;margin-top:.5rem}
+.footer .studio{
+  margin-top:.8rem;font-size:.78rem;color:var(--text-light);
+  padding-top:.7rem;border-top:1px dashed rgba(201,162,59,.4);
+}
+.footer .studio strong{color:var(--green)}
+
+/* RTL */
+.tab-content[dir="rtl"]{text-align:right}
+.tab-content[dir="rtl"] .toc{border-left:none;border-right:4px solid var(--gold)}
+.tab-content[dir="rtl"] .toc ol{padding-left:0;padding-right:1.3rem}
+.tab-content[dir="rtl"] .clause-card ul{margin-left:0;margin-right:1.2rem}
+.tab-content[dir="rtl"] .clause-card h2{flex-direction:row-reverse}
+
+/* RESPONSIVE */
+@media(max-width:520px){
+  html{font-size:14px}
+  .hero h1{font-size:1.35rem}
+  .hero-logo{width:86px;height:86px;padding:4px}
+  .container{padding:.75rem .5rem 1.5rem}
+  .clause-card{padding:1rem .9rem}
+  .brand-strip{font-size:.76rem;padding:.6rem .7rem}
+}
+@media(min-width:781px){
+  .container{padding:1.5rem 1rem 3rem}
+}
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<header class="hero">
+  <img class="hero-logo" src="https://cebeci1.github.io/logo_glow.gif" alt="Shahid Logo">
+  <h1>Shahid</h1>
+  <p class="app-tagline">Ezan &amp; Vakit</p>
+  <p class="subtitle">Gizlilik Politikası &amp; KVKK Aydınlatma Metni</p>
+  <svg class="shield-banner" viewBox="0 0 700 120" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path class="line" d="M20 80 Q 150 40 280 80" stroke-dasharray="3,4"/>
+    <path class="line" d="M420 80 Q 550 40 680 80" stroke-dasharray="3,4"/>
+    <path class="shield" d="M120 30 L160 30 L160 65 Q160 85 140 95 Q120 85 120 65 Z"/>
+    <circle class="lock" cx="140" cy="60" r="5"/>
+    <rect class="lock" x="138" y="60" width="4" height="10"/>
+    <path class="shield" d="M310 15 L390 15 L390 75 Q390 102 350 115 Q310 102 310 75 Z" opacity="0.65"/>
+    <rect class="lock" x="338" y="55" width="24" height="22" rx="3"/>
+    <path d="M343 55 L343 48 Q343 38 350 38 Q357 38 357 48 L357 55" fill="none" stroke="#C9A23B" stroke-width="3" opacity="0.75"/>
+    <circle cx="350" cy="63" r="2.5" fill="#174f36"/>
+    <rect x="349" y="63" width="2" height="6" fill="#174f36"/>
+    <path class="shield" d="M540 30 L580 30 L580 65 Q580 85 560 95 Q540 85 540 65 Z"/>
+    <circle class="lock" cx="560" cy="60" r="5"/>
+    <rect class="lock" x="558" y="60" width="4" height="10"/>
+    <circle class="dot" cx="210" cy="60" r="2"/>
+    <circle class="dot" cx="490" cy="60" r="2"/>
+    <circle class="dot" cx="230" cy="75" r="1.5"/>
+    <circle class="dot" cx="470" cy="75" r="1.5"/>
+    <rect x="0" y="115" width="700" height="5" fill="#174f36" opacity="0.3"/>
+  </svg>
+</header>
+
+<!-- MARKA ŞERİDİ -->
+<div class="brand-strip" data-lang="tr" id="brandStrip">
+  <span class="lang-tr">
+    <span class="brand-dot">✦</span>
+    <strong class="brand-name">Shahid</strong>, bir <strong>ZaiC Design &amp; Studio</strong> <em>(Zafer Cebeci)</em> çalışmasıdır
+    <span class="brand-dot">✦</span>
+  </span>
+  <span class="lang-en">
+    <span class="brand-dot">✦</span>
+    <strong class="brand-name">Shahid</strong> is a product of <strong>ZaiC Design &amp; Studio</strong> <em>(Zafer Cebeci)</em>
+    <span class="brand-dot">✦</span>
+  </span>
+  <span class="lang-ar">
+    <span class="brand-dot">✦</span>
+    <strong class="brand-name">Shahid</strong> هو من إنتاج <strong>ZaiC Design &amp; Studio</strong> <em>(ظافر جبيجي)</em>
+    <span class="brand-dot">✦</span>
+  </span>
+</div>
+
+<!-- TABS -->
+<nav class="tab-nav" role="tablist">
+  <button class="tab-btn active" data-tab="tab-tr" role="tab" aria-selected="true">🇹🇷 Türkçe</button>
+  <button class="tab-btn" data-tab="tab-en" role="tab" aria-selected="false">🇬🇧 English</button>
+  <button class="tab-btn" data-tab="tab-ar" role="tab" aria-selected="false">🇸🇦 العربية</button>
+</nav>
+
+<main class="container">
+
+<!-- ═════════ TÜRKÇE ═════════ -->
+<div id="tab-tr" class="tab-content active" lang="tr">
+
+<nav class="toc">
+  <h3>📑 İçindekiler</h3>
+  <ol>
+    <li><a href="#tr-1">Veri Sorumlusu</a></li>
+    <li><a href="#tr-2">İşlenen Veriler ve Amaçları</a></li>
+    <li><a href="#tr-3">Hukuki Sebepler</a></li>
+    <li><a href="#tr-4">Verilerin Aktarıldığı Taraflar</a></li>
+    <li><a href="#tr-5">Saklama Süresi ve Silme</a></li>
+    <li><a href="#tr-6">Güvenlik</a></li>
+    <li><a href="#tr-7">Haklarınız (KVKK md. 11)</a></li>
+    <li><a href="#tr-8">Değişiklikler</a></li>
+  </ol>
+</nav>
+
+<section class="clause-card" id="tr-1">
+  <h2><span class="clause-num">1</span> VERİ SORUMLUSU</h2>
+  <p>6698 sayılı Kişisel Verilerin Korunması Kanunu ("KVKK") kapsamında veri sorumlusu, Shahid uygulamasını ("Uygulama") "ZaiC Design &amp; Studio" adı altında geliştiren ve yayınlayan Zafer Cebeci'dir ("Geliştirici").</p>
+  <div class="info-box">📧 İletişim: <a class="email-link" href="mailto:cebeci.zafer@gmail.com">cebeci.zafer@gmail.com</a></div>
+</section>
+
+<section class="clause-card" id="tr-2">
+  <h2><span class="clause-num">2</span> İŞLENEN VERİLER VE AMAÇLARI</h2>
+  <p><strong>2.1. Cihazdaki tercihler:</strong> Tema, dil, il/ilçe seçimi ve bildirim ayarları yalnızca cihazınızda saklanır ve Geliştiriciye iletilmez.</p>
+  <p><strong>2.2. Konum:</strong> Konum izni verirseniz konumunuz yalnızca namaz vakitlerini ve kıble yönünü hesaplamak için kullanılır. Vakit verisinin alınabilmesi için konumunuz veya seçtiğiniz il/ilçe bilgisi vakit servislerine (Diyanet İşleri Başkanlığı, AlAdhan) iletilebilir. Konum bilginiz Geliştirici tarafından sunucularda saklanmaz. Konum izni vermeden il/ilçe seçerek de Uygulamayı kullanabilirsiniz.</p>
+  <p><strong>2.3. Hatim Kardeşliği:</strong> Bu özelliği kullanırsanız kullanıcı adınız, katıldığınız gruplar, hatim/cüz ilerlemeniz, paylaştığınız içerikler ve hesabınıza ait teknik tanımlayıcılar, Geliştirici adına Supabase ve Cloudflare altyapısında saklanır. Bu veriler yalnızca özelliğin çalışması için kullanılır.</p>
+  <div class="info-box">⚠️ Bu bilgiler dini inancınızı gösterebileceğinden <strong>KVKK md. 6 kapsamında özel nitelikli kişisel veri</strong> sayılabilir; bu nedenle yalnızca açık rızanızla işlenir. Rızanızı dilediğiniz zaman geri alabilirsiniz. Özelliği kullanmak isteğe bağlıdır; Uygulamanın diğer işlevleri onsuz da çalışır.</div>
+  <p><strong>2.4. Günlük içerikler:</strong> Günlük içerikler sunucudan indirilirken, internet bağlantısının doğası gereği IP adresiniz ve temel cihaz bilgileriniz altyapı sağlayıcıları tarafından teknik olarak işlenebilir.</p>
+  <p><strong>2.5. Reklamlar:</strong> Uygulama Google AdMob reklamları gösterir. AdMob; reklam kimliği, IP adresi, cihaz ve kullanım bilgileri gibi verileri Google'ın gizlilik politikası çerçevesinde işler. Kişiselleştirilmiş reklamları ve reklam kimliğinizi cihazınızın ayarlarından yönetebilirsiniz. "Reklamları Kaldır" satın alındığında reklam gösterilmez.</p>
+  <p><strong>2.6. Satın almalar:</strong> Satın almalar Google Play üzerinden yapılır. Geliştirici ödeme bilgilerinize erişmez; Uygulama yalnızca satın alma durumunu doğrular.</p>
+</section>
+
+<section class="clause-card" id="tr-3">
+  <h2><span class="clause-num">3</span> HUKUKİ SEBEPLER</h2>
+  <p>Veriler; hizmetin sunulması ve sözleşmenin ifası (KVKK md. 5/2-c), Geliştiricinin meşru menfaati (md. 5/2-f) ve Hatim Kardeşliği bakımından açık rızanız (md. 6) hukuki sebeplerine dayanılarak, elektronik ortamda Uygulama üzerinden toplanır.</p>
+</section>
+
+<section class="clause-card" id="tr-4">
+  <h2><span class="clause-num">4</span> VERİLERİN AKTARILDIĞI TARAFLAR</h2>
+  <p><strong>Kişisel verileriniz satılmaz.</strong> Veriler yalnızca hizmetin sunulması için şu hizmet sağlayıcılarla paylaşılır:</p>
+  <ul>
+    <li><strong>Supabase ve Cloudflare:</strong> Hatim Kardeşliği ve günlük içerik altyapısı</li>
+    <li><strong>Google (AdMob, Google Play):</strong> reklam ve satın alma</li>
+    <li><strong>Diyanet İşleri Başkanlığı ve AlAdhan:</strong> namaz vakti verisi</li>
+  </ul>
+  <div class="info-box">🌍 Bu sağlayıcıların sunucuları Türkiye dışında bulunabilir; bu nedenle verileriniz yurt dışına aktarılabilir. Kanunen yetkili kurumların talebi halinde mevzuat gereği paylaşım yapılabilir.</div>
+</section>
+
+<section class="clause-card" id="tr-5">
+  <h2><span class="clause-num">5</span> SAKLAMA SÜRESİ VE SİLME</h2>
+  <p>Cihazdaki tercihler Uygulamayı kaldırdığınızda silinir. Hatim Kardeşliği verileri hesabınız silinene kadar saklanır. Hesabınızın ve ilgili verilerinizin silinmesini Uygulama içinden veya <a class="email-link" href="mailto:cebeci.zafer@gmail.com">cebeci.zafer@gmail.com</a> adresine yazarak isteyebilirsiniz; talebiniz en geç <strong>30 gün içinde</strong> sonuçlandırılır.</p>
+</section>
+
+<section class="clause-card" id="tr-6">
+  <h2><span class="clause-num">6</span> GÜVENLİK</h2>
+  <p>Verileriniz <strong>şifreli bağlantı (HTTPS)</strong> üzerinden iletilir ve makul teknik ve idari güvenlik önlemleri alınır.</p>
+</section>
+
+<section class="clause-card" id="tr-7">
+  <h2><span class="clause-num">7</span> HAKLARINIZ (KVKK md. 11)</h2>
+  <p>Verilerinizin işlenip işlenmediğini öğrenme, bilgi talep etme, işleme amacını ve amaca uygun kullanılıp kullanılmadığını öğrenme, aktarıldığı üçüncü kişileri bilme, eksik veya yanlış işlenmişse düzeltilmesini, silinmesini veya yok edilmesini isteme, bu işlemlerin aktarılan kişilere bildirilmesini isteme, otomatik analiz sonucu aleyhinize çıkan sonuca itiraz etme ve kanuna aykırı işleme nedeniyle zararın giderilmesini talep etme haklarına sahipsiniz.</p>
+  <div class="info-box">📨 Başvurularınızı <a class="email-link" href="mailto:cebeci.zafer@gmail.com">cebeci.zafer@gmail.com</a> adresine iletebilirsiniz.</div>
+</section>
+
+<section class="clause-card" id="tr-8">
+  <h2><span class="clause-num">8</span> DEĞİŞİKLİKLER</h2>
+  <p>Bu politika güncellenebilir; güncel sürüm bu adreste yayınlanır. Önemli değişiklikler Uygulama içinden bildirilir.</p>
+</section>
+
+</div><!-- /tab-tr -->
+
+
+<!-- ═════════ ENGLISH ═════════ -->
+<div id="tab-en" class="tab-content" lang="en">
+
+<nav class="toc">
+  <h3>📑 Table of Contents</h3>
+  <ol>
+    <li><a href="#en-1">Data Controller</a></li>
+    <li><a href="#en-2">Data We Process and Why</a></li>
+    <li><a href="#en-3">Legal Bases</a></li>
+    <li><a href="#en-4">Who We Share Data With</a></li>
+    <li><a href="#en-5">Retention and Deletion</a></li>
+    <li><a href="#en-6">Security</a></li>
+    <li><a href="#en-7">Your Rights (KVKK Art. 11)</a></li>
+    <li><a href="#en-8">Changes</a></li>
+  </ol>
+</nav>
+
+<section class="clause-card" id="en-1">
+  <h2><span class="clause-num">1</span> DATA CONTROLLER</h2>
+  <p>The data controller under the Turkish Personal Data Protection Law No. 6698 ("KVKK") is Zafer Cebeci, who develops and publishes the Shahid application ("App") under the name "ZaiC Design &amp; Studio" ("Developer").</p>
+  <div class="info-box">📧 Contact: <a class="email-link" href="mailto:cebeci.zafer@gmail.com">cebeci.zafer@gmail.com</a></div>
+</section>
+
+<section class="clause-card" id="en-2">
+  <h2><span class="clause-num">2</span> DATA WE PROCESS AND WHY</h2>
+  <p><strong>2.1. Device preferences:</strong> Theme, language, province/district selection and notification settings are stored only on your device and are not sent to the Developer.</p>
+  <p><strong>2.2. Location:</strong> If you grant location permission, your location is used only to calculate prayer times and Qibla direction. To obtain prayer-time data, your location or selected province/district may be sent to prayer-time services (Presidency of Religious Affairs of Türkiye, AlAdhan). Your location is not stored on the Developer's servers. You can also use the App without location permission by selecting a province/district.</p>
+  <p><strong>2.3. Khatm Brotherhood (Hatim Kardeşliği):</strong> If you use this feature, your username, the groups you join, your khatm/juz progress, the content you share and technical identifiers of your account are stored with Supabase and Cloudflare on behalf of the Developer. This data is used only to run the feature.</p>
+  <div class="info-box">⚠️ Because it may reveal your religious beliefs, it may be considered <strong>special category data under KVKK Article 6</strong> and is therefore processed only with your explicit consent. You may withdraw your consent at any time. Using this feature is optional; the rest of the App works without it.</div>
+  <p><strong>2.4. Daily content:</strong> When daily content is downloaded from the server, your IP address and basic device information may be technically processed by infrastructure providers, as is inherent to any internet connection.</p>
+  <p><strong>2.5. Ads:</strong> The App shows Google AdMob ads. AdMob processes data such as the advertising ID, IP address, device and usage information under Google's privacy policy. You can manage personalized ads and your advertising ID in your device settings. No ads are shown once "Remove Ads" is purchased.</p>
+  <p><strong>2.6. Purchases:</strong> Purchases are made through Google Play. The Developer has no access to your payment details; the App only verifies the purchase status.</p>
+</section>
+
+<section class="clause-card" id="en-3">
+  <h2><span class="clause-num">3</span> LEGAL BASES</h2>
+  <p>Data is collected electronically through the App on the legal bases of providing the service and performing the agreement (KVKK Art. 5/2-c), the Developer's legitimate interest (Art. 5/2-f) and, for Khatm Brotherhood, your explicit consent (Art. 6).</p>
+</section>
+
+<section class="clause-card" id="en-4">
+  <h2><span class="clause-num">4</span> WHO WE SHARE DATA WITH</h2>
+  <p><strong>Your personal data is never sold.</strong> It is shared only with the following service providers to deliver the service:</p>
+  <ul>
+    <li><strong>Supabase and Cloudflare:</strong> Khatm Brotherhood and daily content infrastructure</li>
+    <li><strong>Google (AdMob, Google Play):</strong> ads and purchases</li>
+    <li><strong>Presidency of Religious Affairs of Türkiye and AlAdhan:</strong> prayer-time data</li>
+  </ul>
+  <div class="info-box">🌍 These providers' servers may be located outside Türkiye, so your data may be transferred abroad. Data may also be disclosed where required by law at the request of authorized authorities.</div>
+</section>
+
+<section class="clause-card" id="en-5">
+  <h2><span class="clause-num">5</span> RETENTION AND DELETION</h2>
+  <p>Device preferences are deleted when you uninstall the App. Khatm Brotherhood data is kept until your account is deleted. You can request deletion of your account and related data from within the App or by email to <a class="email-link" href="mailto:cebeci.zafer@gmail.com">cebeci.zafer@gmail.com</a>; requests are completed <strong>within 30 days</strong> at the latest.</p>
+</section>
+
+<section class="clause-card" id="en-6">
+  <h2><span class="clause-num">6</span> SECURITY</h2>
+  <p>Your data is transmitted over <strong>encrypted connections (HTTPS)</strong>, and reasonable technical and organizational security measures are applied.</p>
+</section>
+
+<section class="clause-card" id="en-7">
+  <h2><span class="clause-num">7</span> YOUR RIGHTS (KVKK Art. 11)</h2>
+  <p>You have the right to learn whether your data is processed, request information about it, learn the purpose of processing and whether it is used accordingly, know the third parties it is transferred to, request correction of incomplete or inaccurate data, request its deletion or destruction, request that these actions be notified to recipients, object to an outcome against you resulting from automated analysis, and claim compensation for damage caused by unlawful processing.</p>
+  <div class="info-box">📨 Send your requests to <a class="email-link" href="mailto:cebeci.zafer@gmail.com">cebeci.zafer@gmail.com</a>.</div>
+</section>
+
+<section class="clause-card" id="en-8">
+  <h2><span class="clause-num">8</span> CHANGES</h2>
+  <p>This policy may be updated; the current version is published at this address. Significant changes will be announced within the App.</p>
+</section>
+
+</div><!-- /tab-en -->
+
+
+<!-- ═════════ العربية (RTL) ═════════ -->
+<div id="tab-ar" class="tab-content" dir="rtl" lang="ar">
+
+<nav class="toc">
+  <h3>📑 فهرس المحتويات</h3>
+  <ol>
+    <li><a href="#ar-1">المسؤول عن البيانات</a></li>
+    <li><a href="#ar-2">البيانات التي نعالجها وأغراضها</a></li>
+    <li><a href="#ar-3">الأسس القانونية</a></li>
+    <li><a href="#ar-4">الجهات التي تُنقل إليها البيانات</a></li>
+    <li><a href="#ar-5">مدة الاحتفاظ والحذف</a></li>
+    <li><a href="#ar-6">الأمان</a></li>
+    <li><a href="#ar-7">حقوقكم (KVKK المادة 11)</a></li>
+    <li><a href="#ar-8">التعديلات</a></li>
+  </ol>
+</nav>
+
+<section class="clause-card" id="ar-1">
+  <h2><span class="clause-num">1</span> المسؤول عن البيانات</h2>
+  <p>المسؤول عن البيانات بموجب قانون حماية البيانات الشخصية التركي رقم 6698 ("KVKK") هو ظافر جبيجي، الذي يطوّر تطبيق Shahid ("التطبيق") وينشره باسم "ZaiC Design &amp; Studio" ("المطوِّر").</p>
+  <div class="info-box">📧 التواصل: <a class="email-link" href="mailto:cebeci.zafer@gmail.com">cebeci.zafer@gmail.com</a></div>
+</section>
+
+<section class="clause-card" id="ar-2">
+  <h2><span class="clause-num">2</span> البيانات التي نعالجها وأغراضها</h2>
+  <p><strong>2.1. التفضيلات على الجهاز:</strong> المظهر، واللغة، واختيار المحافظة/المنطقة، وإعدادات الإشعارات تُخزَّن على جهازك فقط ولا تُرسَل إلى المطوِّر.</p>
+  <p><strong>2.2. الموقع:</strong> إذا منحت إذن الموقع، فإن موقعك يُستخدم فقط لحساب مواقيت الصلاة واتجاه القبلة. وللحصول على بيانات المواقيت قد يُرسَل موقعك أو المحافظة/المنطقة المختارة إلى خدمات المواقيت (رئاسة الشؤون الدينية التركية، AlAdhan). ولا يُخزَّن موقعك على خوادم المطوِّر. ويمكنك استخدام التطبيق أيضاً دون منح إذن الموقع عبر اختيار محافظة/منطقة.</p>
+  <p><strong>2.3. ختم القرآن الجماعي (Hatim Kardeşliği):</strong> إذا استخدمت هذه الميزة، فإن اسم المستخدم، والمجموعات التي تنضم إليها، وتقدّم الختمة/الأجزاء، والمحتوى الذي تشاركه، والمعرِّفات التقنية لحسابك تُخزَّن لدى Supabase و Cloudflare نيابةً عن المطوِّر. وتُستخدَم هذه البيانات فقط لتشغيل الميزة.</p>
+  <div class="info-box">⚠️ ولأن هذه البيانات قد تكشف معتقدك الديني، فقد تُعدّ <strong>بيانات ذات طبيعة خاصة بموجب المادة 6 من KVKK</strong>، ولذلك تُعالَج فقط بموافقتك الصريحة. ويمكنك سحب موافقتك في أي وقت. استخدام هذه الميزة اختياري؛ وبقية التطبيق تعمل بدونها.</div>
+  <p><strong>2.4. المحتوى اليومي:</strong> عند تنزيل المحتوى اليومي من الخادم، قد يُعالَج عنوان IP ومعلومات الجهاز الأساسية تقنياً من قِبل مزوِّدي البنية التحتية، وذلك بحكم طبيعة أي اتصال بالإنترنت.</p>
+  <p><strong>2.5. الإعلانات:</strong> يعرض التطبيق إعلانات Google AdMob. وتعالج AdMob بيانات مثل معرّف الإعلانات، وعنوان IP، ومعلومات الجهاز والاستخدام وفق سياسة خصوصية Google. ويمكنك إدارة الإعلانات المخصّصة ومعرّف الإعلانات من إعدادات جهازك. ولا تُعرض الإعلانات بعد شراء "إزالة الإعلانات".</p>
+  <p><strong>2.6. المشتريات:</strong> تتم المشتريات عبر Google Play. ولا يصل المطوِّر إلى بيانات الدفع؛ ويتحقّق التطبيق من حالة الشراء فقط.</p>
+</section>
+
+<section class="clause-card" id="ar-3">
+  <h2><span class="clause-num">3</span> الأسس القانونية</h2>
+  <p>تُجمع البيانات إلكترونياً عبر التطبيق استناداً إلى الأسس القانونية التالية: تقديم الخدمة وتنفيذ العقد (KVKK المادة 5/2-ج)، والمصلحة المشروعة للمطوِّر (المادة 5/2-و)، وبالنسبة لـ«ختم القرآن الجماعي» موافقتك الصريحة (المادة 6).</p>
+</section>
+
+<section class="clause-card" id="ar-4">
+  <h2><span class="clause-num">4</span> الجهات التي تُنقل إليها البيانات</h2>
+  <p><strong>لا تُباع بياناتك الشخصية.</strong> وتُشارك فقط مع مزوِّدي الخدمات التالين لتقديم الخدمة:</p>
+  <ul>
+    <li><strong>Supabase و Cloudflare:</strong> البنية التحتية لـ«ختم القرآن الجماعي» والمحتوى اليومي</li>
+    <li><strong>Google (AdMob، Google Play):</strong> الإعلانات والمشتريات</li>
+    <li><strong>رئاسة الشؤون الدينية التركية و AlAdhan:</strong> بيانات مواقيت الصلاة</li>
+  </ul>
+  <div class="info-box">🌍 قد تكون خوادم هؤلاء المزوِّدين خارج تركيا، لذلك قد تُنقل بياناتك إلى الخارج. وقد تُفصح البيانات أيضاً حيثما يستلزم القانون ذلك بطلب من الجهات المختصة.</div>
+</section>
+
+<section class="clause-card" id="ar-5">
+  <h2><span class="clause-num">5</span> مدة الاحتفاظ والحذف</h2>
+  <p>تُحذف التفضيلات الموجودة على الجهاز عند إلغاء تثبيت التطبيق. وتُحفظ بيانات «ختم القرآن الجماعي» حتى يُحذف حسابك. ويمكنك طلب حذف حسابك والبيانات المرتبطة به من داخل التطبيق أو عبر البريد الإلكتروني <a class="email-link" href="mailto:cebeci.zafer@gmail.com">cebeci.zafer@gmail.com</a>؛ وتُنفَّذ الطلبات <strong>خلال 30 يوماً</strong> كحدٍّ أقصى.</p>
+</section>
+
+<section class="clause-card" id="ar-6">
+  <h2><span class="clause-num">6</span> الأمان</h2>
+  <p>تُنقَل بياناتك عبر <strong>اتصالات مشفَّرة (HTTPS)</strong>، وتُتَّخذ تدابير أمنية تقنية وإدارية معقولة.</p>
+</section>
+
+<section class="clause-card" id="ar-7">
+  <h2><span class="clause-num">7</span> حقوقكم (KVKK المادة 11)</h2>
+  <p>لكم الحق في: معرفة ما إذا كانت بياناتكم تُعالَج، وطلب معلومات عنها، ومعرفة غرض المعالجة وما إذا كانت تُستخدم وفق هذا الغرض، ومعرفة الأطراف الثالثة التي نُقلت إليها، وطلب تصحيح البيانات الناقصة أو غير الصحيحة، وطلب حذفها أو إتلافها، وطلب إبلاغ هذه الإجراءات إلى الجهات التي نُقلت إليها، والاعتراض على نتيجة سلبية ناجمة عن تحليل آلي، والمطالبة بالتعويض عن الضرر الناتج عن المعالجة غير القانونية.</p>
+  <div class="info-box">📨 يمكنكم إرسال طلباتكم إلى <a class="email-link" href="mailto:cebeci.zafer@gmail.com">cebeci.zafer@gmail.com</a>.</div>
+</section>
+
+<section class="clause-card" id="ar-8">
+  <h2><span class="clause-num">8</span> التعديلات</h2>
+  <p>قد تُحدَّث هذه السياسة؛ وتُنشر النسخة الحالية على هذا العنوان. ويُعلَن عن التغييرات المهمة من داخل التطبيق.</p>
+</section>
+
+</div><!-- /tab-ar -->
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <p>📧 <a href="mailto:cebeci.zafer@gmail.com">cebeci.zafer@gmail.com</a></p>
+  <p>📄 <a href="https://cebeci1.github.io/ezan/eula.html">EULA / Son Kullanıcı Lisans Sözleşmesi</a></p>
+  <p class="version">Son güncelleme: 12 Ekim 2026</p>
+  <p class="studio">
+    <strong>Shahid</strong> — bir <strong>ZaiC Design &amp; Studio</strong> çalışmasıdır<br>
+    © 2026 Zafer Cebeci · Tüm hakları saklıdır
+  </p>
+</footer>
+
+<script>
+(function(){
+  var btns=document.querySelectorAll('.tab-btn');
+  var tabs=document.querySelectorAll('.tab-content');
+  var brandStrip=document.getElementById('brandStrip');
+  btns.forEach(function(btn){
+    btn.addEventListener('click',function(){
+      btns.forEach(function(b){b.classList.remove('active');b.setAttribute('aria-selected','false')});
+      tabs.forEach(function(t){t.classList.remove('active')});
+      btn.classList.add('active');
+      btn.setAttribute('aria-selected','true');
+      var target=document.getElementById(btn.getAttribute('data-tab'));
+      if(target){
+        target.classList.add('active');
+        var lang=target.getAttribute('lang')||'tr';
+        document.documentElement.lang=lang;
+        document.documentElement.dir=target.getAttribute('dir')||'ltr';
+        if(brandStrip)brandStrip.setAttribute('data-lang',lang);
+        window.scrollTo({top:0,behavior:'smooth'});
+      }
+    });
+  });
+})();
+</script>
+
+</body>
+</html>

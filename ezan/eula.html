@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>EULA — ZaiC Ezan &amp; Vakit</title>
+<title>EULA — Shahid</title>
+<meta name="description" content="Shahid - Ezan &amp; Vakit uygulaması Son Kullanıcı Lisans Sözleşmesi (TR/EN/AR)">
 <style>
 /* ═══════════════ RESET & BASE ═══════════════ */
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
@@ -27,17 +28,45 @@ body{
   background:linear-gradient(170deg,var(--green-dark) 0%,var(--green) 40%,var(--green-light) 100%);
   text-align:center;padding:2rem 1rem 0;position:relative;overflow:hidden;
 }
-.hero-logo{width:100px;height:100px;border-radius:50%;
+.hero-logo{width:110px;height:110px;border-radius:50%;
   border:3px solid var(--gold);box-shadow:0 0 24px rgba(201,162,59,.45);
-  margin-bottom:.75rem;background:#fff;
+  margin-bottom:.75rem;background:#0a1a12;object-fit:contain;padding:6px;}
 }
-.hero h1{color:#fff;font-size:1.35rem;font-weight:700;letter-spacing:.5px;margin-bottom:.25rem}
+.hero h1{color:#fff;font-size:1.6rem;font-weight:700;letter-spacing:1px;margin-bottom:.15rem}
+.hero .app-tagline{color:#fff;opacity:.85;font-size:.9rem;font-weight:500;margin-bottom:.4rem}
 .hero .subtitle{color:var(--gold-light);font-size:.85rem;margin-bottom:1.2rem}
 /* SVG cami silueti */
 .mosque-banner{display:block;width:100%;max-width:700px;margin:0 auto;height:auto}
 .mosque-banner .dome{fill:var(--green-dark);opacity:.55}
 .mosque-banner .minaret{fill:var(--green-dark);opacity:.45}
 .mosque-banner .star{fill:var(--gold);opacity:.7}
+
+/* ═══════════════ MARKA ŞERİDİ ═══════════════ */
+.brand-strip{
+  background:linear-gradient(90deg,
+    rgba(201,162,59,.08) 0%,
+    rgba(201,162,59,.18) 50%,
+    rgba(201,162,59,.08) 100%);
+  border-top:1px solid rgba(201,162,59,.35);
+  border-bottom:1px solid rgba(201,162,59,.35);
+  padding:.7rem 1rem;text-align:center;
+  font-size:.82rem;color:var(--green-dark);
+  letter-spacing:.2px;line-height:1.5;
+}
+.brand-strip strong{color:var(--green);font-weight:700}
+.brand-strip .brand-name{color:var(--gold-dark);font-weight:700}
+.brand-strip em{font-style:normal;color:var(--text-light);font-size:.78rem}
+.brand-strip .brand-dot{
+  display:inline-block;color:var(--gold);
+  margin:0 .5rem;font-size:.75rem;vertical-align:middle;
+}
+.brand-strip[data-lang="tr"] .lang-en,
+.brand-strip[data-lang="tr"] .lang-ar,
+.brand-strip[data-lang="en"] .lang-tr,
+.brand-strip[data-lang="en"] .lang-ar,
+.brand-strip[data-lang="ar"] .lang-tr,
+.brand-strip[data-lang="ar"] .lang-en{display:none}
+.brand-strip .lang-ar{direction:rtl}
 
 /* ═══════════════ TAB NAV ═══════════════ */
 .tab-nav{
@@ -57,12 +86,10 @@ body{
 
 /* ═══════════════ MAIN CONTAINER ═══════════════ */
 .container{max-width:780px;margin:0 auto;padding:1rem .75rem 2rem}
-
-/* ═══════════════ TAB CONTENT ═══════════════ */
 .tab-content{display:none}
 .tab-content.active{display:block}
 
-/* ═══════════════ TOC (İçindekiler) ═══════════════ */
+/* ═══════════════ TOC ═══════════════ */
 .toc{
   background:var(--card-bg);border-radius:var(--radius);
   box-shadow:var(--shadow);padding:1.2rem 1.2rem 1rem;
@@ -78,26 +105,21 @@ body{
 .clause-card{
   background:var(--card-bg);border-radius:var(--radius);
   box-shadow:var(--shadow);padding:1.3rem 1.2rem;
-  margin-bottom:1.1rem;
-  border-top:3px solid var(--green);
+  margin-bottom:1.1rem;border-top:3px solid var(--green);
   scroll-margin-top:60px;
 }
 .clause-card h2{
   color:var(--green);font-size:1.05rem;font-weight:700;
-  margin-bottom:.7rem;display:flex;align-items:center;gap:.5rem;
-  line-height:1.4;
+  margin-bottom:.7rem;display:flex;align-items:center;gap:.5rem;line-height:1.4;
 }
 .clause-num{
   display:inline-flex;align-items:center;justify-content:center;
   min-width:30px;height:30px;border-radius:50%;
-  background:var(--gold);color:#fff;font-size:.85rem;font-weight:700;
-  flex-shrink:0;
+  background:var(--gold);color:#fff;font-size:.85rem;font-weight:700;flex-shrink:0;
 }
 .clause-card p{margin-bottom:.55rem;font-size:.92rem;color:var(--text)}
 .clause-card p strong{color:var(--green-dark)}
-.clause-card ul,.clause-card ol.sub{
-  margin:.4rem 0 .6rem 1.2rem;font-size:.9rem;
-}
+.clause-card ul{margin:.4rem 0 .6rem 1.2rem;font-size:.9rem}
 .clause-card li{margin-bottom:.3rem}
 .clause-card .email-link{color:var(--green);word-break:break-all}
 
@@ -118,32 +140,35 @@ body{
 /* ═══════════════ FOOTER ═══════════════ */
 .footer{
   text-align:center;padding:1.5rem 1rem;
-  border-top:2px solid var(--cream-dark);
-  margin-top:1rem;
+  border-top:2px solid var(--cream-dark);margin-top:1rem;
 }
 .footer p{font-size:.82rem;color:var(--text-light);margin-bottom:.3rem}
 .footer a{color:var(--green);text-decoration:none;border-bottom:1px dotted var(--gold)}
 .footer a:hover{color:var(--gold-dark)}
 .footer .version{color:var(--gold-dark);font-weight:600;font-size:.8rem;margin-top:.5rem}
+.footer .studio{
+  margin-top:.8rem;font-size:.78rem;color:var(--text-light);
+  padding-top:.7rem;border-top:1px dashed rgba(201,162,59,.4);
+}
+.footer .studio strong{color:var(--green)}
 
 /* ═══════════════ RTL (AR) ═══════════════ */
 .tab-content[dir="rtl"]{text-align:right}
 .tab-content[dir="rtl"] .toc{border-left:none;border-right:4px solid var(--gold)}
 .tab-content[dir="rtl"] .toc ol{padding-left:0;padding-right:1.3rem}
-.tab-content[dir="rtl"] .clause-card{border-top-color:var(--green)}
-.tab-content[dir="rtl"] .clause-card ul,
-.tab-content[dir="rtl"] .clause-card ol.sub{margin-left:0;margin-right:1.2rem}
+.tab-content[dir="rtl"] .clause-card ul{margin-left:0;margin-right:1.2rem}
 .tab-content[dir="rtl"] .dev-note::before{right:auto;left:12px}
 .tab-content[dir="rtl"] .clause-card h2{flex-direction:row-reverse}
 
 /* ═══════════════ RESPONSIVE ═══════════════ */
 @media(max-width:520px){
   html{font-size:14px}
-  .hero h1{font-size:1.15rem}
-  .hero-logo{width:76px;height:76px}
+  .hero h1{font-size:1.35rem}
+  .hero-logo{width:86px;height:86px;padding:4px}
   .toc ol{columns:1}
   .container{padding:.75rem .5rem 1.5rem}
   .clause-card{padding:1rem .9rem}
+  .brand-strip{font-size:.76rem;padding:.6rem .7rem}
 }
 @media(min-width:781px){
   .container{padding:1.5rem 1rem 3rem}
@@ -154,39 +179,51 @@ body{
 
 <!-- ═══════════════ HERO / BANNER ═══════════════ -->
 <header class="hero">
-  <img class="hero-logo" src="https://cebeci1.github.io/logo_glow.gif" alt="ZaiC Logo">
-  <h1>ZaiC Ezan &amp; Vakit &amp; Shahid</h1>
+  <img class="hero-logo" src="https://cebeci1.github.io/logo_glow.gif" alt="Shahid Logo">
+  <h1>Shahid</h1>
+  <p class="app-tagline">Ezan &amp; Vakit</p>
   <p class="subtitle">Son Kullanıcı Lisans Sözleşmesi (EULA)</p>
-  <!-- SVG Cami Silueti Banner -->
   <svg class="mosque-banner" viewBox="0 0 700 120" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-    <!-- minare sol -->
     <rect class="minaret" x="60" y="20" width="8" height="100" rx="2"/>
     <circle class="star" cx="64" cy="14" r="4"/>
     <rect class="minaret" x="56" y="40" width="16" height="4" rx="1"/>
-    <!-- kubbe sol -->
     <ellipse class="dome" cx="140" cy="70" rx="45" ry="35"/>
     <rect class="dome" x="95" y="70" width="90" height="50"/>
-    <!-- ana kubbe -->
     <ellipse class="dome" cx="350" cy="45" rx="70" ry="50"/>
     <rect class="dome" x="280" y="45" width="140" height="75"/>
     <circle class="star" cx="350" cy="0" r="5"/>
     <rect class="minaret" x="347" y="0" width="6" height="10"/>
-    <!-- kubbe sağ -->
     <ellipse class="dome" cx="560" cy="70" rx="45" ry="35"/>
     <rect class="dome" x="515" y="70" width="90" height="50"/>
-    <!-- minare sağ -->
     <rect class="minaret" x="632" y="20" width="8" height="100" rx="2"/>
     <circle class="star" cx="636" cy="14" r="4"/>
     <rect class="minaret" x="628" y="40" width="16" height="4" rx="1"/>
-    <!-- zemin -->
     <rect class="dome" x="0" y="110" width="700" height="10"/>
-    <!-- küçük yıldızlar -->
     <circle class="star" cx="200" cy="25" r="2.5"/>
     <circle class="star" cx="500" cy="20" r="2"/>
     <circle class="star" cx="450" cy="12" r="1.5"/>
     <circle class="star" cx="250" cy="15" r="1.8"/>
   </svg>
 </header>
+
+<!-- ═══════════════ MARKA ŞERİDİ ═══════════════ -->
+<div class="brand-strip" data-lang="tr" id="brandStrip">
+  <span class="lang-tr">
+    <span class="brand-dot">✦</span>
+    <strong class="brand-name">Shahid</strong>, bir <strong>ZaiC Design &amp; Studio</strong> <em>(Zafer Cebeci)</em> çalışmasıdır
+    <span class="brand-dot">✦</span>
+  </span>
+  <span class="lang-en">
+    <span class="brand-dot">✦</span>
+    <strong class="brand-name">Shahid</strong> is a product of <strong>ZaiC Design &amp; Studio</strong> <em>(Zafer Cebeci)</em>
+    <span class="brand-dot">✦</span>
+  </span>
+  <span class="lang-ar">
+    <span class="brand-dot">✦</span>
+    <strong class="brand-name">Shahid</strong> هو من إنتاج <strong>ZaiC Design &amp; Studio</strong> <em>(ظافر جبيجي)</em>
+    <span class="brand-dot">✦</span>
+  </span>
+</div>
 
 <!-- ═══════════════ DİL SEKMELERİ ═══════════════ -->
 <nav class="tab-nav" role="tablist">
@@ -197,10 +234,8 @@ body{
 
 <main class="container">
 
-<!-- ╔══════════════════════════════════════════════════════════╗ -->
-<!-- ║                    TÜRKÇE (MASTER)                      ║ -->
-<!-- ╚══════════════════════════════════════════════════════════╝ -->
-<div id="tab-tr" class="tab-content active">
+<!-- ╔═══════════════ TÜRKÇE (MASTER) ═══════════════╗ -->
+<div id="tab-tr" class="tab-content active" lang="tr">
 
 <nav class="toc">
   <h3>📑 İçindekiler</h3>
@@ -222,7 +257,7 @@ body{
 
 <section class="clause-card" id="tr-1">
   <h2><span class="clause-num">1</span> TARAFLAR VE KABUL</h2>
-  <p><strong>1.1.</strong> Bu Son Kullanıcı Lisans Sözleşmesi ("Sözleşme"), ZaiC Ezan &amp; Vakit mobil uygulamasını ("Uygulama") kullanan kişi ("Kullanıcı") ile Uygulamayı "ZaiC Design &amp; Studio" adı altında geliştiren ve yayınlayan Zafer Cebeci ("Geliştirici") arasında akdedilmiştir.</p>
+  <p><strong>1.1.</strong> Bu Son Kullanıcı Lisans Sözleşmesi ("Sözleşme"), Shahid mobil uygulamasını ("Uygulama") kullanan kişi ("Kullanıcı") ile Uygulamayı "ZaiC Design &amp; Studio" adı altında geliştiren ve yayınlayan Zafer Cebeci ("Geliştirici") arasında akdedilmiştir.</p>
   <p><strong>1.2.</strong> Kullanıcı, Uygulamayı kullanmaya başlamadan önce bu Sözleşmeyi onaylayarak tüm hükümlerini okuduğunu, anladığını ve kabul ettiğini beyan eder. Sözleşmeyi kabul etmeyen Kullanıcı Uygulamayı kullanmamalı ve cihazından kaldırmalıdır.</p>
 </section>
 
@@ -266,14 +301,14 @@ body{
   <p><strong>5.1.</strong> Tema, dil, il/ilçe seçimi ve benzeri tercihler cihazınızda saklanır. Konum izni verirseniz konumunuz namaz vakitlerini ve kıble yönünü hesaplamak için kullanılır; vakit verisinin alınabilmesi için konumunuz veya seçtiğiniz il/ilçe bilgisi ilgili vakit servisine iletilebilir.</p>
   <p><strong>5.2.</strong> Hatim Kardeşliği gibi çevrim içi özellikleri kullanmanız halinde, bu özelliklerin çalışması için gereken veriler (ör. kullanıcı adı, grup üyelikleri, hatim/cüz ilerlemesi ve paylaştığınız içerikler) Geliştirici adına hizmet veren altyapı sağlayıcılarında (ör. Supabase, Cloudflare) saklanır. Bu veriler bakımından veri sorumlusu Geliştiricidir. Bu özellikleri kullanmak isteğe bağlıdır.</p>
   <p><strong>5.3.</strong> Reklam (Google AdMob) ve satın alma (Google Play) hizmetleri; reklam kimliği, cihaz ve kullanım bilgileri gibi verileri kendi gizlilik politikaları çerçevesinde işleyebilir.</p>
-  <p><strong>5.4.</strong> Hangi verilerin hangi amaçla işlendiği, kimlere ve hangi ülkelere aktarıldığı, saklama süreleri ve 6698 sayılı Kişisel Verilerin Korunması Kanunu kapsamındaki haklarınız Gizlilik Politikası ve KVKK Aydınlatma Metninde açıklanmıştır: <a href="https://cebeci1.github.io/ezan/gizlilik.txt">Gizlilik Politikası</a></p>
+  <p><strong>5.4.</strong> Hangi verilerin hangi amaçla işlendiği, kimlere ve hangi ülkelere aktarıldığı, saklama süreleri ve 6698 sayılı Kişisel Verilerin Korunması Kanunu kapsamındaki haklarınız Gizlilik Politikası ve KVKK Aydınlatma Metninde açıklanmıştır: <a href="https://cebeci1.github.io/ezan/gizlilik.html">Gizlilik Politikası</a></p>
   <p><strong>5.5.</strong> Çevrim içi özellikler için oluşturulan hesabınızın ve ilgili verilerinizin silinmesini Uygulama içinden veya <a class="email-link" href="mailto:cebeci.zafer@gmail.com">cebeci.zafer@gmail.com</a> adresi üzerinden talep edebilirsiniz.</p>
 </section>
 
 <section class="clause-card" id="tr-6">
   <h2><span class="clause-num">6</span> LİSANS VE FİKRİ HAKLAR</h2>
   <p><strong>6.1.</strong> Geliştirici, Kullanıcıya Uygulamayı bu Sözleşmeye uygun olarak kişisel cihazlarında kullanmak üzere kişisel, ticari olmayan, devredilemez, münhasır olmayan ve geri alınabilir bir lisans verir.</p>
-  <p><strong>6.2.</strong> Uygulamanın yazılımı, kaynak kodu, tasarımı, arayüzü, görselleri, logosu ve "ZaiC" adı üzerindeki tüm fikri ve sınai haklar Geliştiriciye aittir. Kur'an-ı Kerim meal ve tefsirleri, hadis ve dua metinleri, vakit verileri gibi üçüncü taraf içerikler üzerindeki haklar ilgili hak sahiplerine aittir.</p>
+  <p><strong>6.2.</strong> Uygulamanın yazılımı, kaynak kodu, tasarımı, arayüzü, görselleri, logosu ile "Shahid" ve "ZaiC" adları üzerindeki tüm fikri ve sınai haklar Geliştiriciye aittir. Kur'an-ı Kerim meal ve tefsirleri, hadis ve dua metinleri, vakit verileri gibi üçüncü taraf içerikler üzerindeki haklar ilgili hak sahiplerine aittir.</p>
   <p><strong>6.3.</strong> Yürürlükteki mevzuatın açıkça izin verdiği haller saklı kalmak kaydıyla Kullanıcı; Uygulamayı tersine mühendisliğe tabi tutamaz veya kaynak koduna erişmeye çalışamaz; Uygulamayı ya da herhangi bir parçasını kopyalayamaz, değiştiremez, türev eserini oluşturamaz; Uygulamayı resmi uygulama mağazaları dışında, ücretli veya ücretsiz olarak dağıtamaz; Uygulamanın kodlarını, tasarımlarını veya varlıklarını başka bir yerde yayınlayamaz; Uygulamanın sunucularına ve altyapısına yetkisiz erişmeye, aşırı yük bindirmeye veya güvenlik önlemlerini aşmaya çalışamaz.</p>
   <p><strong>6.4.</strong> Bu maddeye aykırılık halinde lisans kendiliğinden sona erer. Geliştiricinin 5846 sayılı Fikir ve Sanat Eserleri Kanunu ve ilgili mevzuattan doğan hukuki ve cezai başvuru hakları saklıdır.</p>
 </section>
@@ -325,10 +360,8 @@ body{
 </div><!-- /tab-tr -->
 
 
-<!-- ╔══════════════════════════════════════════════════════════╗ -->
-<!-- ║                      ENGLISH                            ║ -->
-<!-- ╚══════════════════════════════════════════════════════════╝ -->
-<div id="tab-en" class="tab-content">
+<!-- ╔═══════════════ ENGLISH ═══════════════╗ -->
+<div id="tab-en" class="tab-content" lang="en">
 
 <nav class="toc">
   <h3>📑 Table of Contents</h3>
@@ -350,7 +383,7 @@ body{
 
 <section class="clause-card" id="en-1">
   <h2><span class="clause-num">1</span> PARTIES AND ACCEPTANCE</h2>
-  <p><strong>1.1.</strong> This End User License Agreement ("Agreement") is entered into between the person using the ZaiC Ezan &amp; Vakit mobile application ("App") ("User") and Zafer Cebeci, who develops and publishes the App under the name "ZaiC Design &amp; Studio" ("Developer").</p>
+  <p><strong>1.1.</strong> This End User License Agreement ("Agreement") is entered into between the person using the Shahid mobile application ("App") ("User") and Zafer Cebeci, who develops and publishes the App under the name "ZaiC Design &amp; Studio" ("Developer").</p>
   <p><strong>1.2.</strong> By approving this Agreement before starting to use the App, the User declares that they have read, understood and accepted all of its terms. A User who does not accept this Agreement should not use the App and should remove it from their device.</p>
 </section>
 
@@ -394,14 +427,14 @@ body{
   <p><strong>5.1.</strong> Preferences such as theme, language and province/district selection are stored on your device. If you grant location permission, your location is used to calculate prayer times and Qibla direction; your location or selected province/district may be sent to the relevant prayer-time service to obtain time data.</p>
   <p><strong>5.2.</strong> If you use online features such as Khatm Brotherhood, the data needed for these features to work (e.g. username, group memberships, khatm/juz progress and content you share) is stored with infrastructure providers acting on behalf of the Developer (e.g. Supabase, Cloudflare). The Developer is the data controller for this data. Using these features is optional.</p>
   <p><strong>5.3.</strong> Advertising (Google AdMob) and purchase (Google Play) services may process data such as the advertising ID, device and usage information under their own privacy policies.</p>
-  <p><strong>5.4.</strong> Which data is processed and for what purposes, to whom and to which countries it is transferred, retention periods and your rights under the Turkish Personal Data Protection Law No. 6698 (KVKK) are explained in the <a href="https://cebeci1.github.io/ezan/gizlilik.txt">Privacy Policy</a>.</p>
+  <p><strong>5.4.</strong> Which data is processed and for what purposes, to whom and to which countries it is transferred, retention periods and your rights under the Turkish Personal Data Protection Law No. 6698 (KVKK) are explained in the <a href="https://cebeci1.github.io/ezan/gizlilik.html">Privacy Policy</a>.</p>
   <p><strong>5.5.</strong> You can request deletion of your account and related data created for online features from within the App or by email to <a class="email-link" href="mailto:cebeci.zafer@gmail.com">cebeci.zafer@gmail.com</a>.</p>
 </section>
 
 <section class="clause-card" id="en-6">
   <h2><span class="clause-num">6</span> LICENSE AND INTELLECTUAL PROPERTY</h2>
   <p><strong>6.1.</strong> The Developer grants the User a personal, non-commercial, non-transferable, non-exclusive and revocable license to use the App on their personal devices in accordance with this Agreement.</p>
-  <p><strong>6.2.</strong> All intellectual and industrial property rights in the App's software, source code, design, interface, graphics, logo and the "ZaiC" name belong to the Developer. Rights in third-party content such as Quran translations and tafsir, hadith and dua texts and prayer-time data belong to their respective owners.</p>
+  <p><strong>6.2.</strong> All intellectual and industrial property rights in the App's software, source code, design, interface, graphics, logo and the names "Shahid" and "ZaiC" belong to the Developer. Rights in third-party content such as Quran translations and tafsir, hadith and dua texts and prayer-time data belong to their respective owners.</p>
   <p><strong>6.3.</strong> Except where expressly permitted by applicable law, the User may not: reverse engineer the App or attempt to access its source code; copy, modify or create derivative works of the App or any part of it; distribute the App outside official app stores, whether for a fee or free of charge; publish the App's code, designs or assets elsewhere; or attempt to gain unauthorized access to, overload or circumvent the security measures of the App's servers and infrastructure.</p>
   <p><strong>6.4.</strong> In case of breach of this section, the license terminates automatically. The Developer's civil and criminal remedies under the Turkish Law on Intellectual and Artistic Works No. 5846 and other applicable legislation are reserved.</p>
 </section>
@@ -453,9 +486,7 @@ body{
 </div><!-- /tab-en -->
 
 
-<!-- ╔══════════════════════════════════════════════════════════╗ -->
-<!-- ║                    العربية  (RTL)                       ║ -->
-<!-- ╚══════════════════════════════════════════════════════════╝ -->
+<!-- ╔═══════════════ العربية (RTL) ═══════════════╗ -->
 <div id="tab-ar" class="tab-content" dir="rtl" lang="ar">
 
 <nav class="toc">
@@ -478,7 +509,7 @@ body{
 
 <section class="clause-card" id="ar-1">
   <h2><span class="clause-num">1</span> الأطراف والقبول</h2>
-  <p><strong>1.1.</strong> أُبرمت اتفاقية ترخيص المستخدم النهائي هذه ("الاتفاقية") بين الشخص الذي يستخدم تطبيق الهاتف المحمول ZaiC Ezan &amp; Vakit ("التطبيق") ("المستخدم")، وبين ظافر جبيجي الذي يطوّر التطبيق وينشره باسم "ZaiC Design &amp; Studio" ("المطوِّر").</p>
+  <p><strong>1.1.</strong> أُبرمت اتفاقية ترخيص المستخدم النهائي هذه ("الاتفاقية") بين الشخص الذي يستخدم تطبيق الهاتف المحمول Shahid ("التطبيق") ("المستخدم")، وبين ظافر جبيجي الذي يطوّر التطبيق وينشره باسم "ZaiC Design &amp; Studio" ("المطوِّر").</p>
   <p><strong>1.2.</strong> بموافقة المستخدم على هذه الاتفاقية قبل البدء في استخدام التطبيق، يُقرّ بأنه قرأ جميع أحكامها وفهمها وقبلها. وعلى المستخدم الذي لا يقبل هذه الاتفاقية ألّا يستخدم التطبيق وأن يحذفه من جهازه.</p>
 </section>
 
@@ -522,14 +553,14 @@ body{
   <p><strong>5.1.</strong> تُحفظ التفضيلات مثل المظهر واللغة واختيار المحافظة/المنطقة على جهازك. وإذا منحت إذن الموقع، يُستخدم موقعك لحساب مواقيت الصلاة واتجاه القبلة؛ وقد يُرسَل موقعك أو المحافظة/المنطقة المختارة إلى خدمة المواقيت المعنية للحصول على بيانات المواقيت.</p>
   <p><strong>5.2.</strong> إذا استخدمت ميزات عبر الإنترنت مثل «ختم القرآن الجماعي»، تُخزَّن البيانات اللازمة لعمل هذه الميزات (مثل اسم المستخدم، وعضويات المجموعات، وتقدّم الختمة/الأجزاء، والمحتوى الذي تشاركه) لدى مزوِّدي البنية التحتية العاملين نيابةً عن المطوِّر (مثل Supabase و Cloudflare). والمطوِّر هو المسؤول عن معالجة هذه البيانات. واستخدام هذه الميزات اختياري.</p>
   <p><strong>5.3.</strong> قد تعالج خدمات الإعلانات (Google AdMob) والشراء (Google Play) بيانات مثل معرّف الإعلانات ومعلومات الجهاز والاستخدام وفق سياسات الخصوصية الخاصة بها.</p>
-  <p><strong>5.4.</strong> تُبيَّن في <a href="https://cebeci1.github.io/ezan/gizlilik.txt">سياسة الخصوصية</a> البياناتُ التي تُعالَج وأغراضُ معالجتها، والجهاتُ والدولُ التي تُنقل إليها، ومددُ الاحتفاظ بها، وحقوقُك بموجب قانون حماية البيانات الشخصية التركي رقم 6698 (KVKK).</p>
+  <p><strong>5.4.</strong> تُبيَّن في <a href="https://cebeci1.github.io/ezan/gizlilik.html">سياسة الخصوصية</a> البياناتُ التي تُعالَج وأغراضُ معالجتها، والجهاتُ والدولُ التي تُنقل إليها، ومددُ الاحتفاظ بها، وحقوقُك بموجب قانون حماية البيانات الشخصية التركي رقم 6698 (KVKK).</p>
   <p><strong>5.5.</strong> يمكنك طلب حذف حسابك وبياناتك المرتبطة بالميزات عبر الإنترنت من داخل التطبيق أو عبر البريد الإلكتروني (<a class="email-link" href="mailto:cebeci.zafer@gmail.com">cebeci.zafer@gmail.com</a>).</p>
 </section>
 
 <section class="clause-card" id="ar-6">
   <h2><span class="clause-num">6</span> الترخيص والملكية الفكرية</h2>
   <p><strong>6.1.</strong> يمنح المطوِّر المستخدمَ ترخيصاً شخصياً وغير تجاري وغير قابل للتنازل وغير حصري وقابلاً للإلغاء، لاستخدام التطبيق على أجهزته الشخصية وفقاً لهذه الاتفاقية.</p>
-  <p><strong>6.2.</strong> جميع حقوق الملكية الفكرية والصناعية في برمجيات التطبيق وشيفرته المصدرية وتصميمه وواجهته ورسومه وشعاره واسم "ZaiC" مملوكة للمطوِّر. أما الحقوق في محتويات الجهات الخارجية، مثل ترجمات معاني القرآن الكريم وتفاسيره ونصوص الأحاديث والأدعية وبيانات المواقيت، فهي لأصحابها.</p>
+  <p><strong>6.2.</strong> جميع حقوق الملكية الفكرية والصناعية في برمجيات التطبيق وشيفرته المصدرية وتصميمه وواجهته ورسومه وشعاره واسمَي "Shahid" و "ZaiC" مملوكة للمطوِّر. أما الحقوق في محتويات الجهات الخارجية، مثل ترجمات معاني القرآن الكريم وتفاسيره ونصوص الأحاديث والأدعية وبيانات المواقيت، فهي لأصحابها.</p>
   <p><strong>6.3.</strong> باستثناء ما يجيزه القانون النافذ صراحةً، لا يجوز للمستخدم: إخضاع التطبيق للهندسة العكسية أو محاولة الوصول إلى شيفرته المصدرية؛ أو نسخ التطبيق أو أي جزء منه أو تعديله أو إنشاء أعمال مشتقة منه؛ أو توزيع التطبيق خارج متاجر التطبيقات الرسمية، بمقابل أو مجاناً؛ أو نشر شيفرات التطبيق أو تصاميمه أو مكوّناته في مكان آخر؛ أو محاولة الوصول غير المصرَّح به إلى خوادم التطبيق وبنيته التحتية أو إثقالها أو تجاوز إجراءاتها الأمنية.</p>
   <p><strong>6.4.</strong> عند مخالفة هذا البند ينتهي الترخيص تلقائياً. وتبقى حقوق المطوِّر في اللجوء إلى الطرق المدنية والجزائية بموجب قانون المصنَّفات الفكرية والفنية التركي رقم 5846 وسائر التشريعات ذات الصلة محفوظة.</p>
 </section>
@@ -585,15 +616,20 @@ body{
 <!-- ═══════════════ FOOTER ═══════════════ -->
 <footer class="footer">
   <p>📧 <a href="mailto:cebeci.zafer@gmail.com">cebeci.zafer@gmail.com</a></p>
-  <p>🔒 <a href="https://cebeci1.github.io/ezan/gizlilik.txt">Gizlilik Politikası / Privacy Policy / سياسة الخصوصية</a></p>
+  <p>🔒 <a href="https://cebeci1.github.io/ezan/gizlilik.html">Gizlilik Politikası / Privacy Policy / سياسة الخصوصية</a></p>
   <p class="version">Son güncelleme: Ekim 2026 · Sürüm 2026-10-12</p>
+  <p class="studio">
+    <strong>Shahid</strong> — bir <strong>ZaiC Design &amp; Studio</strong> çalışmasıdır<br>
+    © 2026 Zafer Cebeci · Tüm hakları saklıdır
+  </p>
 </footer>
 
-<!-- ═══════════════ JS (Minimal — Sekme Geçişleri) ═══════════════ -->
+<!-- ═══════════════ JS ═══════════════ -->
 <script>
 (function(){
-  const btns=document.querySelectorAll('.tab-btn');
-  const tabs=document.querySelectorAll('.tab-content');
+  var btns=document.querySelectorAll('.tab-btn');
+  var tabs=document.querySelectorAll('.tab-content');
+  var brandStrip=document.getElementById('brandStrip');
   btns.forEach(function(btn){
     btn.addEventListener('click',function(){
       btns.forEach(function(b){b.classList.remove('active');b.setAttribute('aria-selected','false')});
@@ -603,9 +639,11 @@ body{
       var target=document.getElementById(btn.getAttribute('data-tab'));
       if(target){
         target.classList.add('active');
-        /* AR sekmesi için html lang güncelle */
-        document.documentElement.lang=target.getAttribute('lang')||'tr';
+        var lang=target.getAttribute('lang')||'tr';
+        document.documentElement.lang=lang;
         document.documentElement.dir=target.getAttribute('dir')||'ltr';
+        if(brandStrip)brandStrip.setAttribute('data-lang',lang);
+        window.scrollTo({top:0,behavior:'smooth'});
       }
     });
   });
