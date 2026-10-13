@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>EULA — ZaiC Ezan &amp; Vakit</title>
+<style>
+/* ═══════════════ RESET & BASE ═══════════════ */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --green:#1F6E4A;--green-light:#2a8c5f;--green-dark:#174f36;
+  --gold:#C9A23B;--gold-light:#e0c36a;--gold-dark:#a07e20;
+  --cream:#F7F6F2;--cream-dark:#EDE9DF;
+  --text:#2c2c2c;--text-light:#5a5a5a;
+  --card-bg:#FFFFFF;--shadow:0 2px 12px rgba(0,0,0,.08);
+  --radius:12px;
+}
+html{scroll-behavior:smooth;font-size:15px}
+body{
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  background:var(--cream);color:var(--text);line-height:1.7;
+  min-height:100vh;
+}
+
+/* ═══════════════ HEADER / BANNER ═══════════════ */
+.hero{
+  background:linear-gradient(170deg,var(--green-dark) 0%,var(--green) 40%,var(--green-light) 100%);
+  text-align:center;padding:2rem 1rem 0;position:relative;overflow:hidden;
+}
+.hero-logo{width:100px;height:100px;border-radius:50%;
+  border:3px solid var(--gold);box-shadow:0 0 24px rgba(201,162,59,.45);
+  margin-bottom:.75rem;background:#fff;
+}
+.hero h1{color:#fff;font-size:1.35rem;font-weight:700;letter-spacing:.5px;margin-bottom:.25rem}
+.hero .subtitle{color:var(--gold-light);font-size:.85rem;margin-bottom:1.2rem}
+/* SVG cami silueti */
+.mosque-banner{display:block;width:100%;max-width:700px;margin:0 auto;height:auto}
+.mosque-banner .dome{fill:var(--green-dark);opacity:.55}
+.mosque-banner .minaret{fill:var(--green-dark);opacity:.45}
+.mosque-banner .star{fill:var(--gold);opacity:.7}
+
+/* ═══════════════ TAB NAV ═══════════════ */
+.tab-nav{
+  position:sticky;top:0;z-index:100;
+  display:flex;justify-content:center;gap:0;
+  background:var(--green);
+  box-shadow:0 2px 8px rgba(0,0,0,.15);
+}
+.tab-btn{
+  flex:1;max-width:140px;padding:.75rem .5rem;
+  background:transparent;border:none;color:rgba(255,255,255,.65);
+  font-size:.95rem;font-weight:600;cursor:pointer;
+  border-bottom:3px solid transparent;transition:.2s;
+}
+.tab-btn:hover{color:#fff;background:rgba(255,255,255,.07)}
+.tab-btn.active{color:var(--gold-light);border-bottom-color:var(--gold)}
+
+/* ═══════════════ MAIN CONTAINER ═══════════════ */
+.container{max-width:780px;margin:0 auto;padding:1rem .75rem 2rem}
+
+/* ═══════════════ TAB CONTENT ═══════════════ */
+.tab-content{display:none}
+.tab-content.active{display:block}
+
+/* ═══════════════ TOC (İçindekiler) ═══════════════ */
+.toc{
+  background:var(--card-bg);border-radius:var(--radius);
+  box-shadow:var(--shadow);padding:1.2rem 1.2rem 1rem;
+  margin-bottom:1.5rem;border-left:4px solid var(--gold);
+}
+.toc h3{color:var(--green);font-size:1rem;margin-bottom:.6rem;display:flex;align-items:center;gap:.4rem}
+.toc ol{padding-left:1.3rem;columns:2;column-gap:1.5rem}
+.toc li{margin-bottom:.3rem;font-size:.85rem;break-inside:avoid}
+.toc a{color:var(--green);text-decoration:none;border-bottom:1px dotted var(--gold)}
+.toc a:hover{color:var(--gold-dark);border-bottom-style:solid}
+
+/* ═══════════════ CLAUSE CARDS ═══════════════ */
+.clause-card{
+  background:var(--card-bg);border-radius:var(--radius);
+  box-shadow:var(--shadow);padding:1.3rem 1.2rem;
+  margin-bottom:1.1rem;
+  border-top:3px solid var(--green);
+  scroll-margin-top:60px;
+}
+.clause-card h2{
+  color:var(--green);font-size:1.05rem;font-weight:700;
+  margin-bottom:.7rem;display:flex;align-items:center;gap:.5rem;
+  line-height:1.4;
+}
+.clause-num{
+  display:inline-flex;align-items:center;justify-content:center;
+  min-width:30px;height:30px;border-radius:50%;
+  background:var(--gold);color:#fff;font-size:.85rem;font-weight:700;
+  flex-shrink:0;
+}
+.clause-card p{margin-bottom:.55rem;font-size:.92rem;color:var(--text)}
+.clause-card p strong{color:var(--green-dark)}
+.clause-card ul,.clause-card ol.sub{
+  margin:.4rem 0 .6rem 1.2rem;font-size:.9rem;
+}
+.clause-card li{margin-bottom:.3rem}
+.clause-card .email-link{color:var(--green);word-break:break-all}
+
+/* ═══════════════ DEVELOPER NOTE ═══════════════ */
+.dev-note{
+  background:linear-gradient(135deg,var(--green-dark),var(--green));
+  color:#fff;border-radius:var(--radius);padding:1.3rem 1.2rem;
+  margin:1.5rem 0;position:relative;overflow:hidden;
+}
+.dev-note::before{
+  content:"🤲";position:absolute;right:12px;top:10px;
+  font-size:2.5rem;opacity:.18;
+}
+.dev-note h3{color:var(--gold-light);font-size:.95rem;margin-bottom:.5rem}
+.dev-note p{font-size:.88rem;line-height:1.7;opacity:.92}
+.dev-note .disclaimer{font-size:.78rem;opacity:.65;font-style:italic;margin-bottom:.4rem}
+
+/* ═══════════════ FOOTER ═══════════════ */
+.footer{
+  text-align:center;padding:1.5rem 1rem;
+  border-top:2px solid var(--cream-dark);
+  margin-top:1rem;
+}
+.footer p{font-size:.82rem;color:var(--text-light);margin-bottom:.3rem}
+.footer a{color:var(--green);text-decoration:none;border-bottom:1px dotted var(--gold)}
+.footer a:hover{color:var(--gold-dark)}
+.footer .version{color:var(--gold-dark);font-weight:600;font-size:.8rem;margin-top:.5rem}
+
+/* ═══════════════ RTL (AR) ═══════════════ */
+.tab-content[dir="rtl"]{text-align:right}
+.tab-content[dir="rtl"] .toc{border-left:none;border-right:4px solid var(--gold)}
+.tab-content[dir="rtl"] .toc ol{padding-left:0;padding-right:1.3rem}
+.tab-content[dir="rtl"] .clause-card{border-top-color:var(--green)}
+.tab-content[dir="rtl"] .clause-card ul,
+.tab-content[dir="rtl"] .clause-card ol.sub{margin-left:0;margin-right:1.2rem}
+.tab-content[dir="rtl"] .dev-note::before{right:auto;left:12px}
+.tab-content[dir="rtl"] .clause-card h2{flex-direction:row-reverse}
+
+/* ═══════════════ RESPONSIVE ═══════════════ */
+@media(max-width:520px){
+  html{font-size:14px}
+  .hero h1{font-size:1.15rem}
+  .hero-logo{width:76px;height:76px}
+  .toc ol{columns:1}
+  .container{padding:.75rem .5rem 1.5rem}
+  .clause-card{padding:1rem .9rem}
+}
+@media(min-width:781px){
+  .container{padding:1.5rem 1rem 3rem}
+}
+</style>
+</head>
+<body>
+
+<!-- ═══════════════ HERO / BANNER ═══════════════ -->
+<header class="hero">
+  <img class="hero-logo" src="https://cebeci1.github.io/logo_glow.gif" alt="ZaiC Logo">
+  <h1>ZaiC Ezan &amp; Vakit &amp; Shahid</h1>
+  <p class="subtitle">Son Kullanıcı Lisans Sözleşmesi (EULA)</p>
+  <!-- SVG Cami Silueti Banner -->
+  <svg class="mosque-banner" viewBox="0 0 700 120" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <!-- minare sol -->
+    <rect class="minaret" x="60" y="20" width="8" height="100" rx="2"/>
+    <circle class="star" cx="64" cy="14" r="4"/>
+    <rect class="minaret" x="56" y="40" width="16" height="4" rx="1"/>
+    <!-- kubbe sol -->
+    <ellipse class="dome" cx="140" cy="70" rx="45" ry="35"/>
+    <rect class="dome" x="95" y="70" width="90" height="50"/>
+    <!-- ana kubbe -->
+    <ellipse class="dome" cx="350" cy="45" rx="70" ry="50"/>
+    <rect class="dome" x="280" y="45" width="140" height="75"/>
+    <circle class="star" cx="350" cy="0" r="5"/>
+    <rect class="minaret" x="347" y="0" width="6" height="10"/>
+    <!-- kubbe sağ -->
+    <ellipse class="dome" cx="560" cy="70" rx="45" ry="35"/>
+    <rect class="dome" x="515" y="70" width="90" height="50"/>
+    <!-- minare sağ -->
+    <rect class="minaret" x="632" y="20" width="8" height="100" rx="2"/>
+    <circle class="star" cx="636" cy="14" r="4"/>
+    <rect class="minaret" x="628" y="40" width="16" height="4" rx="1"/>
+    <!-- zemin -->
+    <rect class="dome" x="0" y="110" width="700" height="10"/>
+    <!-- küçük yıldızlar -->
+    <circle class="star" cx="200" cy="25" r="2.5"/>
+    <circle class="star" cx="500" cy="20" r="2"/>
+    <circle class="star" cx="450" cy="12" r="1.5"/>
+    <circle class="star" cx="250" cy="15" r="1.8"/>
+  </svg>
+</header>
+
+<!-- ═══════════════ DİL SEKMELERİ ═══════════════ -->
+<nav class="tab-nav" role="tablist">
+  <button class="tab-btn active" data-tab="tab-tr" role="tab" aria-selected="true">🇹🇷 Türkçe</button>
+  <button class="tab-btn" data-tab="tab-en" role="tab" aria-selected="false">🇬🇧 English</button>
+  <button class="tab-btn" data-tab="tab-ar" role="tab" aria-selected="false">🇸🇦 العربية</button>
+</nav>
+
+<main class="container">
+
+<!-- ╔══════════════════════════════════════════════════════════╗ -->
+<!-- ║                    TÜRKÇE (MASTER)                      ║ -->
+<!-- ╚══════════════════════════════════════════════════════════╝ -->
+<div id="tab-tr" class="tab-content active">
+
+<nav class="toc">
+  <h3>📑 İçindekiler</h3>
+  <ol>
+    <li><a href="#tr-1">Taraflar ve Kabul</a></li>
+    <li><a href="#tr-2">Hizmetin Niteliği ve Dini İçerik Uyarısı</a></li>
+    <li><a href="#tr-3">Sorumluluğun Sınırlandırılması</a></li>
+    <li><a href="#tr-4">Hatim Kardeşliği ve Kullanıcı İçerikleri</a></li>
+    <li><a href="#tr-5">Kişisel Veriler ve Gizlilik</a></li>
+    <li><a href="#tr-6">Lisans ve Fikri Haklar</a></li>
+    <li><a href="#tr-7">Reklamlar ve Uygulama İçi Satın Alımlar</a></li>
+    <li><a href="#tr-8">Süre, Fesih ve Hizmette Değişiklik</a></li>
+    <li><a href="#tr-9">Sözleşme Değişiklikleri</a></li>
+    <li><a href="#tr-10">Uygulanacak Hukuk ve Yetkili Merciler</a></li>
+    <li><a href="#tr-11">Dil</a></li>
+    <li><a href="#tr-12">İletişim</a></li>
+  </ol>
+</nav>
+
+<section class="clause-card" id="tr-1">
+  <h2><span class="clause-num">1</span> TARAFLAR VE KABUL</h2>
+  <p><strong>1.1.</strong> Bu Son Kullanıcı Lisans Sözleşmesi ("Sözleşme"), ZaiC Ezan &amp; Vakit mobil uygulamasını ("Uygulama") kullanan kişi ("Kullanıcı") ile Uygulamayı "ZaiC Design &amp; Studio" adı altında geliştiren ve yayınlayan Zafer Cebeci ("Geliştirici") arasında akdedilmiştir.</p>
+  <p><strong>1.2.</strong> Kullanıcı, Uygulamayı kullanmaya başlamadan önce bu Sözleşmeyi onaylayarak tüm hükümlerini okuduğunu, anladığını ve kabul ettiğini beyan eder. Sözleşmeyi kabul etmeyen Kullanıcı Uygulamayı kullanmamalı ve cihazından kaldırmalıdır.</p>
+</section>
+
+<section class="clause-card" id="tr-2">
+  <h2><span class="clause-num">2</span> HİZMETİN NİTELİĞİ VE DİNİ İÇERİK UYARISI</h2>
+  <p><strong>2.1.</strong> Uygulama; namaz vakitleri, kıble yönü, Kur'an-ı Kerim okuma, zikir ve hatim takibi gibi ibadete yardımcı araçlar sunar.</p>
+  <p><strong>2.2.</strong> Namaz vakitleri, Diyanet İşleri Başkanlığı ve AlAdhan gibi üçüncü taraf kaynaklardan alınır veya astronomik hesaplamayla üretilir. Vakitler, kaynağa ve hesaplama yöntemine göre birkaç dakika farklılık gösterebilir; ibadetlerinizde bulunduğunuz yerin resmi takvimini ve yerel caminizin vakitlerini esas alınız.</p>
+  <p><strong>2.3.</strong> Kıble yönü, cihazın konum ve manyetik sensör (pusula) doğruluğuna bağlıdır; metal cisimler, elektronik cihazlar ve kalibrasyon eksikliği hatalı sonuç verebilir.</p>
+  <p><strong>2.4.</strong> Uygulama dini bir merci değildir. İçerikler bilgilendirme amaçlıdır; ibadet, fıkıh ve diğer dini konularda yetkili âlimlere ve resmi kurumlara başvurunuz.</p>
+  <p><strong>2.5.</strong> Uygulama; Diyanet İşleri Başkanlığı, AlAdhan veya başka herhangi bir kurum ve kuruluşla bağlantılı değildir, onları temsil etmez ve onlar tarafından onaylanmamıştır. Bu kurumların adları yalnızca veri kaynağını belirtmek için kullanılır.</p>
+</section>
+
+<section class="clause-card" id="tr-3">
+  <h2><span class="clause-num">3</span> SORUMLULUĞUN SINIRLANDIRILMASI</h2>
+  <p><strong>3.1.</strong> Uygulama "olduğu gibi" ve "mevcut haliyle" sunulur; kesintisiz, hatasız veya belirli bir amaca uygun çalışacağı garanti edilmez.</p>
+  <p><strong>3.2.</strong> Geliştirici; bildirimlerin gecikmesi veya hiç gelmemesi, cihaz kısıtlamaları (pil optimizasyonu, üretici yazılımı, sessiz mod vb.), internet kesintileri ya da üçüncü taraf hizmetlerdeki (Diyanet, AlAdhan, Supabase, Cloudflare, Google AdMob, Google Play vb.) aksaklıklar nedeniyle ortaya çıkan vakit, kıble veya bildirim hatalarından ve bunların sonuçlarından sorumlu tutulamaz.</p>
+  <p><strong>3.3.</strong> Kur'an-ı Kerim meali/tefsiri, hadis ve dua içerikleri üçüncü taraf kaynaklardan sağlanır. Geliştirici bu içeriklerin doğruluğu için makul özeni gösterir; ancak kaynaktan gelen metin hatalarından sorumlu değildir. Fark ettiğiniz hataları <a class="email-link" href="mailto:cebeci.zafer@gmail.com">cebeci.zafer@gmail.com</a> adresine bildirmeniz rica olunur.</p>
+  <p><strong>3.4.</strong> Bu maddedeki sorumluluk sınırlamaları; Geliştiricinin kast veya ağır ihmalinden doğan sorumluluğu, yürürlükteki mevzuat uyarınca sınırlandırılamayan haller ve tüketicinin kanundan doğan emredici hakları bakımından uygulanmaz.</p>
+</section>
+
+<section class="clause-card" id="tr-4">
+  <h2><span class="clause-num">4</span> HATİM KARDEŞLİĞİ VE KULLANICI İÇERİKLERİ</h2>
+  <p><strong>4.1.</strong> Hatim Kardeşliği ve benzeri çevrim içi özellikler, Kullanıcıların oluşturduğu ve diğer Kullanıcıların görebildiği içerikler (grup adları, kullanıcı adları, mesajlar, notlar vb.) barındırabilir. Bu içeriklerin hukuki sorumluluğu, içeriği oluşturan Kullanıcıya aittir.</p>
+  <p><strong>4.2.</strong> Aşağıdaki içerik ve davranışlar yasaktır:</p>
+  <ul>
+    <li>a) Hakaret, küfür, taciz, tehdit veya zorbalık;</li>
+    <li>b) Herhangi bir kişiyi, grubu, dini, mezhebi, etnik kökeni veya inancı aşağılayan, nefreti ya da şiddeti teşvik eden içerikler;</li>
+    <li>c) Müstehcen, cinsel içerikli veya şiddet içeren materyaller;</li>
+    <li>d) Yasa dışı faaliyetleri teşvik eden içerikler, dolandırıcılık, spam ve izinsiz reklam;</li>
+    <li>e) Başkalarının kişisel verilerini, iletişim bilgilerini veya özel bilgilerini izinsiz paylaşmak;</li>
+    <li>f) Başkalarının telif ve diğer fikri haklarını ihlal eden içerikler;</li>
+    <li>g) Başka bir kişiyi veya kurumu taklit etmek ya da kendini yanıltıcı biçimde tanıtmak.</li>
+  </ul>
+  <p><strong>4.3.</strong> Kullanıcılar, bu kurallara aykırı içerik veya kullanıcıları uygulama içindeki bildirme işleviyle ya da <a class="email-link" href="mailto:cebeci.zafer@gmail.com">cebeci.zafer@gmail.com</a> adresi üzerinden bildirebilir ve diğer kullanıcıları engelleyebilir. Geliştirici, bildirimleri makul süre içinde inceler.</p>
+  <p><strong>4.4.</strong> Geliştirici, bu Sözleşmeye aykırı içerikleri önceden bildirimde bulunmaksızın kaldırma, ilgili Kullanıcının bu özelliklere erişimini kısıtlama veya hesabını kapatma hakkına sahiptir.</p>
+  <p><strong>4.5.</strong> Kullanıcı, paylaştığı içeriklerin Uygulama içinde saklanması ve diğer grup üyelerine gösterilmesi için, yalnızca hizmetin sunulmasıyla sınırlı, ücretsiz ve münhasır olmayan bir kullanım iznini Geliştiriciye verir.</p>
+</section>
+
+<section class="clause-card" id="tr-5">
+  <h2><span class="clause-num">5</span> KİŞİSEL VERİLER VE GİZLİLİK</h2>
+  <p><strong>5.1.</strong> Tema, dil, il/ilçe seçimi ve benzeri tercihler cihazınızda saklanır. Konum izni verirseniz konumunuz namaz vakitlerini ve kıble yönünü hesaplamak için kullanılır; vakit verisinin alınabilmesi için konumunuz veya seçtiğiniz il/ilçe bilgisi ilgili vakit servisine iletilebilir.</p>
+  <p><strong>5.2.</strong> Hatim Kardeşliği gibi çevrim içi özellikleri kullanmanız halinde, bu özelliklerin çalışması için gereken veriler (ör. kullanıcı adı, grup üyelikleri, hatim/cüz ilerlemesi ve paylaştığınız içerikler) Geliştirici adına hizmet veren altyapı sağlayıcılarında (ör. Supabase, Cloudflare) saklanır. Bu veriler bakımından veri sorumlusu Geliştiricidir. Bu özellikleri kullanmak isteğe bağlıdır.</p>
+  <p><strong>5.3.</strong> Reklam (Google AdMob) ve satın alma (Google Play) hizmetleri; reklam kimliği, cihaz ve kullanım bilgileri gibi verileri kendi gizlilik politikaları çerçevesinde işleyebilir.</p>
+  <p><strong>5.4.</strong> Hangi verilerin hangi amaçla işlendiği, kimlere ve hangi ülkelere aktarıldığı, saklama süreleri ve 6698 sayılı Kişisel Verilerin Korunması Kanunu kapsamındaki haklarınız Gizlilik Politikası ve KVKK Aydınlatma Metninde açıklanmıştır: <a href="https://cebeci1.github.io/ezan/gizlilik.txt">Gizlilik Politikası</a></p>
+  <p><strong>5.5.</strong> Çevrim içi özellikler için oluşturulan hesabınızın ve ilgili verilerinizin silinmesini Uygulama içinden veya <a class="email-link" href="mailto:cebeci.zafer@gmail.com">cebeci.zafer@gmail.com</a> adresi üzerinden talep edebilirsiniz.</p>
+</section>
+
+<section class="clause-card" id="tr-6">
+  <h2><span class="clause-num">6</span> LİSANS VE FİKRİ HAKLAR</h2>
+  <p><strong>6.1.</strong> Geliştirici, Kullanıcıya Uygulamayı bu Sözleşmeye uygun olarak kişisel cihazlarında kullanmak üzere kişisel, ticari olmayan, devredilemez, münhasır olmayan ve geri alınabilir bir lisans verir.</p>
+  <p><strong>6.2.</strong> Uygulamanın yazılımı, kaynak kodu, tasarımı, arayüzü, görselleri, logosu ve "ZaiC" adı üzerindeki tüm fikri ve sınai haklar Geliştiriciye aittir. Kur'an-ı Kerim meal ve tefsirleri, hadis ve dua metinleri, vakit verileri gibi üçüncü taraf içerikler üzerindeki haklar ilgili hak sahiplerine aittir.</p>
+  <p><strong>6.3.</strong> Yürürlükteki mevzuatın açıkça izin verdiği haller saklı kalmak kaydıyla Kullanıcı; Uygulamayı tersine mühendisliğe tabi tutamaz veya kaynak koduna erişmeye çalışamaz; Uygulamayı ya da herhangi bir parçasını kopyalayamaz, değiştiremez, türev eserini oluşturamaz; Uygulamayı resmi uygulama mağazaları dışında, ücretli veya ücretsiz olarak dağıtamaz; Uygulamanın kodlarını, tasarımlarını veya varlıklarını başka bir yerde yayınlayamaz; Uygulamanın sunucularına ve altyapısına yetkisiz erişmeye, aşırı yük bindirmeye veya güvenlik önlemlerini aşmaya çalışamaz.</p>
+  <p><strong>6.4.</strong> Bu maddeye aykırılık halinde lisans kendiliğinden sona erer. Geliştiricinin 5846 sayılı Fikir ve Sanat Eserleri Kanunu ve ilgili mevzuattan doğan hukuki ve cezai başvuru hakları saklıdır.</p>
+</section>
+
+<section class="clause-card" id="tr-7">
+  <h2><span class="clause-num">7</span> REKLAMLAR VE UYGULAMA İÇİ SATIN ALIMLAR</h2>
+  <p><strong>7.1.</strong> Uygulama ücretsiz olarak sunulur. Sunucu, altyapı ve diğer hizmet giderlerinin karşılanabilmesi amacıyla Uygulamada Google AdMob reklamları gösterilebilir ve "Reklamları Kaldır" veya Premium gibi uygulama içi satın alımlar sunulabilir.</p>
+  <p><strong>7.2.</strong> Satın alımlar Google Play üzerinden yapılır; ödeme, faturalandırma ve iade işlemleri Google Play koşullarına tabidir. Satın alımlar, işlemin yapıldığı Google hesabına bağlıdır.</p>
+  <p><strong>7.3.</strong> Satın alınan dijital içerikler anında teslim edildiğinden, Mesafeli Sözleşmeler Yönetmeliği'nin 15. maddesi uyarınca cayma hakkı kullanılamaz. Google Play iade politikası ile tüketici mevzuatından doğan diğer haklarınız saklıdır.</p>
+  <p><strong>7.4.</strong> Abonelik olarak sunulan ürünlerde yenileme, iptal ve ücret bilgileri satın alma ekranında ayrıca gösterilir; abonelikler Google Play hesabınızdan iptal edilebilir.</p>
+</section>
+
+<section class="clause-card" id="tr-8">
+  <h2><span class="clause-num">8</span> SÜRE, FESİH VE HİZMETTE DEĞİŞİKLİK</h2>
+  <p><strong>8.1.</strong> Kullanıcı, Uygulamayı cihazından kaldırarak bu Sözleşmeyi dilediği zaman sona erdirebilir.</p>
+  <p><strong>8.2.</strong> Geliştirici, Uygulamanın özelliklerini değiştirme, geliştirme, geçici olarak askıya alma veya Uygulamanın yayınını sonlandırma hakkını saklı tutar. Satın alınmış ürünlere ilişkin tüketici hakları saklıdır.</p>
+  <p><strong>8.3.</strong> Geliştirici, bu Sözleşmeye aykırı davranan Kullanıcının Uygulamaya veya çevrim içi özelliklere erişimini sona erdirebilir.</p>
+</section>
+
+<section class="clause-card" id="tr-9">
+  <h2><span class="clause-num">9</span> SÖZLEŞME DEĞİŞİKLİKLERİ</h2>
+  <p>Geliştirici bu Sözleşmeyi güncelleyebilir. Güncel sürüm her zaman Uygulama içinden erişilebilir. Kullanıcıların haklarını önemli ölçüde etkileyen değişikliklerde Uygulama içinde yeniden onay istenir.</p>
+</section>
+
+<section class="clause-card" id="tr-10">
+  <h2><span class="clause-num">10</span> UYGULANACAK HUKUK VE YETKİLİ MERCİLER</h2>
+  <p><strong>10.1.</strong> Bu Sözleşme Türkiye Cumhuriyeti hukukuna tabidir.</p>
+  <p><strong>10.2.</strong> Tüketici işlemlerinden doğan uyuşmazlıklarda, 6502 sayılı Tüketicinin Korunması Hakkında Kanun uyarınca her yıl belirlenen parasal sınırlar dahilinde tüketici hakem heyetlerine, bu sınırları aşan uyuşmazlıklarda tüketici mahkemelerine başvurulabilir. Tüketicinin kendi yerleşim yerindeki mercilere başvurma hakkı saklıdır.</p>
+  <p><strong>10.3.</strong> Yetki sözleşmesi yapılmasının hukuken mümkün olduğu hallerde İstanbul Merkez (Çağlayan) Mahkemeleri ve İcra Daireleri yetkilidir.</p>
+  <p><strong>10.4.</strong> Türkiye dışında yaşayan Kullanıcıların, ikamet ettikleri ülkenin emredici tüketici mevzuatından doğan hakları saklıdır.</p>
+</section>
+
+<section class="clause-card" id="tr-11">
+  <h2><span class="clause-num">11</span> DİL</h2>
+  <p>Bu Sözleşme Türkçe, İngilizce ve Arapça olarak sunulmuştur. Metinler arasında farklılık olması halinde Türkçe metin esas alınır.</p>
+</section>
+
+<section class="clause-card" id="tr-12">
+  <h2><span class="clause-num">12</span> İLETİŞİM</h2>
+  <p>Sözleşme, gizlilik, içerik bildirimi ve diğer tüm konular için: <a class="email-link" href="mailto:cebeci.zafer@gmail.com">cebeci.zafer@gmail.com</a></p>
+</section>
+
+<div class="dev-note">
+  <p class="disclaimer">(Bu bölüm sözleşme hükmü değildir.)</p>
+  <h3>GELİŞTİRİCİDEN NOT</h3>
+  <p>Bu uygulama, aylarca süren fikir, tasarım ve kodlama emeğinin, çoğu zaman sabahlara kadar süren çalışmaların ürünüdür; kullanıcıların hayır duası ve ahiret yatırımı niyetiyle yapılmıştır. Reklam ve satın alımlar, uygulamanın ayakta kalabilmesi için gereken sunucu ve hizmet giderlerini karşılamak içindir. Uygulamanın ve kodlarının izinsiz kopyalanmaması ve paylaşılmaması, emeğe saygının ve kul hakkının gereğidir. Dualarınızı bekleriz.</p>
+</div>
+
+</div><!-- /tab-tr -->
+
+
+<!-- ╔══════════════════════════════════════════════════════════╗ -->
+<!-- ║                      ENGLISH                            ║ -->
+<!-- ╚══════════════════════════════════════════════════════════╝ -->
+<div id="tab-en" class="tab-content">
+
+<nav class="toc">
+  <h3>📑 Table of Contents</h3>
+  <ol>
+    <li><a href="#en-1">Parties and Acceptance</a></li>
+    <li><a href="#en-2">Nature of the Service and Religious Content Notice</a></li>
+    <li><a href="#en-3">Limitation of Liability</a></li>
+    <li><a href="#en-4">Khatm Brotherhood and User Content</a></li>
+    <li><a href="#en-5">Personal Data and Privacy</a></li>
+    <li><a href="#en-6">License and Intellectual Property</a></li>
+    <li><a href="#en-7">Ads and In-App Purchases</a></li>
+    <li><a href="#en-8">Term, Termination and Changes to the Service</a></li>
+    <li><a href="#en-9">Changes to the Agreement</a></li>
+    <li><a href="#en-10">Governing Law and Jurisdiction</a></li>
+    <li><a href="#en-11">Language</a></li>
+    <li><a href="#en-12">Contact</a></li>
+  </ol>
+</nav>
+
+<section class="clause-card" id="en-1">
+  <h2><span class="clause-num">1</span> PARTIES AND ACCEPTANCE</h2>
+  <p><strong>1.1.</strong> This End User License Agreement ("Agreement") is entered into between the person using the ZaiC Ezan &amp; Vakit mobile application ("App") ("User") and Zafer Cebeci, who develops and publishes the App under the name "ZaiC Design &amp; Studio" ("Developer").</p>
+  <p><strong>1.2.</strong> By approving this Agreement before starting to use the App, the User declares that they have read, understood and accepted all of its terms. A User who does not accept this Agreement should not use the App and should remove it from their device.</p>
+</section>
+
+<section class="clause-card" id="en-2">
+  <h2><span class="clause-num">2</span> NATURE OF THE SERVICE AND RELIGIOUS CONTENT NOTICE</h2>
+  <p><strong>2.1.</strong> The App provides tools that support worship, such as prayer times, Qibla direction, Quran reading, dhikr and khatm tracking.</p>
+  <p><strong>2.2.</strong> Prayer times are obtained from third-party sources such as the Presidency of Religious Affairs of Türkiye (Diyanet) and AlAdhan, or produced by astronomical calculation. Times may differ by a few minutes depending on the source and calculation method; for your worship, rely on the official calendar of your location and the times of your local mosque.</p>
+  <p><strong>2.3.</strong> Qibla direction depends on the accuracy of the device's location and magnetic sensor (compass); metal objects, electronic devices and lack of calibration may cause incorrect results.</p>
+  <p><strong>2.4.</strong> The App is not a religious authority. Content is for information only; for worship, fiqh and other religious matters, consult qualified scholars and official institutions.</p>
+  <p><strong>2.5.</strong> The App is not affiliated with, does not represent and is not endorsed by the Presidency of Religious Affairs, AlAdhan or any other institution or organization. Their names are used solely to identify data sources.</p>
+</section>
+
+<section class="clause-card" id="en-3">
+  <h2><span class="clause-num">3</span> LIMITATION OF LIABILITY</h2>
+  <p><strong>3.1.</strong> The App is provided "as is" and "as available"; no guarantee is given that it will operate uninterrupted, error-free or fit for a particular purpose.</p>
+  <p><strong>3.2.</strong> The Developer shall not be liable for errors in prayer times, Qibla direction or notifications, or their consequences, arising from delayed or missing notifications, device restrictions (battery optimization, manufacturer software, silent mode, etc.), internet outages or disruptions in third-party services (Diyanet, AlAdhan, Supabase, Cloudflare, Google AdMob, Google Play, etc.).</p>
+  <p><strong>3.3.</strong> Quran translation/tafsir, hadith and dua content is provided from third-party sources. The Developer takes reasonable care regarding the accuracy of this content but is not liable for textual errors originating from the source. Please report any errors you notice to <a class="email-link" href="mailto:cebeci.zafer@gmail.com">cebeci.zafer@gmail.com</a>.</p>
+  <p><strong>3.4.</strong> The limitations in this section do not apply to liability arising from the Developer's intent or gross negligence, to cases where liability cannot be limited under applicable law, or to the mandatory statutory rights of consumers.</p>
+</section>
+
+<section class="clause-card" id="en-4">
+  <h2><span class="clause-num">4</span> KHATM BROTHERHOOD AND USER CONTENT</h2>
+  <p><strong>4.1.</strong> Khatm Brotherhood (Hatim Kardeşliği) and similar online features may contain content created by Users and visible to other Users (group names, usernames, messages, notes, etc.). Legal responsibility for such content lies with the User who created it.</p>
+  <p><strong>4.2.</strong> The following content and behavior are prohibited:</p>
+  <ul>
+    <li>a) Insults, profanity, harassment, threats or bullying;</li>
+    <li>b) Content that demeans any person, group, religion, sect, ethnic origin or belief, or that promotes hatred or violence;</li>
+    <li>c) Obscene, sexual or violent material;</li>
+    <li>d) Content promoting illegal activity, fraud, spam and unauthorized advertising;</li>
+    <li>e) Sharing other people's personal data, contact details or private information without permission;</li>
+    <li>f) Content that infringes others' copyrights or other intellectual property rights;</li>
+    <li>g) Impersonating another person or organization, or misrepresenting oneself.</li>
+  </ul>
+  <p><strong>4.3.</strong> Users can report content or users that violate these rules through the in-app reporting function or by email to <a class="email-link" href="mailto:cebeci.zafer@gmail.com">cebeci.zafer@gmail.com</a>, and can block other users. The Developer reviews reports within a reasonable time.</p>
+  <p><strong>4.4.</strong> The Developer may, without prior notice, remove content that violates this Agreement, restrict the relevant User's access to these features or close their account.</p>
+  <p><strong>4.5.</strong> The User grants the Developer a free, non-exclusive permission, limited solely to providing the service, to store the content they share within the App and display it to other group members.</p>
+</section>
+
+<section class="clause-card" id="en-5">
+  <h2><span class="clause-num">5</span> PERSONAL DATA AND PRIVACY</h2>
+  <p><strong>5.1.</strong> Preferences such as theme, language and province/district selection are stored on your device. If you grant location permission, your location is used to calculate prayer times and Qibla direction; your location or selected province/district may be sent to the relevant prayer-time service to obtain time data.</p>
+  <p><strong>5.2.</strong> If you use online features such as Khatm Brotherhood, the data needed for these features to work (e.g. username, group memberships, khatm/juz progress and content you share) is stored with infrastructure providers acting on behalf of the Developer (e.g. Supabase, Cloudflare). The Developer is the data controller for this data. Using these features is optional.</p>
+  <p><strong>5.3.</strong> Advertising (Google AdMob) and purchase (Google Play) services may process data such as the advertising ID, device and usage information under their own privacy policies.</p>
+  <p><strong>5.4.</strong> Which data is processed and for what purposes, to whom and to which countries it is transferred, retention periods and your rights under the Turkish Personal Data Protection Law No. 6698 (KVKK) are explained in the <a href="https://cebeci1.github.io/ezan/gizlilik.txt">Privacy Policy</a>.</p>
+  <p><strong>5.5.</strong> You can request deletion of your account and related data created for online features from within the App or by email to <a class="email-link" href="mailto:cebeci.zafer@gmail.com">cebeci.zafer@gmail.com</a>.</p>
+</section>
+
+<section class="clause-card" id="en-6">
+  <h2><span class="clause-num">6</span> LICENSE AND INTELLECTUAL PROPERTY</h2>
+  <p><strong>6.1.</strong> The Developer grants the User a personal, non-commercial, non-transferable, non-exclusive and revocable license to use the App on their personal devices in accordance with this Agreement.</p>
+  <p><strong>6.2.</strong> All intellectual and industrial property rights in the App's software, source code, design, interface, graphics, logo and the "ZaiC" name belong to the Developer. Rights in third-party content such as Quran translations and tafsir, hadith and dua texts and prayer-time data belong to their respective owners.</p>
+  <p><strong>6.3.</strong> Except where expressly permitted by applicable law, the User may not: reverse engineer the App or attempt to access its source code; copy, modify or create derivative works of the App or any part of it; distribute the App outside official app stores, whether for a fee or free of charge; publish the App's code, designs or assets elsewhere; or attempt to gain unauthorized access to, overload or circumvent the security measures of the App's servers and infrastructure.</p>
+  <p><strong>6.4.</strong> In case of breach of this section, the license terminates automatically. The Developer's civil and criminal remedies under the Turkish Law on Intellectual and Artistic Works No. 5846 and other applicable legislation are reserved.</p>
+</section>
+
+<section class="clause-card" id="en-7">
+  <h2><span class="clause-num">7</span> ADS AND IN-APP PURCHASES</h2>
+  <p><strong>7.1.</strong> The App is offered free of charge. To cover server, infrastructure and other service costs, the App may display Google AdMob ads and offer in-app purchases such as "Remove Ads" or Premium.</p>
+  <p><strong>7.2.</strong> Purchases are made through Google Play; payment, billing and refunds are subject to Google Play's terms. Purchases are tied to the Google account used for the transaction.</p>
+  <p><strong>7.3.</strong> Since purchased digital content is delivered instantly, the right of withdrawal cannot be exercised pursuant to Article 15 of the Turkish Distance Contracts Regulation. Google Play's refund policy and your other rights under consumer law remain reserved.</p>
+  <p><strong>7.4.</strong> For products offered as subscriptions, renewal, cancellation and price information is shown separately on the purchase screen; subscriptions can be cancelled from your Google Play account.</p>
+</section>
+
+<section class="clause-card" id="en-8">
+  <h2><span class="clause-num">8</span> TERM, TERMINATION AND CHANGES TO THE SERVICE</h2>
+  <p><strong>8.1.</strong> The User may terminate this Agreement at any time by removing the App from their device.</p>
+  <p><strong>8.2.</strong> The Developer reserves the right to change, improve or temporarily suspend the App's features, or to discontinue its publication. Consumer rights regarding purchased products are reserved.</p>
+  <p><strong>8.3.</strong> The Developer may terminate the access of a User who breaches this Agreement to the App or its online features.</p>
+</section>
+
+<section class="clause-card" id="en-9">
+  <h2><span class="clause-num">9</span> CHANGES TO THE AGREEMENT</h2>
+  <p>The Developer may update this Agreement. The current version is always accessible within the App. For changes that significantly affect Users' rights, renewed approval will be requested within the App.</p>
+</section>
+
+<section class="clause-card" id="en-10">
+  <h2><span class="clause-num">10</span> GOVERNING LAW AND JURISDICTION</h2>
+  <p><strong>10.1.</strong> This Agreement is governed by the laws of the Republic of Türkiye.</p>
+  <p><strong>10.2.</strong> For disputes arising from consumer transactions, consumers may apply to consumer arbitration committees within the monetary limits determined annually under the Consumer Protection Law No. 6502, and to consumer courts for disputes exceeding those limits. The consumer's right to apply to the authorities at their place of residence is reserved.</p>
+  <p><strong>10.3.</strong> Where a jurisdiction agreement is legally permissible, the Istanbul Central (Çağlayan) Courts and Enforcement Offices shall have jurisdiction.</p>
+  <p><strong>10.4.</strong> Users residing outside Türkiye retain the rights granted to them by the mandatory consumer protection laws of their country of residence.</p>
+</section>
+
+<section class="clause-card" id="en-11">
+  <h2><span class="clause-num">11</span> LANGUAGE</h2>
+  <p>This Agreement is provided in Turkish, English and Arabic. In case of any discrepancy between the texts, the Turkish text shall prevail.</p>
+</section>
+
+<section class="clause-card" id="en-12">
+  <h2><span class="clause-num">12</span> CONTACT</h2>
+  <p>For questions about this Agreement, privacy, content reports and all other matters: <a class="email-link" href="mailto:cebeci.zafer@gmail.com">cebeci.zafer@gmail.com</a></p>
+</section>
+
+<div class="dev-note">
+  <p class="disclaimer">(This section is not a contractual term.)</p>
+  <h3>A NOTE FROM THE DEVELOPER</h3>
+  <p>This App is the result of months of ideas, design and coding work, often lasting until morning, and was made with charitable intentions — hoping for the users' prayers and as an investment for the hereafter. Ads and purchases are intended to cover the server and service costs needed to keep the App running. Not copying or sharing the App and its code without permission is a matter of respecting this effort and the rights of others (kul hakkı). We would be grateful for your prayers.</p>
+</div>
+
+</div><!-- /tab-en -->
+
+
+<!-- ╔══════════════════════════════════════════════════════════╗ -->
+<!-- ║                    العربية  (RTL)                       ║ -->
+<!-- ╚══════════════════════════════════════════════════════════╝ -->
+<div id="tab-ar" class="tab-content" dir="rtl" lang="ar">
+
+<nav class="toc">
+  <h3>📑 فهرس المحتويات</h3>
+  <ol>
+    <li><a href="#ar-1">الأطراف والقبول</a></li>
+    <li><a href="#ar-2">طبيعة الخدمة وتنبيه بشأن المحتوى الديني</a></li>
+    <li><a href="#ar-3">تحديد المسؤولية</a></li>
+    <li><a href="#ar-4">ختم القرآن الجماعي ومحتوى المستخدمين</a></li>
+    <li><a href="#ar-5">البيانات الشخصية والخصوصية</a></li>
+    <li><a href="#ar-6">الترخيص والملكية الفكرية</a></li>
+    <li><a href="#ar-7">الإعلانات والمشتريات داخل التطبيق</a></li>
+    <li><a href="#ar-8">المدة والإنهاء والتغييرات في الخدمة</a></li>
+    <li><a href="#ar-9">تعديلات الاتفاقية</a></li>
+    <li><a href="#ar-10">القانون الواجب التطبيق والجهات المختصة</a></li>
+    <li><a href="#ar-11">اللغة</a></li>
+    <li><a href="#ar-12">التواصل</a></li>
+  </ol>
+</nav>
+
+<section class="clause-card" id="ar-1">
+  <h2><span class="clause-num">1</span> الأطراف والقبول</h2>
+  <p><strong>1.1.</strong> أُبرمت اتفاقية ترخيص المستخدم النهائي هذه ("الاتفاقية") بين الشخص الذي يستخدم تطبيق الهاتف المحمول ZaiC Ezan &amp; Vakit ("التطبيق") ("المستخدم")، وبين ظافر جبيجي الذي يطوّر التطبيق وينشره باسم "ZaiC Design &amp; Studio" ("المطوِّر").</p>
+  <p><strong>1.2.</strong> بموافقة المستخدم على هذه الاتفاقية قبل البدء في استخدام التطبيق، يُقرّ بأنه قرأ جميع أحكامها وفهمها وقبلها. وعلى المستخدم الذي لا يقبل هذه الاتفاقية ألّا يستخدم التطبيق وأن يحذفه من جهازه.</p>
+</section>
+
+<section class="clause-card" id="ar-2">
+  <h2><span class="clause-num">2</span> طبيعة الخدمة وتنبيه بشأن المحتوى الديني</h2>
+  <p><strong>2.1.</strong> يقدّم التطبيق أدوات مساعِدة على العبادة، مثل مواقيت الصلاة، واتجاه القبلة، وقراءة القرآن الكريم، والذكر، ومتابعة الختمة.</p>
+  <p><strong>2.2.</strong> تُؤخذ مواقيت الصلاة من مصادر خارجية مثل رئاسة الشؤون الدينية التركية (Diyanet) و AlAdhan، أو تُحسب فلكياً. وقد تختلف المواقيت ببضع دقائق بحسب المصدر وطريقة الحساب؛ فاعتمدوا في عباداتكم على التقويم الرسمي لمكانكم وعلى مواقيت مسجدكم المحلي.</p>
+  <p><strong>2.3.</strong> يعتمد اتجاه القبلة على دقة موقع الجهاز وحسّاسه المغناطيسي (البوصلة)؛ وقد تؤدي الأجسام المعدنية والأجهزة الإلكترونية وعدم المعايرة إلى نتائج غير صحيحة.</p>
+  <p><strong>2.4.</strong> التطبيق ليس مرجعاً دينياً. المحتوى لأغراض التوعية فقط؛ وفي مسائل العبادة والفقه وسائر الشؤون الدينية يُرجى الرجوع إلى العلماء المؤهَّلين والجهات الرسمية.</p>
+  <p><strong>2.5.</strong> التطبيق غير تابع لرئاسة الشؤون الدينية أو AlAdhan أو أي مؤسسة أو جهة أخرى، ولا يمثّلها، ولم يحصل على اعتمادها. وتُذكر أسماء هذه الجهات فقط لبيان مصدر البيانات.</p>
+</section>
+
+<section class="clause-card" id="ar-3">
+  <h2><span class="clause-num">3</span> تحديد المسؤولية</h2>
+  <p><strong>3.1.</strong> يُقدَّم التطبيق "كما هو" و"حسب توفّره"؛ ولا يُضمن عمله دون انقطاع أو خلوّه من الأخطاء أو ملاءمته لغرض معيّن.</p>
+  <p><strong>3.2.</strong> لا يتحمّل المطوِّر المسؤولية عن أخطاء المواقيت أو اتجاه القبلة أو الإشعارات أو عن نتائجها، الناشئة عن تأخّر الإشعارات أو عدم وصولها، أو قيود الجهاز (تحسين البطارية، برمجيات الشركة المصنِّعة، الوضع الصامت وغيرها)، أو انقطاع الإنترنت، أو الأعطال في خدمات الجهات الخارجية (Diyanet، AlAdhan، Supabase، Cloudflare، Google AdMob، Google Play وغيرها).</p>
+  <p><strong>3.3.</strong> تُقدَّم محتويات ترجمة معاني القرآن الكريم وتفسيره والأحاديث والأدعية من مصادر خارجية. ويبذل المطوِّر العناية المعقولة بشأن صحة هذه المحتويات، لكنه غير مسؤول عن الأخطاء النصية الواردة من المصدر. نرجو الإبلاغ عن أي خطأ تلاحظونه عبر البريد الإلكتروني: <a class="email-link" href="mailto:cebeci.zafer@gmail.com">cebeci.zafer@gmail.com</a></p>
+  <p><strong>3.4.</strong> لا تسري حدود المسؤولية الواردة في هذا البند على المسؤولية الناشئة عن عمد المطوِّر أو إهماله الجسيم، ولا على الحالات التي لا يجوز فيها تحديد المسؤولية بموجب القانون النافذ، ولا على الحقوق القانونية الآمرة للمستهلك.</p>
+</section>
+
+<section class="clause-card" id="ar-4">
+  <h2><span class="clause-num">4</span> «ختم القرآن الجماعي» ومحتوى المستخدمين</h2>
+  <p><strong>4.1.</strong> قد تتضمّن ميزة «ختم القرآن الجماعي» والميزات المماثلة عبر الإنترنت محتوى ينشئه المستخدمون ويراه مستخدمون آخرون (أسماء المجموعات، أسماء المستخدمين، الرسائل، الملاحظات وغيرها). وتقع المسؤولية القانونية عن هذا المحتوى على المستخدم الذي أنشأه.</p>
+  <p><strong>4.2.</strong> يُحظر المحتوى والسلوك التالي:</p>
+  <ul>
+    <li>أ) الإهانة أو الشتم أو التحرّش أو التهديد أو التنمّر؛</li>
+    <li>ب) المحتوى الذي يحطّ من قدر أي شخص أو جماعة أو دين أو مذهب أو أصل عرقي أو معتقد، أو يحرّض على الكراهية أو العنف؛</li>
+    <li>ج) المواد الفاحشة أو الجنسية أو العنيفة؛</li>
+    <li>د) المحتوى الذي يروّج لأنشطة غير قانونية، والاحتيال، والرسائل المزعجة، والإعلانات غير المصرَّح بها؛</li>
+    <li>هـ) نشر البيانات الشخصية للآخرين أو بيانات الاتصال بهم أو معلوماتهم الخاصة دون إذن؛</li>
+    <li>و) المحتوى الذي ينتهك حقوق النشر أو غيرها من حقوق الملكية الفكرية للآخرين؛</li>
+    <li>ز) انتحال شخصية شخص أو جهة أخرى، أو تقديم النفس بصورة مضلِّلة.</li>
+  </ul>
+  <p><strong>4.3.</strong> يمكن للمستخدمين الإبلاغ عن المحتوى أو المستخدمين المخالفين لهذه القواعد عبر وظيفة الإبلاغ داخل التطبيق أو عبر البريد الإلكتروني (<a class="email-link" href="mailto:cebeci.zafer@gmail.com">cebeci.zafer@gmail.com</a>)، كما يمكنهم حظر المستخدمين الآخرين. ويراجع المطوِّر البلاغات خلال مدة معقولة.</p>
+  <p><strong>4.4.</strong> يحق للمطوِّر، دون إشعار مسبق، إزالة المحتوى المخالف لهذه الاتفاقية، أو تقييد وصول المستخدم المعني إلى هذه الميزات، أو إغلاق حسابه.</p>
+  <p><strong>4.5.</strong> يمنح المستخدمُ المطوِّرَ إذناً مجانياً وغير حصري، مقصوراً على تقديم الخدمة فقط، لتخزين المحتوى الذي يشاركه داخل التطبيق وعرضه على أعضاء المجموعة الآخرين.</p>
+</section>
+
+<section class="clause-card" id="ar-5">
+  <h2><span class="clause-num">5</span> البيانات الشخصية والخصوصية</h2>
+  <p><strong>5.1.</strong> تُحفظ التفضيلات مثل المظهر واللغة واختيار المحافظة/المنطقة على جهازك. وإذا منحت إذن الموقع، يُستخدم موقعك لحساب مواقيت الصلاة واتجاه القبلة؛ وقد يُرسَل موقعك أو المحافظة/المنطقة المختارة إلى خدمة المواقيت المعنية للحصول على بيانات المواقيت.</p>
+  <p><strong>5.2.</strong> إذا استخدمت ميزات عبر الإنترنت مثل «ختم القرآن الجماعي»، تُخزَّن البيانات اللازمة لعمل هذه الميزات (مثل اسم المستخدم، وعضويات المجموعات، وتقدّم الختمة/الأجزاء، والمحتوى الذي تشاركه) لدى مزوِّدي البنية التحتية العاملين نيابةً عن المطوِّر (مثل Supabase و Cloudflare). والمطوِّر هو المسؤول عن معالجة هذه البيانات. واستخدام هذه الميزات اختياري.</p>
+  <p><strong>5.3.</strong> قد تعالج خدمات الإعلانات (Google AdMob) والشراء (Google Play) بيانات مثل معرّف الإعلانات ومعلومات الجهاز والاستخدام وفق سياسات الخصوصية الخاصة بها.</p>
+  <p><strong>5.4.</strong> تُبيَّن في <a href="https://cebeci1.github.io/ezan/gizlilik.txt">سياسة الخصوصية</a> البياناتُ التي تُعالَج وأغراضُ معالجتها، والجهاتُ والدولُ التي تُنقل إليها، ومددُ الاحتفاظ بها، وحقوقُك بموجب قانون حماية البيانات الشخصية التركي رقم 6698 (KVKK).</p>
+  <p><strong>5.5.</strong> يمكنك طلب حذف حسابك وبياناتك المرتبطة بالميزات عبر الإنترنت من داخل التطبيق أو عبر البريد الإلكتروني (<a class="email-link" href="mailto:cebeci.zafer@gmail.com">cebeci.zafer@gmail.com</a>).</p>
+</section>
+
+<section class="clause-card" id="ar-6">
+  <h2><span class="clause-num">6</span> الترخيص والملكية الفكرية</h2>
+  <p><strong>6.1.</strong> يمنح المطوِّر المستخدمَ ترخيصاً شخصياً وغير تجاري وغير قابل للتنازل وغير حصري وقابلاً للإلغاء، لاستخدام التطبيق على أجهزته الشخصية وفقاً لهذه الاتفاقية.</p>
+  <p><strong>6.2.</strong> جميع حقوق الملكية الفكرية والصناعية في برمجيات التطبيق وشيفرته المصدرية وتصميمه وواجهته ورسومه وشعاره واسم "ZaiC" مملوكة للمطوِّر. أما الحقوق في محتويات الجهات الخارجية، مثل ترجمات معاني القرآن الكريم وتفاسيره ونصوص الأحاديث والأدعية وبيانات المواقيت، فهي لأصحابها.</p>
+  <p><strong>6.3.</strong> باستثناء ما يجيزه القانون النافذ صراحةً، لا يجوز للمستخدم: إخضاع التطبيق للهندسة العكسية أو محاولة الوصول إلى شيفرته المصدرية؛ أو نسخ التطبيق أو أي جزء منه أو تعديله أو إنشاء أعمال مشتقة منه؛ أو توزيع التطبيق خارج متاجر التطبيقات الرسمية، بمقابل أو مجاناً؛ أو نشر شيفرات التطبيق أو تصاميمه أو مكوّناته في مكان آخر؛ أو محاولة الوصول غير المصرَّح به إلى خوادم التطبيق وبنيته التحتية أو إثقالها أو تجاوز إجراءاتها الأمنية.</p>
+  <p><strong>6.4.</strong> عند مخالفة هذا البند ينتهي الترخيص تلقائياً. وتبقى حقوق المطوِّر في اللجوء إلى الطرق المدنية والجزائية بموجب قانون المصنَّفات الفكرية والفنية التركي رقم 5846 وسائر التشريعات ذات الصلة محفوظة.</p>
+</section>
+
+<section class="clause-card" id="ar-7">
+  <h2><span class="clause-num">7</span> الإعلانات والمشتريات داخل التطبيق</h2>
+  <p><strong>7.1.</strong> يُقدَّم التطبيق مجاناً. ولتغطية تكاليف الخوادم والبنية التحتية والخدمات الأخرى، قد يعرض التطبيق إعلانات Google AdMob ويقدّم مشتريات داخل التطبيق مثل "إزالة الإعلانات" أو Premium.</p>
+  <p><strong>7.2.</strong> تتم المشتريات عبر Google Play؛ وتخضع عمليات الدفع والفوترة والاسترداد لشروط Google Play. وترتبط المشتريات بحساب Google الذي أُجريت به العملية.</p>
+  <p><strong>7.3.</strong> نظراً لأن المحتوى الرقمي المشترى يُسلَّم فوراً، فلا يمكن ممارسة حق العدول وفقاً للمادة 15 من لائحة العقود عن بُعد التركية. وتبقى سياسة الاسترداد في Google Play وحقوقك الأخرى بموجب قانون حماية المستهلك محفوظة.</p>
+  <p><strong>7.4.</strong> في المنتجات المقدَّمة كاشتراك، تُعرض معلومات التجديد والإلغاء والسعر بشكل منفصل في شاشة الشراء؛ ويمكن إلغاء الاشتراكات من حسابك في Google Play.</p>
+</section>
+
+<section class="clause-card" id="ar-8">
+  <h2><span class="clause-num">8</span> المدة والإنهاء والتغييرات في الخدمة</h2>
+  <p><strong>8.1.</strong> يمكن للمستخدم إنهاء هذه الاتفاقية في أي وقت بحذف التطبيق من جهازه.</p>
+  <p><strong>8.2.</strong> يحتفظ المطوِّر بحق تغيير ميزات التطبيق أو تطويرها أو تعليقها مؤقتاً أو إيقاف نشر التطبيق. وتبقى حقوق المستهلك المتعلقة بالمنتجات المشتراة محفوظة.</p>
+  <p><strong>8.3.</strong> يحق للمطوِّر إنهاء وصول المستخدم المخالف لهذه الاتفاقية إلى التطبيق أو إلى ميزاته عبر الإنترنت.</p>
+</section>
+
+<section class="clause-card" id="ar-9">
+  <h2><span class="clause-num">9</span> تعديلات الاتفاقية</h2>
+  <p>يجوز للمطوِّر تحديث هذه الاتفاقية. والنسخة الحالية متاحة دائماً داخل التطبيق. وفي التغييرات التي تؤثر تأثيراً جوهرياً في حقوق المستخدمين، تُطلب الموافقة من جديد داخل التطبيق.</p>
+</section>
+
+<section class="clause-card" id="ar-10">
+  <h2><span class="clause-num">10</span> القانون الواجب التطبيق والجهات المختصة</h2>
+  <p><strong>10.1.</strong> تخضع هذه الاتفاقية لقوانين جمهورية تركيا.</p>
+  <p><strong>10.2.</strong> في النزاعات الناشئة عن معاملات المستهلكين، يجوز للمستهلك اللجوء إلى لجان تحكيم المستهلك ضمن الحدود المالية المحدَّدة سنوياً بموجب قانون حماية المستهلك رقم 6502، وإلى محاكم المستهلك في النزاعات التي تتجاوز تلك الحدود. ويبقى حق المستهلك في اللجوء إلى الجهات المختصة في مكان إقامته محفوظاً.</p>
+  <p><strong>10.3.</strong> حيثما يجوز قانوناً الاتفاق على الاختصاص، تختص محاكم ودوائر التنفيذ في إسطنبول المركزية (Çağlayan / جاغالاي).</p>
+  <p><strong>10.4.</strong> يحتفظ المستخدمون المقيمون خارج تركيا بالحقوق التي تمنحها لهم قوانين حماية المستهلك الآمرة في بلد إقامتهم.</p>
+</section>
+
+<section class="clause-card" id="ar-11">
+  <h2><span class="clause-num">11</span> اللغة</h2>
+  <p>تُقدَّم هذه الاتفاقية باللغات التركية والإنجليزية والعربية. وفي حال وجود أي اختلاف بين النصوص، يُعتمد النص التركي.</p>
+</section>
+
+<section class="clause-card" id="ar-12">
+  <h2><span class="clause-num">12</span> التواصل</h2>
+  <p>للاستفسارات المتعلقة بهذه الاتفاقية والخصوصية والإبلاغ عن المحتوى وسائر المسائل: <a class="email-link" href="mailto:cebeci.zafer@gmail.com">cebeci.zafer@gmail.com</a></p>
+</section>
+
+<div class="dev-note">
+  <p class="disclaimer">(هذا القسم ليس من أحكام الاتفاقية.)</p>
+  <h3>كلمة من المطوِّر</h3>
+  <p>هذا التطبيق ثمرة أشهر من الأفكار والتصميم والبرمجة، امتدّ كثير منها حتى ساعات الفجر، وقد صُنع بنيّة الخير، رجاءَ دعاء المستخدمين واستثماراً للآخرة. والإعلانات والمشتريات مخصّصة لتغطية تكاليف الخوادم والخدمات اللازمة لاستمرار التطبيق. وإنّ عدم نسخ التطبيق وشيفراته أو نشرها دون إذن من احترام هذا الجهد ومن حفظ حقوق العباد. ولا تنسونا من صالح دعائكم.</p>
+</div>
+
+</div><!-- /tab-ar -->
+
+</main>
+
+<!-- ═══════════════ FOOTER ═══════════════ -->
+<footer class="footer">
+  <p>📧 <a href="mailto:cebeci.zafer@gmail.com">cebeci.zafer@gmail.com</a></p>
+  <p>🔒 <a href="https://cebeci1.github.io/ezan/gizlilik.txt">Gizlilik Politikası / Privacy Policy / سياسة الخصوصية</a></p>
+  <p class="version">Son güncelleme: Ekim 2026 · Sürüm 2026-10-12</p>
+</footer>
+
+<!-- ═══════════════ JS (Minimal — Sekme Geçişleri) ═══════════════ -->
+<script>
+(function(){
+  const btns=document.querySelectorAll('.tab-btn');
+  const tabs=document.querySelectorAll('.tab-content');
+  btns.forEach(function(btn){
+    btn.addEventListener('click',function(){
+      btns.forEach(function(b){b.classList.remove('active');b.setAttribute('aria-selected','false')});
+      tabs.forEach(function(t){t.classList.remove('active')});
+      btn.classList.add('active');
+      btn.setAttribute('aria-selected','true');
+      var target=document.getElementById(btn.getAttribute('data-tab'));
+      if(target){
+        target.classList.add('active');
+        /* AR sekmesi için html lang güncelle */
+        document.documentElement.lang=target.getAttribute('lang')||'tr';
+        document.documentElement.dir=target.getAttribute('dir')||'ltr';
+      }
+    });
+  });
+})();
+</script>
+
+</body>
+</html>
