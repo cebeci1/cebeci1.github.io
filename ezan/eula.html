@@ -21,20 +21,29 @@ body{
   font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
   background:var(--cream);color:var(--text);line-height:1.7;
   min-height:100vh;
+  -webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;
+  -webkit-touch-callout:none;
 }
 
 /* ═══════════════ HEADER / BANNER ═══════════════ */
 .hero{
-  background:linear-gradient(170deg,var(--green-dark) 0%,var(--green) 40%,var(--green-light) 100%);
-  text-align:center;padding:2rem 1rem 0;position:relative;overflow:hidden;
+ /* background:linear-gradient(170deg,var(--green-dark) 0%,var(--green) 40%,var(--green-light) 100%); */
+  background: url('https://cebeci1.github.io/ezan/Eula_banner_ist_sunset-700X150.webp') center/cover no-repeat;
+  text-align:center;padding:2rem 1rem 1.2 rem;position:relative;overflow:hidden;
 }
 .hero-logo{width:110px;height:110px;border-radius:50%;
   border:3px solid var(--gold);box-shadow:0 0 24px rgba(201,162,59,.45);
   margin-bottom:.75rem;background:#0a1a12;object-fit:contain;padding:6px;}
-}
+  
 .hero h1{color:#fff;font-size:1.6rem;font-weight:700;letter-spacing:1px;margin-bottom:.15rem}
 .hero .app-tagline{color:#fff;opacity:.85;font-size:.9rem;font-weight:500;margin-bottom:.4rem}
-.hero .subtitle{color:var(--gold-light);font-size:.85rem;margin-bottom:1.2rem}
+.hero .subtitle{color:var(--gold-light);font-size:.85rem;margin-bottom:1.2rem;text-shadow:0 2px 6px rgba(0,0,0,0.9);}
+
+html[lang="tr"] .hero .lang-en, html[lang="tr"] .hero .lang-ar,
+html[lang="en"] .hero .lang-tr, html[lang="en"] .hero .lang-ar,
+html[lang="ar"] .hero .lang-tr, html[lang="ar"] .hero .lang-en { display: none; }
+
+
 /* SVG cami silueti */
 .mosque-banner{display:block;width:100%;max-width:700px;margin:0 auto;height:auto}
 .mosque-banner .dome{fill:var(--green-dark);opacity:.55}
@@ -181,29 +190,42 @@ body{
 <header class="hero">
   <img class="hero-logo" src="https://cebeci1.github.io/logo_glow.gif" alt="Shahid Logo">
   <h1>Shahid</h1>
-  <p class="app-tagline">Ezan &amp; Vakit</p>
-  <p class="subtitle">Son Kullanıcı Lisans Sözleşmesi (EULA)</p>
-  <svg class="mosque-banner" viewBox="0 0 700 120" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-    <rect class="minaret" x="60" y="20" width="8" height="100" rx="2"/>
-    <circle class="star" cx="64" cy="14" r="4"/>
-    <rect class="minaret" x="56" y="40" width="16" height="4" rx="1"/>
-    <ellipse class="dome" cx="140" cy="70" rx="45" ry="35"/>
-    <rect class="dome" x="95" y="70" width="90" height="50"/>
-    <ellipse class="dome" cx="350" cy="45" rx="70" ry="50"/>
-    <rect class="dome" x="280" y="45" width="140" height="75"/>
-    <circle class="star" cx="350" cy="0" r="5"/>
-    <rect class="minaret" x="347" y="0" width="6" height="10"/>
-    <ellipse class="dome" cx="560" cy="70" rx="45" ry="35"/>
-    <rect class="dome" x="515" y="70" width="90" height="50"/>
-    <rect class="minaret" x="632" y="20" width="8" height="100" rx="2"/>
-    <circle class="star" cx="636" cy="14" r="4"/>
-    <rect class="minaret" x="628" y="40" width="16" height="4" rx="1"/>
-    <rect class="dome" x="0" y="110" width="700" height="10"/>
-    <circle class="star" cx="200" cy="25" r="2.5"/>
-    <circle class="star" cx="500" cy="20" r="2"/>
-    <circle class="star" cx="450" cy="12" r="1.5"/>
-    <circle class="star" cx="250" cy="15" r="1.8"/>
-  </svg>
+  <p class="app-tagline">
+    <span class="lang-tr">Ezan &amp; Vakit</span>
+    <span class="lang-en">Adhan &amp; Prayer Times</span>
+    <span class="lang-ar">الأذان ومواقيت الصلاة</span>
+  </p>
+  <p class="subtitle">
+    <span class="lang-tr">Son Kullanıcı Lisans Sözleşmesi (EULA)</span>
+    <span class="lang-en">End User License Agreement (EULA)</span>
+    <span class="lang-ar">اتفاقية ترخيص المستخدم النهائي (EULA)</span>
+  </p>
+
+  <!-- <p class="app-tagline">Ezan &amp; Vakit</p> -->
+  <!-- <p class="subtitle">Son Kullanıcı Lisans Sözleşmesi (EULA)</p> -->
+  <!-- <svg class="mosque-banner" viewBox="0 0 700 120" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"> -->
+    <!-- <rect class="minaret" x="60" y="20" width="8" height="100" rx="2"/> -->
+    <!-- <circle class="star" cx="64" cy="14" r="4"/> -->
+    <!-- <rect class="minaret" x="56" y="40" width="16" height="4" rx="1"/> -->
+    <!-- <ellipse class="dome" cx="140" cy="70" rx="45" ry="35"/> -->
+    <!-- <rect class="dome" x="95" y="70" width="90" height="50"/> -->
+    <!-- <ellipse class="dome" cx="350" cy="45" rx="70" ry="50"/> -->
+    <!-- <rect class="dome" x="280" y="45" width="140" height="75"/> -->
+    <!-- <circle class="star" cx="350" cy="0" r="5"/> -->
+    <!-- <rect class="minaret" x="347" y="0" width="6" height="10"/> -->
+    <!-- <ellipse class="dome" cx="560" cy="70" rx="45" ry="35"/> -->
+    <!-- <rect class="dome" x="515" y="70" width="90" height="50"/> -->
+    <!-- <rect class="minaret" x="632" y="20" width="8" height="100" rx="2"/> -->
+    <!-- <circle class="star" cx="636" cy="14" r="4"/> -->
+    <!-- <rect class="minaret" x="628" y="40" width="16" height="4" rx="1"/> -->
+    <!-- <rect class="dome" x="0" y="110" width="700" height="10"/> -->
+    <!-- <circle class="star" cx="200" cy="25" r="2.5"/> -->
+    <!-- <circle class="star" cx="500" cy="20" r="2"/> -->
+    <!-- <circle class="star" cx="450" cy="12" r="1.5"/> -->
+    <!-- <circle class="star" cx="250" cy="15" r="1.8"/> -->
+  <!-- </svg> -->
+  <!-- <img class="mosque-banner" src="YENI_RESMININ_LINKI_BURAYA" alt="İstanbul Silüeti"> -->
+
 </header>
 
 <!-- ═══════════════ MARKA ŞERİDİ ═══════════════ -->
@@ -242,7 +264,7 @@ body{
   <ol>
     <li><a href="#tr-1">Taraflar ve Kabul</a></li>
     <li><a href="#tr-2">Hizmetin Niteliği ve Dini İçerik Uyarısı</a></li>
-    <li><a href="#tr-3">Sorumluluğun Sınırlandırılması</a></li>
+    <li><a href="#tr-3">Sorumluluğun Reddi ve Sınırlandırılması</a></li>
     <li><a href="#tr-4">Hatim Kardeşliği ve Kullanıcı İçerikleri</a></li>
     <li><a href="#tr-5">Kişisel Veriler ve Gizlilik</a></li>
     <li><a href="#tr-6">Lisans ve Fikri Haklar</a></li>
@@ -264,18 +286,21 @@ body{
 <section class="clause-card" id="tr-2">
   <h2><span class="clause-num">2</span> HİZMETİN NİTELİĞİ VE DİNİ İÇERİK UYARISI</h2>
   <p><strong>2.1.</strong> Uygulama; namaz vakitleri, kıble yönü, Kur'an-ı Kerim okuma, zikir ve hatim takibi gibi ibadete yardımcı araçlar sunar.</p>
-  <p><strong>2.2.</strong> Namaz vakitleri, Diyanet İşleri Başkanlığı ve AlAdhan gibi üçüncü taraf kaynaklardan alınır veya astronomik hesaplamayla üretilir. Vakitler, kaynağa ve hesaplama yöntemine göre birkaç dakika farklılık gösterebilir; ibadetlerinizde bulunduğunuz yerin resmi takvimini ve yerel caminizin vakitlerini esas alınız.</p>
+  <p><strong>2.2.</strong> Namaz vakitleri, güvenilir üçüncü taraf veri kaynaklarından alınır veya genel kabul görmüş astronomik hesaplama yöntemleriyle üretilir. Vakitler, kaynağa ve hesaplama yöntemine göre birkaç dakika farklılık gösterebilir; ibadetlerinizde bulunduğunuz yerin resmi takvimini ve yerel caminizin vakitlerini esas alınız.</p>
   <p><strong>2.3.</strong> Kıble yönü, cihazın konum ve manyetik sensör (pusula) doğruluğuna bağlıdır; metal cisimler, elektronik cihazlar ve kalibrasyon eksikliği hatalı sonuç verebilir.</p>
   <p><strong>2.4.</strong> Uygulama dini bir merci değildir. İçerikler bilgilendirme amaçlıdır; ibadet, fıkıh ve diğer dini konularda yetkili âlimlere ve resmi kurumlara başvurunuz.</p>
-  <p><strong>2.5.</strong> Uygulama; Diyanet İşleri Başkanlığı, AlAdhan veya başka herhangi bir kurum ve kuruluşla bağlantılı değildir, onları temsil etmez ve onlar tarafından onaylanmamıştır. Bu kurumların adları yalnızca veri kaynağını belirtmek için kullanılır.</p>
+  <p><strong>2.5.</strong> Uygulama ve Uygulamayı geliştiren Geliştirici, Uygulama içinde geçen bazı kurum ve kuruluşlar ile hiçbir şekilde bağlantılı değildir, onları temsil etmez, onlar tarafından onaylanmamıştır ve onaylanmayı da beklemez. Uygulama sadece inananlara hizmet etmek maksadıyla geliştirilmiş olup isteğe bağlı olarak kullanılmak üzere tasarlanarak yayınlanmıştır. Uygulama içinde geçen kurum ya da kuruluş adları ise sadece dünya üzerinde genel kabul görmüş ilmî hesaplama yöntemi ve fıkhî kaynaklar gösterilmek sorumluluğu ile belirtilmiştir. Bu, Geliştiricinin bireysel olarak herhangi bir aidiyeti olduğu anlamına gelmez. Uygulama geliştirilmeye devam ettikçe referans kaynakları da genişletilecek ve bu Uygulama içerisinde de belirtilecektir.</p>
+  <p><strong>2.6.</strong> Uygulama ve Geliştirici; herhangi bir siyasi oluşumu, partiyi, mezhebi, cemaati, tarikatı veya ideolojiyi temsil etmez, desteklemez, bunlarla bağlantılı değildir ve bunlara ait propaganda niteliğinde içerik barındırmaz. Uygulamanın yayınlandığı platformun kendi reklam politikaları gereğince politik ya da farklı sebeplerle, seçim dönemlerinde veya herhangi bir zamanda Uygulama içinde görünebilecek reklam bantları ya da geçişleri, Geliştiricinin iradesi dışında yayıncı kurumun hükmüne tabidir. Bu, görünen her reklamı Geliştiricinin onayladığı anlamına gelmez.</p>
 </section>
 
 <section class="clause-card" id="tr-3">
-  <h2><span class="clause-num">3</span> SORUMLULUĞUN SINIRLANDIRILMASI</h2>
+  <h2><span class="clause-num">3</span> SORUMLULUĞUN REDDİ VE SINIRLANDIRILMASI</h2>
   <p><strong>3.1.</strong> Uygulama "olduğu gibi" ve "mevcut haliyle" sunulur; kesintisiz, hatasız veya belirli bir amaca uygun çalışacağı garanti edilmez.</p>
-  <p><strong>3.2.</strong> Geliştirici; bildirimlerin gecikmesi veya hiç gelmemesi, cihaz kısıtlamaları (pil optimizasyonu, üretici yazılımı, sessiz mod vb.), internet kesintileri ya da üçüncü taraf hizmetlerdeki (Diyanet, AlAdhan, Supabase, Cloudflare, Google AdMob, Google Play vb.) aksaklıklar nedeniyle ortaya çıkan vakit, kıble veya bildirim hatalarından ve bunların sonuçlarından sorumlu tutulamaz.</p>
-  <p><strong>3.3.</strong> Kur'an-ı Kerim meali/tefsiri, hadis ve dua içerikleri üçüncü taraf kaynaklardan sağlanır. Geliştirici bu içeriklerin doğruluğu için makul özeni gösterir; ancak kaynaktan gelen metin hatalarından sorumlu değildir. Fark ettiğiniz hataları <a class="email-link" href="mailto:cebeci.zafer@gmail.com">cebeci.zafer@gmail.com</a> adresine bildirmeniz rica olunur.</p>
+  <p><strong>3.2.</strong> Geliştirici; bildirimlerin gecikmesi veya hiç gelmemesi, cihaz kısıtlamaları (pil optimizasyonu, üretici yazılımı, sessiz mod vb.), internet kesintileri ya da üçüncü taraf hizmetlerdeki (Ticari sır ve siber güvenlik ilkeleri gereği kamuya açık metinde ismen listelenmemiş olup yasal mercilerce istendiğinde açıklanır) aksaklıklar nedeniyle ortaya çıkan vakit, kıble veya bildirim hatalarından ve bunların sonuçlarından sorumlu tutulamaz.</p>
+  <p><strong>3.3.</strong> Kur'an-ı Kerim meali/tefsiri, hadis ve dua içerikleri üçüncü taraf kaynaklardan sağlanır. Geliştirici bu içeriklerin doğruluğu için makul özeni gösterir; ancak kaynaktan gelen metin hatalarından sorumlu değildir. Geliştirici kullandığınız bu Uygulamayı bağımsız bir geliştirici olarak tek başına uçtan uca (full-stack) yazılım mimarisiyle tasarlayarak üretmiştir. Bununla birlikte özellikle Namaz Hocası, 32 Farz gibi, Hac ve Umre Rehberi gibi bölümlerin kaynaklarını tek tek teyit etmiştir. Ancak bu, Uygulamanın tümüyle hatasız olduğu anlamını taşımaz. Bu nedenle bulduğunuz hataları lütfen <a class="email-link" href="mailto:cebeci.zafer@gmail.com">cebeci.zafer@gmail.com</a> adresinden Geliştiriciye bildiriniz. Geliştirici, Uygulamayı Hanefi fıkhî kaynaklardan derleyerek geliştirmiştir. Ancak bu sadece bir başlangıç olup bu Uygulamanın geliştirilmesi sürecektir. Diğer farklı yorum ve kaynaklar konusunda destek olmak isteyen yazılım profesyonelleri Geliştiriciye ulaşabilirler.</p>
   <p><strong>3.4.</strong> Bu maddedeki sorumluluk sınırlamaları; Geliştiricinin kast veya ağır ihmalinden doğan sorumluluğu, yürürlükteki mevzuat uyarınca sınırlandırılamayan haller ve tüketicinin kanundan doğan emredici hakları bakımından uygulanmaz.</p>
+  <p><strong>3.5.</strong> Yürürlükteki mevzuatın izin verdiği azami ölçüde Geliştirici; Uygulamanın kullanılmasından veya kullanılamamasından, veri veya kâr kaybından, iş kesintisinden, cihaz hasarından, sistem/sunucu arızalarından veya zararlı yazılımlardan kaynaklanan doğrudan, dolaylı, özel, arızi veya netice kabilinden doğan hiçbir zarardan sorumlu değildir. Geliştiricinin Kullanıcıya karşı her türlü talep için toplam mali sorumluluğu, varsa Kullanıcının son on iki (12) ay içinde Uygulama içi satın alımlar kapsamında Geliştiriciye fiilen ödediği tutarı aşamaz.</p>
+  <p><strong>3.6.</strong> Uygulama üzerinden üçüncü taraf web sitelerine veya sistemlerine verilen bağlantılar yalnızca kolaylık sağlamak amacıyla sunulur; Geliştirici bu sitelerin içeriğini, güvenliğini veya doğruluğunu onaylamaz ve bunlardan sorumlu tutulamaz. Uygulamaya erişim için gereken internet bağlantısı ve mobil veri ücretleri tamamen Kullanıcının sorumluluğundadır. Kullanıcının sorumluluğunda olan konular hakkında, Kullanıcının kullanarak açık rızası ile onaylamış olduğu bu Uygulama ya da Geliştiricisi sorumlu tutulamaz.</p>
 </section>
 
 <section class="clause-card" id="tr-4">
@@ -294,12 +319,14 @@ body{
   <p><strong>4.3.</strong> Kullanıcılar, bu kurallara aykırı içerik veya kullanıcıları uygulama içindeki bildirme işleviyle ya da <a class="email-link" href="mailto:cebeci.zafer@gmail.com">cebeci.zafer@gmail.com</a> adresi üzerinden bildirebilir ve diğer kullanıcıları engelleyebilir. Geliştirici, bildirimleri makul süre içinde inceler.</p>
   <p><strong>4.4.</strong> Geliştirici, bu Sözleşmeye aykırı içerikleri önceden bildirimde bulunmaksızın kaldırma, ilgili Kullanıcının bu özelliklere erişimini kısıtlama veya hesabını kapatma hakkına sahiptir.</p>
   <p><strong>4.5.</strong> Kullanıcı, paylaştığı içeriklerin Uygulama içinde saklanması ve diğer grup üyelerine gösterilmesi için, yalnızca hizmetin sunulmasıyla sınırlı, ücretsiz ve münhasır olmayan bir kullanım iznini Geliştiriciye verir.</p>
+  <p><strong>4.6.</strong> Kullanıcı; bu Sözleşmeyi ihlal etmesi, Uygulamayı kötüye kullanması, paylaştığı içerikler veya üçüncü kişilerin haklarını ya da yürürlükteki mevzuatı ihlal etmesi nedeniyle Geliştiricinin maruz kalabileceği her türlü dava, talep, idari yaptırım, zarar, kayıp ve masraftan (makul avukatlık ücretleri ve yargılama giderleri dâhil) Geliştiriciyi beri kılmayı ve bu zararları ilk talepte tazmin etmeyi (rücu) kabul ve taahhüt eder.</p>
+  <p><strong>4.7.</strong> Telif hakkı veya diğer fikri mülkiyet haklarının ihlal edildiğini düşünen hak sahipleri, ihlale konu içeriği ve hak sahipliği belgelerini <a class="email-link" href="mailto:cebeci.zafer@gmail.com">cebeci.zafer@gmail.com</a> adresine bildirebilir; geçerli bildirimler üzerine ilgili içerik mevzuata uygun olarak makul sürede kaldırılır veya erişime kapatılır.</p>
 </section>
 
 <section class="clause-card" id="tr-5">
   <h2><span class="clause-num">5</span> KİŞİSEL VERİLER VE GİZLİLİK</h2>
   <p><strong>5.1.</strong> Tema, dil, il/ilçe seçimi ve benzeri tercihler cihazınızda saklanır. Konum izni verirseniz konumunuz namaz vakitlerini ve kıble yönünü hesaplamak için kullanılır; vakit verisinin alınabilmesi için konumunuz veya seçtiğiniz il/ilçe bilgisi ilgili vakit servisine iletilebilir.</p>
-  <p><strong>5.2.</strong> Hatim Kardeşliği gibi çevrim içi özellikleri kullanmanız halinde, bu özelliklerin çalışması için gereken veriler (ör. kullanıcı adı, grup üyelikleri, hatim/cüz ilerlemesi ve paylaştığınız içerikler) Geliştirici adına hizmet veren altyapı sağlayıcılarında (ör. Supabase, Cloudflare) saklanır. Bu veriler bakımından veri sorumlusu Geliştiricidir. Bu özellikleri kullanmak isteğe bağlıdır.</p>
+  <p><strong>5.2.</strong> Hatim Kardeşliği gibi çevrim içi özellikleri kullanmanız halinde, bu özelliklerin çalışması için gereken veriler (ör. kullanıcı adı, grup üyelikleri, hatim/cüz ilerlemesi ve paylaştığınız içerikler) Geliştirici adına hizmet veren üçüncü taraf altyapı sağlayıcılarında (Ticari sır ve siber güvenlik ilkeleri gereği kamuya açık metinde ismen listelenmemiş olup yasal mercilerce istendiğinde açıklanır) saklanır. Bu veriler bakımından veri sorumlusu Geliştiricidir. Bu özellikleri kullanmak ise Kullanıcının isteğine bağlıdır. Bu metin Kullanıcıyı bilgilendirmek amacıyla hazırlanmış olup Kullanıcı bu şartları kabul ettiği takdirde Uygulamayı kullanabilir. Geliştirici, hiçbir surette kullanıcıları Uygulamasını kullanmaya zorlamamaktadır.</p>
   <p><strong>5.3.</strong> Reklam (Google AdMob) ve satın alma (Google Play) hizmetleri; reklam kimliği, cihaz ve kullanım bilgileri gibi verileri kendi gizlilik politikaları çerçevesinde işleyebilir.</p>
   <p><strong>5.4.</strong> Hangi verilerin hangi amaçla işlendiği, kimlere ve hangi ülkelere aktarıldığı, saklama süreleri ve 6698 sayılı Kişisel Verilerin Korunması Kanunu kapsamındaki haklarınız Gizlilik Politikası ve KVKK Aydınlatma Metninde açıklanmıştır: <a href="https://cebeci1.github.io/ezan/gizlilik.html">Gizlilik Politikası</a></p>
   <p><strong>5.5.</strong> Çevrim içi özellikler için oluşturulan hesabınızın ve ilgili verilerinizin silinmesini Uygulama içinden veya <a class="email-link" href="mailto:cebeci.zafer@gmail.com">cebeci.zafer@gmail.com</a> adresi üzerinden talep edebilirsiniz.</p>
@@ -339,6 +366,7 @@ body{
   <p><strong>10.2.</strong> Tüketici işlemlerinden doğan uyuşmazlıklarda, 6502 sayılı Tüketicinin Korunması Hakkında Kanun uyarınca her yıl belirlenen parasal sınırlar dahilinde tüketici hakem heyetlerine, bu sınırları aşan uyuşmazlıklarda tüketici mahkemelerine başvurulabilir. Tüketicinin kendi yerleşim yerindeki mercilere başvurma hakkı saklıdır.</p>
   <p><strong>10.3.</strong> Yetki sözleşmesi yapılmasının hukuken mümkün olduğu hallerde İstanbul Merkez (Çağlayan) Mahkemeleri ve İcra Daireleri yetkilidir.</p>
   <p><strong>10.4.</strong> Türkiye dışında yaşayan Kullanıcıların, ikamet ettikleri ülkenin emredici tüketici mevzuatından doğan hakları saklıdır.</p>
+  <p><strong>10.5.</strong> Taraflar, bu Sözleşmeden doğabilecek uyuşmazlıklarda Geliştiriciye ait sunucu, veritabanı, log ve diğer elektronik ortam kayıtlarının 6100 sayılı Hukuk Muhakemeleri Kanunu'nun 193. maddesi uyarınca geçerli, bağlayıcı ve kesin delil teşkil edeceğini kabul eder.</p>
 </section>
 
 <section class="clause-card" id="tr-11">
@@ -354,6 +382,7 @@ body{
 <div class="dev-note">
   <p class="disclaimer">(Bu bölüm sözleşme hükmü değildir.)</p>
   <h3>GELİŞTİRİCİDEN NOT</h3>
+  <p><strong>ESSELAMU ALEYKUM VE RAHMETULLAH,</strong><br>Kıymetli Müslüman Kardeşim,</p>
   <p>Bu uygulama, aylarca süren fikir, tasarım ve kodlama emeğinin, çoğu zaman sabahlara kadar süren çalışmaların ürünüdür; kullanıcıların hayır duası ve ahiret yatırımı niyetiyle yapılmıştır. Reklam ve satın alımlar, uygulamanın ayakta kalabilmesi için gereken sunucu ve hizmet giderlerini karşılamak içindir. Uygulamanın ve kodlarının izinsiz kopyalanmaması ve paylaşılmaması, emeğe saygının ve kul hakkının gereğidir. Dualarınızı bekleriz.</p>
 </div>
 
@@ -368,7 +397,7 @@ body{
   <ol>
     <li><a href="#en-1">Parties and Acceptance</a></li>
     <li><a href="#en-2">Nature of the Service and Religious Content Notice</a></li>
-    <li><a href="#en-3">Limitation of Liability</a></li>
+    <li><a href="#en-3">Disclaimer and Limitation of Liability</a></li>
     <li><a href="#en-4">Khatm Brotherhood and User Content</a></li>
     <li><a href="#en-5">Personal Data and Privacy</a></li>
     <li><a href="#en-6">License and Intellectual Property</a></li>
@@ -390,18 +419,21 @@ body{
 <section class="clause-card" id="en-2">
   <h2><span class="clause-num">2</span> NATURE OF THE SERVICE AND RELIGIOUS CONTENT NOTICE</h2>
   <p><strong>2.1.</strong> The App provides tools that support worship, such as prayer times, Qibla direction, Quran reading, dhikr and khatm tracking.</p>
-  <p><strong>2.2.</strong> Prayer times are obtained from third-party sources such as the Presidency of Religious Affairs of Türkiye (Diyanet) and AlAdhan, or produced by astronomical calculation. Times may differ by a few minutes depending on the source and calculation method; for your worship, rely on the official calendar of your location and the times of your local mosque.</p>
+  <p><strong>2.2.</strong> Prayer times are obtained from reliable third-party data sources or produced by generally accepted astronomical calculation methods. Times may differ by a few minutes depending on the source and calculation method; for your worship, rely on the official calendar of your location and the times of your local mosque.</p>
   <p><strong>2.3.</strong> Qibla direction depends on the accuracy of the device's location and magnetic sensor (compass); metal objects, electronic devices and lack of calibration may cause incorrect results.</p>
   <p><strong>2.4.</strong> The App is not a religious authority. Content is for information only; for worship, fiqh and other religious matters, consult qualified scholars and official institutions.</p>
-  <p><strong>2.5.</strong> The App is not affiliated with, does not represent and is not endorsed by the Presidency of Religious Affairs, AlAdhan or any other institution or organization. Their names are used solely to identify data sources.</p>
+  <p><strong>2.5.</strong> The App and its Developer are in no way affiliated with, do not represent, are not endorsed by, and do not seek endorsement from any institutions or organizations mentioned within the App. The App has been developed solely to serve believers and is designed and published for optional use. Any institution or organization names mentioned within the App are stated solely out of the responsibility to indicate globally recognized scientific calculation methods and fiqh (Islamic jurisprudence) sources. This does not imply any personal affiliation on the part of the Developer. As the App continues to be developed, reference sources will also be expanded and indicated within the App.</p>
+  <p><strong>2.6.</strong> The App and the Developer do not represent, endorse or have any affiliation with any political organization, party, sect, religious group, order or ideology, and do not host propaganda content belonging to them. Any ad banners or interstitials that may appear within the App during election periods or at any other time for political or other reasons pursuant to the advertising policies of the publishing platform are outside the Developer's control and subject to the publishing organization's governance. This does not mean that the Developer approves or endorses every advertisement displayed.</p>
 </section>
 
 <section class="clause-card" id="en-3">
-  <h2><span class="clause-num">3</span> LIMITATION OF LIABILITY</h2>
+  <h2><span class="clause-num">3</span> DISCLAIMER AND LIMITATION OF LIABILITY</h2>
   <p><strong>3.1.</strong> The App is provided "as is" and "as available"; no guarantee is given that it will operate uninterrupted, error-free or fit for a particular purpose.</p>
-  <p><strong>3.2.</strong> The Developer shall not be liable for errors in prayer times, Qibla direction or notifications, or their consequences, arising from delayed or missing notifications, device restrictions (battery optimization, manufacturer software, silent mode, etc.), internet outages or disruptions in third-party services (Diyanet, AlAdhan, Supabase, Cloudflare, Google AdMob, Google Play, etc.).</p>
-  <p><strong>3.3.</strong> Quran translation/tafsir, hadith and dua content is provided from third-party sources. The Developer takes reasonable care regarding the accuracy of this content but is not liable for textual errors originating from the source. Please report any errors you notice to <a class="email-link" href="mailto:cebeci.zafer@gmail.com">cebeci.zafer@gmail.com</a>.</p>
+  <p><strong>3.2.</strong> The Developer shall not be liable for errors in prayer times, Qibla direction or notifications, or their consequences, arising from delayed or missing notifications, device restrictions (battery optimization, manufacturer software, silent mode, etc.), internet outages or disruptions in third-party services (In accordance with trade secret and cybersecurity principles, these are not individually named in the public text and will be disclosed upon request by legal authorities).</p>
+  <p><strong>3.3.</strong> Quran translation/tafsir, hadith and dua content is provided from third-party sources. The Developer takes reasonable care regarding the accuracy of this content but is not liable for textual errors originating from the source. The Developer has designed and produced this App independently as a solo developer using an end-to-end (full-stack) software architecture. Furthermore, the Developer has individually verified the sources of sections such as the Prayer Guide (Namaz Hocası), 32 Farz, and the Hajj and Umrah Guide. However, this does not mean that the App is completely error-free; therefore, please report any errors you find to the Developer at <a class="email-link" href="mailto:cebeci.zafer@gmail.com">cebeci.zafer@gmail.com</a>. The Developer compiled and developed the App from Hanafi fiqh sources. However, this is only a beginning and the development of this App will continue. Software professionals who wish to support regarding other interpretations and sources may reach out to the Developer.</p>
   <p><strong>3.4.</strong> The limitations in this section do not apply to liability arising from the Developer's intent or gross negligence, to cases where liability cannot be limited under applicable law, or to the mandatory statutory rights of consumers.</p>
+  <p><strong>3.5.</strong> To the maximum extent permitted by applicable law, the Developer shall not be liable for any direct, indirect, special, incidental or consequential damages arising out of the use or inability to use the App, loss of data or profits, business interruption, device damage, system/server failures or malware. The Developer's total cumulative financial liability to the User for all claims shall not exceed the amount, if any, actually paid by the User to the Developer for in-app purchases during the preceding twelve (12) months.</p>
+  <p><strong>3.6.</strong> Links to third-party websites or systems provided through the App are offered solely for convenience; the Developer does not endorse and is not responsible for the content, security or accuracy of such sites. Internet connection and mobile data charges required to access the App are the sole responsibility of the User. Regarding matters that are under the User's responsibility, neither this App nor its Developer—which the User has approved with their explicit consent by using it—can be held liable.</p>
 </section>
 
 <section class="clause-card" id="en-4">
@@ -420,12 +452,14 @@ body{
   <p><strong>4.3.</strong> Users can report content or users that violate these rules through the in-app reporting function or by email to <a class="email-link" href="mailto:cebeci.zafer@gmail.com">cebeci.zafer@gmail.com</a>, and can block other users. The Developer reviews reports within a reasonable time.</p>
   <p><strong>4.4.</strong> The Developer may, without prior notice, remove content that violates this Agreement, restrict the relevant User's access to these features or close their account.</p>
   <p><strong>4.5.</strong> The User grants the Developer a free, non-exclusive permission, limited solely to providing the service, to store the content they share within the App and display it to other group members.</p>
+  <p><strong>4.6.</strong> The User agrees to indemnify, defend and hold harmless the Developer from and against any and all claims, lawsuits, administrative penalties, damages, losses and expenses (including reasonable attorneys' fees and litigation costs) arising out of or related to the User's breach of this Agreement, misuse of the App, shared content, or violation of any law or third-party rights.</p>
+  <p><strong>4.7.</strong> Rights holders who believe their copyright or other intellectual property rights have been infringed may notify <a class="email-link" href="mailto:cebeci.zafer@gmail.com">cebeci.zafer@gmail.com</a> with details of the infringing content and proof of ownership; upon valid notice, the relevant content will be removed or disabled within a reasonable time in accordance with applicable law.</p>
 </section>
 
 <section class="clause-card" id="en-5">
   <h2><span class="clause-num">5</span> PERSONAL DATA AND PRIVACY</h2>
   <p><strong>5.1.</strong> Preferences such as theme, language and province/district selection are stored on your device. If you grant location permission, your location is used to calculate prayer times and Qibla direction; your location or selected province/district may be sent to the relevant prayer-time service to obtain time data.</p>
-  <p><strong>5.2.</strong> If you use online features such as Khatm Brotherhood, the data needed for these features to work (e.g. username, group memberships, khatm/juz progress and content you share) is stored with infrastructure providers acting on behalf of the Developer (e.g. Supabase, Cloudflare). The Developer is the data controller for this data. Using these features is optional.</p>
+  <p><strong>5.2.</strong> If you use online features such as Khatm Brotherhood, the data needed for these features to work (e.g. username, group memberships, khatm/juz progress and content you share) is stored with third-party infrastructure providers acting on behalf of the Developer (In accordance with trade secret and cybersecurity principles, these are not individually named in the public text and will be disclosed upon request by legal authorities). The Developer is the data controller for this data. Using these features is optional for the User. This text has been prepared to inform the User, and the User may use the App if they accept these terms. Under no circumstances does the Developer compel users to use the App.</p>
   <p><strong>5.3.</strong> Advertising (Google AdMob) and purchase (Google Play) services may process data such as the advertising ID, device and usage information under their own privacy policies.</p>
   <p><strong>5.4.</strong> Which data is processed and for what purposes, to whom and to which countries it is transferred, retention periods and your rights under the Turkish Personal Data Protection Law No. 6698 (KVKK) are explained in the <a href="https://cebeci1.github.io/ezan/gizlilik.html">Privacy Policy</a>.</p>
   <p><strong>5.5.</strong> You can request deletion of your account and related data created for online features from within the App or by email to <a class="email-link" href="mailto:cebeci.zafer@gmail.com">cebeci.zafer@gmail.com</a>.</p>
@@ -465,6 +499,7 @@ body{
   <p><strong>10.2.</strong> For disputes arising from consumer transactions, consumers may apply to consumer arbitration committees within the monetary limits determined annually under the Consumer Protection Law No. 6502, and to consumer courts for disputes exceeding those limits. The consumer's right to apply to the authorities at their place of residence is reserved.</p>
   <p><strong>10.3.</strong> Where a jurisdiction agreement is legally permissible, the Istanbul Central (Çağlayan) Courts and Enforcement Offices shall have jurisdiction.</p>
   <p><strong>10.4.</strong> Users residing outside Türkiye retain the rights granted to them by the mandatory consumer protection laws of their country of residence.</p>
+  <p><strong>10.5.</strong> The parties agree that in any dispute arising out of this Agreement, the Developer's server, database, log and other electronic records shall constitute valid, binding and conclusive evidence pursuant to Article 193 of the Turkish Code of Civil Procedure No. 6100.</p>
 </section>
 
 <section class="clause-card" id="en-11">
@@ -480,6 +515,7 @@ body{
 <div class="dev-note">
   <p class="disclaimer">(This section is not a contractual term.)</p>
   <h3>A NOTE FROM THE DEVELOPER</h3>
+  <p><strong>AS-SALAMU ALAYKUM WA RAHMATULLAH,</strong><br>Dear Muslim Brother / Sister,</p>
   <p>This App is the result of months of ideas, design and coding work, often lasting until morning, and was made with charitable intentions — hoping for the users' prayers and as an investment for the hereafter. Ads and purchases are intended to cover the server and service costs needed to keep the App running. Not copying or sharing the App and its code without permission is a matter of respecting this effort and the rights of others (kul hakkı). We would be grateful for your prayers.</p>
 </div>
 
@@ -494,7 +530,7 @@ body{
   <ol>
     <li><a href="#ar-1">الأطراف والقبول</a></li>
     <li><a href="#ar-2">طبيعة الخدمة وتنبيه بشأن المحتوى الديني</a></li>
-    <li><a href="#ar-3">تحديد المسؤولية</a></li>
+    <li><a href="#ar-3">إخلاء المسؤولية وتحديدها</a></li>
     <li><a href="#ar-4">ختم القرآن الجماعي ومحتوى المستخدمين</a></li>
     <li><a href="#ar-5">البيانات الشخصية والخصوصية</a></li>
     <li><a href="#ar-6">الترخيص والملكية الفكرية</a></li>
@@ -516,18 +552,21 @@ body{
 <section class="clause-card" id="ar-2">
   <h2><span class="clause-num">2</span> طبيعة الخدمة وتنبيه بشأن المحتوى الديني</h2>
   <p><strong>2.1.</strong> يقدّم التطبيق أدوات مساعِدة على العبادة، مثل مواقيت الصلاة، واتجاه القبلة، وقراءة القرآن الكريم، والذكر، ومتابعة الختمة.</p>
-  <p><strong>2.2.</strong> تُؤخذ مواقيت الصلاة من مصادر خارجية مثل رئاسة الشؤون الدينية التركية (Diyanet) و AlAdhan، أو تُحسب فلكياً. وقد تختلف المواقيت ببضع دقائق بحسب المصدر وطريقة الحساب؛ فاعتمدوا في عباداتكم على التقويم الرسمي لمكانكم وعلى مواقيت مسجدكم المحلي.</p>
+  <p><strong>2.2.</strong> تُؤخذ مواقيت الصلاة من مصادر بيانات خارجية موثوقة أو تُحسب وفق طرق الحساب الفلكي المعتمدة عامّةً. وقد تختلف المواقيت ببضع دقائق بحسب المصدر وطريقة الحساب؛ فاعتمدوا في عباداتكم على التقويم الرسمي لمكانكم وعلى مواقيت مسجدكم المحلي.</p>
   <p><strong>2.3.</strong> يعتمد اتجاه القبلة على دقة موقع الجهاز وحسّاسه المغناطيسي (البوصلة)؛ وقد تؤدي الأجسام المعدنية والأجهزة الإلكترونية وعدم المعايرة إلى نتائج غير صحيحة.</p>
   <p><strong>2.4.</strong> التطبيق ليس مرجعاً دينياً. المحتوى لأغراض التوعية فقط؛ وفي مسائل العبادة والفقه وسائر الشؤون الدينية يُرجى الرجوع إلى العلماء المؤهَّلين والجهات الرسمية.</p>
-  <p><strong>2.5.</strong> التطبيق غير تابع لرئاسة الشؤون الدينية أو AlAdhan أو أي مؤسسة أو جهة أخرى، ولا يمثّلها، ولم يحصل على اعتمادها. وتُذكر أسماء هذه الجهات فقط لبيان مصدر البيانات.</p>
+  <p><strong>2.5.</strong> لا يرتبط التطبيق ولا مطوِّره بأي شكل من الأشكال ببعض المؤسسات والهيئات المذكورة داخل التطبيق، ولا يمثّلانها، ولم يحصلا على اعتمادها ولا ينتظران ذلك. وقد طُوِّر التطبيق فقط لخدمة المؤمنين وصُمِّم ونُشر للاستخدام الاختياري. أمّا أسماء المؤسسات أو الهيئات الواردة داخل التطبيق فقد ذُكرت فقط من باب مسؤولية بيان طرق الحساب العلمية المعتمدة عالمياً والمصادر الفقهية، ولا يعني ذلك وجود أي انتماء فردي للمطوِّر. ومع استمرار تطوير التطبيق ستُوسَّع المصادر المرجعية ويُشار إليها داخل التطبيق.</p>
+  <p><strong>2.6.</strong> لا يمثّل التطبيق ولا المطوِّر أي تنظيم سياسي أو حزب أو مذهب أو جماعة أو طريقة أو أيديولوجية، ولا يدعمانها ولا يرتبطان بها، ولا يتضمّن التطبيق أي محتوى دعائي تابع لها. وأي أشرطة أو فواصل إعلانية قد تظهر داخل التطبيق لأسباب سياسية أو غيرها، خلال فترات الانتخابات أو في أي وقت آخر بموجب سياسات الإعلانات الخاصة بالمنصة الناشرة، تخضع لأحكام الجهة الناشرة خارج إرادة المطوِّر، ولا يعني ذلك موافقة المطوِّر على كل إعلان يظهر.</p>
 </section>
 
 <section class="clause-card" id="ar-3">
-  <h2><span class="clause-num">3</span> تحديد المسؤولية</h2>
+  <h2><span class="clause-num">3</span> إخلاء المسؤولية وتحديدها</h2>
   <p><strong>3.1.</strong> يُقدَّم التطبيق "كما هو" و"حسب توفّره"؛ ولا يُضمن عمله دون انقطاع أو خلوّه من الأخطاء أو ملاءمته لغرض معيّن.</p>
-  <p><strong>3.2.</strong> لا يتحمّل المطوِّر المسؤولية عن أخطاء المواقيت أو اتجاه القبلة أو الإشعارات أو عن نتائجها، الناشئة عن تأخّر الإشعارات أو عدم وصولها، أو قيود الجهاز (تحسين البطارية، برمجيات الشركة المصنِّعة، الوضع الصامت وغيرها)، أو انقطاع الإنترنت، أو الأعطال في خدمات الجهات الخارجية (Diyanet، AlAdhan، Supabase، Cloudflare، Google AdMob، Google Play وغيرها).</p>
-  <p><strong>3.3.</strong> تُقدَّم محتويات ترجمة معاني القرآن الكريم وتفسيره والأحاديث والأدعية من مصادر خارجية. ويبذل المطوِّر العناية المعقولة بشأن صحة هذه المحتويات، لكنه غير مسؤول عن الأخطاء النصية الواردة من المصدر. نرجو الإبلاغ عن أي خطأ تلاحظونه عبر البريد الإلكتروني: <a class="email-link" href="mailto:cebeci.zafer@gmail.com">cebeci.zafer@gmail.com</a></p>
+  <p><strong>3.2.</strong> لا يتحمّل المطوِّر المسؤولية عن أخطاء المواقيت أو اتجاه القبلة أو الإشعارات أو عن نتائجها، الناشئة عن تأخّر الإشعارات أو عدم وصولها، أو قيود الجهاز (تحسين البطارية، برمجيات الشركة المصنِّعة، الوضع الصامت وغيرها)، أو انقطاع الإنترنت، أو الأعطال في خدمات الجهات الخارجية (حفاظاً على الأسرار التجارية ومبادئ الأمن السيبراني، لم تُدرَج أسماؤها تفصيلاً في النص العلني، ويُفصَح عنها عند طلبها من الجهات القانونية المختصة).</p>
+  <p><strong>3.3.</strong> تُقدَّم محتويات ترجمة معاني القرآن الكريم وتفسيره والأحاديث والأدعية من مصادر خارجية. ويبذل المطوِّر العناية المعقولة بشأن صحة هذه المحتويات، لكنه غير مسؤول عن الأخطاء النصية الواردة من المصدر. وقد صمّم المطوِّر هذا التطبيق الذي تستخدمونه وأنتجه بمفرده كمطوِّر مستقل وفق بنية برمجية متكاملة (Full-Stack)، كما تثبّت من مصادر أقسام مثل «معلّم الصلاة» و«32 فرضاً» و«دليل الحج والعمرة» واحداً تلو الآخر. غير أنّ ذلك لا يعني خلوّ التطبيق تماماً من الأخطاء؛ لذا يُرجى الإبلاغ عن أي أخطاء تجدونها إلى المطوِّر عبر البريد الإلكتروني: <a class="email-link" href="mailto:cebeci.zafer@gmail.com">cebeci.zafer@gmail.com</a>. وقد طوّر المطوِّر التطبيق بالاعتماد على مصادر الفقه الحنفي، غير أنّ هذا مجرّد بداية وسيستمر تطوير هذا التطبيق؛ ويمكن لمحترفي البرمجيات الراغبين في تقديم الدعم بخصوص الآراء والمصادر الأخرى التواصل مع المطوِّر.</p>
   <p><strong>3.4.</strong> لا تسري حدود المسؤولية الواردة في هذا البند على المسؤولية الناشئة عن عمد المطوِّر أو إهماله الجسيم، ولا على الحالات التي لا يجوز فيها تحديد المسؤولية بموجب القانون النافذ، ولا على الحقوق القانونية الآمرة للمستهلك.</p>
+  <p><strong>3.5.</strong> إلى أقصى حدّ يسمح به القانون النافذ، لا يتحمّل المطوِّر أي مسؤولية عن أي أضرار مباشرة أو غير مباشرة أو خاصة أو عرضية أو تبعية تنشأ عن استخدام التطبيق أو عدم القدرة على استخدامه، أو فقدان البيانات أو الأرباح، أو توقّف الأعمال، أو تلف الجهاز، أو أعطال النظام/الخوادم، أو البرمجيات الخبيثة. ولا تتجاوز المسؤولية المالية الإجمالية للمطوِّر تجاه المستخدم عن جميع المطالبات المبلغَ الذي دفعه المستخدم فعلياً للمطوِّر، إن وُجد، مقابل المشتريات داخل التطبيق خلال الاثني عشر (12) شهراً السابقة.</p>
+  <p><strong>3.6.</strong> تُقدَّم الروابط المؤدّية إلى مواقع أو أنظمة تابعة لجهات خارجية عبر التطبيق على سبيل التيسير فحسب؛ ولا يعتمد المطوِّر محتوى تلك المواقع أو أمانها أو صحّتها ولا يتحمّل أي مسؤولية عنها. وتقع رسوم الاتصال بالإنترنت وبيانات الهاتف المحمول اللازمة للوصول إلى التطبيق على عاتق المستخدم وحده. وفيما يتعلّق بالأمور التي تقع ضمن مسؤولية المستخدم، لا يتحمّل هذا التطبيق ولا مطوِّره — اللذان وافق عليهما المستخدم برضاه الصريح من خلال الاستخدام — أي مسؤولية.</p>
 </section>
 
 <section class="clause-card" id="ar-4">
@@ -546,12 +585,14 @@ body{
   <p><strong>4.3.</strong> يمكن للمستخدمين الإبلاغ عن المحتوى أو المستخدمين المخالفين لهذه القواعد عبر وظيفة الإبلاغ داخل التطبيق أو عبر البريد الإلكتروني (<a class="email-link" href="mailto:cebeci.zafer@gmail.com">cebeci.zafer@gmail.com</a>)، كما يمكنهم حظر المستخدمين الآخرين. ويراجع المطوِّر البلاغات خلال مدة معقولة.</p>
   <p><strong>4.4.</strong> يحق للمطوِّر، دون إشعار مسبق، إزالة المحتوى المخالف لهذه الاتفاقية، أو تقييد وصول المستخدم المعني إلى هذه الميزات، أو إغلاق حسابه.</p>
   <p><strong>4.5.</strong> يمنح المستخدمُ المطوِّرَ إذناً مجانياً وغير حصري، مقصوراً على تقديم الخدمة فقط، لتخزين المحتوى الذي يشاركه داخل التطبيق وعرضه على أعضاء المجموعة الآخرين.</p>
+  <p><strong>4.6.</strong> يوافق المستخدم على تعويض المطوِّر وإبراء ذمّته وحمايته من جميع الدعاوى والمطالبات والعقوبات الإدارية والأضرار والخسائر والنفقات (بما في ذلك أتعاب المحاماة المعقولة ومصاريف التقاضي) الناشئة عن مخالفة المستخدم لهذه الاتفاقية، أو إساءة استخدام التطبيق، أو المحتوى الذي يشاركه، أو انتهاكه لأي قانون أو لحقوق الغير.</p>
+  <p><strong>4.7.</strong> يمكن لأصحاب الحقوق الذين يرون أنّ حقوق النشر أو غيرها من حقوق الملكية الفكرية الخاصة بهم قد انتُهكت إبلاغُنا عبر البريد الإلكتروني <a class="email-link" href="mailto:cebeci.zafer@gmail.com">cebeci.zafer@gmail.com</a> مع بيان المحتوى المخالف ومستندات الملكية؛ وعند تلقّي بلاغ صحيح، يُزال المحتوى المعني أو يُحجب الوصول إليه خلال مدة معقولة وفقاً للقانون.</p>
 </section>
 
 <section class="clause-card" id="ar-5">
   <h2><span class="clause-num">5</span> البيانات الشخصية والخصوصية</h2>
   <p><strong>5.1.</strong> تُحفظ التفضيلات مثل المظهر واللغة واختيار المحافظة/المنطقة على جهازك. وإذا منحت إذن الموقع، يُستخدم موقعك لحساب مواقيت الصلاة واتجاه القبلة؛ وقد يُرسَل موقعك أو المحافظة/المنطقة المختارة إلى خدمة المواقيت المعنية للحصول على بيانات المواقيت.</p>
-  <p><strong>5.2.</strong> إذا استخدمت ميزات عبر الإنترنت مثل «ختم القرآن الجماعي»، تُخزَّن البيانات اللازمة لعمل هذه الميزات (مثل اسم المستخدم، وعضويات المجموعات، وتقدّم الختمة/الأجزاء، والمحتوى الذي تشاركه) لدى مزوِّدي البنية التحتية العاملين نيابةً عن المطوِّر (مثل Supabase و Cloudflare). والمطوِّر هو المسؤول عن معالجة هذه البيانات. واستخدام هذه الميزات اختياري.</p>
+  <p><strong>5.2.</strong> إذا استخدمت ميزات عبر الإنترنت مثل «ختم القرآن الجماعي»، تُخزَّن البيانات اللازمة لعمل هذه الميزات (مثل اسم المستخدم، وعضويات المجموعات، وتقدّم الختمة/الأجزاء، والمحتوى الذي تشاركه) لدى مزوِّدي البنية التحتية الخارجيين العاملين نيابةً عن المطوِّر (حفاظاً على الأسرار التجارية ومبادئ الأمن السيبراني، لم تُدرَج أسماؤها تفصيلاً في النص العلني، ويُفصَح عنها عند طلبها من الجهات القانونية المختصة). والمطوِّر هو المسؤول عن معالجة هذه البيانات، واستخدام هذه الميزات اختياري للمستخدم. وقد أُعدّ هذا النص لإعلام المستخدم، ويجوز للمستخدم استعمال التطبيق إذا قَبِل هذه الشروط، ولا يُجبر المطوِّر بأي حال من الأحوال المستخدمين على استخدام تطبيقه.</p>
   <p><strong>5.3.</strong> قد تعالج خدمات الإعلانات (Google AdMob) والشراء (Google Play) بيانات مثل معرّف الإعلانات ومعلومات الجهاز والاستخدام وفق سياسات الخصوصية الخاصة بها.</p>
   <p><strong>5.4.</strong> تُبيَّن في <a href="https://cebeci1.github.io/ezan/gizlilik.html">سياسة الخصوصية</a> البياناتُ التي تُعالَج وأغراضُ معالجتها، والجهاتُ والدولُ التي تُنقل إليها، ومددُ الاحتفاظ بها، وحقوقُك بموجب قانون حماية البيانات الشخصية التركي رقم 6698 (KVKK).</p>
   <p><strong>5.5.</strong> يمكنك طلب حذف حسابك وبياناتك المرتبطة بالميزات عبر الإنترنت من داخل التطبيق أو عبر البريد الإلكتروني (<a class="email-link" href="mailto:cebeci.zafer@gmail.com">cebeci.zafer@gmail.com</a>).</p>
@@ -591,6 +632,7 @@ body{
   <p><strong>10.2.</strong> في النزاعات الناشئة عن معاملات المستهلكين، يجوز للمستهلك اللجوء إلى لجان تحكيم المستهلك ضمن الحدود المالية المحدَّدة سنوياً بموجب قانون حماية المستهلك رقم 6502، وإلى محاكم المستهلك في النزاعات التي تتجاوز تلك الحدود. ويبقى حق المستهلك في اللجوء إلى الجهات المختصة في مكان إقامته محفوظاً.</p>
   <p><strong>10.3.</strong> حيثما يجوز قانوناً الاتفاق على الاختصاص، تختص محاكم ودوائر التنفيذ في إسطنبول المركزية (Çağlayan / جاغالاي).</p>
   <p><strong>10.4.</strong> يحتفظ المستخدمون المقيمون خارج تركيا بالحقوق التي تمنحها لهم قوانين حماية المستهلك الآمرة في بلد إقامتهم.</p>
+  <p><strong>10.5.</strong> يوافق الطرفان على أنه في أي نزاع ينشأ عن هذه الاتفاقية، تُعدّ سجلات الخوادم وقواعد البيانات والسجلات التقنية وسائر السجلات الإلكترونية الخاصة بالمطوِّر دليلاً صحيحاً وملزِماً وحاسماً وفقاً للمادة 193 من قانون أصول المحاكمات المدنية التركي رقم 6100.</p>
 </section>
 
 <section class="clause-card" id="ar-11">
@@ -606,6 +648,7 @@ body{
 <div class="dev-note">
   <p class="disclaimer">(هذا القسم ليس من أحكام الاتفاقية.)</p>
   <h3>كلمة من المطوِّر</h3>
+  <p><strong>السلام عليكم ورحمة الله،</strong><br>أخي المسلم الكريم / أختي المسلمة الكريمة،</p>
   <p>هذا التطبيق ثمرة أشهر من الأفكار والتصميم والبرمجة، امتدّ كثير منها حتى ساعات الفجر، وقد صُنع بنيّة الخير، رجاءَ دعاء المستخدمين واستثماراً للآخرة. والإعلانات والمشتريات مخصّصة لتغطية تكاليف الخوادم والخدمات اللازمة لاستمرار التطبيق. وإنّ عدم نسخ التطبيق وشيفراته أو نشرها دون إذن من احترام هذا الجهد ومن حفظ حقوق العباد. ولا تنسونا من صالح دعائكم.</p>
 </div>
 
@@ -646,6 +689,16 @@ body{
         window.scrollTo({top:0,behavior:'smooth'});
       }
     });
+  });
+  ['contextmenu','copy','cut','selectstart','dragstart'].forEach(function(ev){
+    document.addEventListener(ev,function(e){e.preventDefault();return false;});
+  });
+  document.addEventListener('keydown',function(e){
+    var k=(e.key||'').toLowerCase();
+    if(e.keyCode===123||((e.ctrlKey||e.metaKey)&&(k==='c'||k==='u'||k==='s'||k==='p'||k==='a'))||((e.ctrlKey||e.metaKey)&&e.shiftKey&&(k==='i'||k==='j'||k==='c'))){
+      e.preventDefault();
+      return false;
+    }
   });
 })();
 </script>
