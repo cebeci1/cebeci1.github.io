@@ -16,6 +16,10 @@ Dijital çağ için eşsiz bir gramofon deneyimi. 16 dil desteği ve aslına uyg
 #### 🤖 [ZaiC AI Assistant (Asistan-V3)](https://asistan-v3.onrender.com)
 Gelişmiş RAG (Retrieval-Augmented Generation) altyapısına sahip, akıllı yapay zeka asistanı ve bilgi botu.
 
+#### 🕌 Shahid – Ezan & Vakit
+Namaz vakitleri, ezan alarmı, kıble, hatim grupları, Kur'an okuyucu ve daha fazlası; 24 dil desteğiyle.  
+[Gizlilik Politikası](https://cebeci1.github.io/ezan/gizlilik.html) · [Hesap Silme](https://cebeci1.github.io/ezan/hesap-silme.html)
+
 ---
 
 ### 🌐 16 Dilde Destek / Global Support in 16 Languages
