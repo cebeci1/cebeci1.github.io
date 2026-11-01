@@ -5,7 +5,7 @@
 # 🌍 Zafer CEBECI | ZaiC Design & Studio
 ## 🛠️ Full Stack Vibe Coding & Apps Developer
 
-Dijital dünyaya nostalji, müzik ve yapay zeka estetiği katmak için buradayım. Benzersiz kullanıcı deneyimleri tasarlıyor ve 16 dilde dünya çapında çözümler sunuyorum.
+Dijital dünyaya nostalji, müzik ve yapay zeka estetiği katmak için buradayım. Benzersiz kullanıcı deneyimleri tasarlıyor ve 24 dile varan dil desteğiyle dünya çapında çözümler sunuyorum.
 
 ---
 
@@ -22,8 +22,11 @@ Namaz vakitleri, ezan alarmı, kıble, hatim grupları, Kur'an okuyucu ve daha f
 
 ---
 
-### 🌐 16 Dilde Destek / Global Support in 16 Languages
+### 🌐 ZaiC Player: 16 Dilde Destek / 16 Languages
 🇹🇷 Türkçe | 🇬🇧 English | 🇦🇿 Azərbaycan | 🇸🇦 العربية | 🇵🇰 Urdu (اردو) | 🇸🇴 Somali (Af-Soomaali) | 🇳🇬 Hausa | 🇮🇩 Indonesia | 🇪🇸 Español | 🇷🇺 Русский | 🇨🇳 中文 | 🇯🇵 日本語 | 🇰🇷 한국어 | 🇩🇪 Deutsch | 🇫🇷 Français | 🇸🇪 Svenska
+
+### 🕌 Shahid – Ezan & Vakit: 24 Dilde Destek / 24 Languages
+🇹🇷 Türkçe | 🇬🇧 English | 🇦🇿 Azərbaycan | 🇸🇦 العربية | 🇵🇰 Urdu (اردو) | 🇸🇴 Somali (Af-Soomaali) | 🇳🇬 Hausa | 🇮🇩 Indonesia | 🇪🇸 Español | 🇷🇺 Русский | 🇨🇳 中文 | 🇯🇵 日本語 | 🇰🇷 한국어 | 🇩🇪 Deutsch | 🇫🇷 Français | 🇸🇪 Svenska | 🇰🇿 Қазақша | 🇰🇬 Кыргызча | 🇹🇲 Türkmençe | 🇺🇿 O'zbekcha | <img src="ug_flag.svg" width="20" alt="ug"> ug | 🇧🇦 Bosanski | 🇦🇱 Shqip | 🇮🇷 فارسی
 
 ---
 *This domain is used for Google AdMob app-ads.txt verification and developer contact for ZaiC Design & Studio Apps.*
