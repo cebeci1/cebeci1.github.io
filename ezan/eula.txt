@@ -18,7 +18,7 @@ SON KULLANICI LİSANS SÖZLEŞMESİ (EULA) VE SORUMLULUK REDDİ — ZaiC Ezan & 
 3. SORUMLULUĞUN SINIRLANDIRILMASI
 3.1. Uygulama "olduğu gibi" ve "mevcut haliyle" sunulur; kesintisiz, hatasız veya belirli bir amaca uygun çalışacağı garanti edilmez.
 3.2. Geliştirici; bildirimlerin gecikmesi veya hiç gelmemesi, cihaz kısıtlamaları (pil optimizasyonu, üretici yazılımı, sessiz mod vb.), internet kesintileri ya da üçüncü taraf hizmetlerdeki (Diyanet, AlAdhan, Supabase, Cloudflare, Google AdMob, Google Play vb.) aksaklıklar nedeniyle ortaya çıkan vakit, kıble veya bildirim hatalarından ve bunların sonuçlarından sorumlu tutulamaz.
-3.3. Kur'an-ı Kerim meali/tefsiri, hadis ve dua içerikleri üçüncü taraf kaynaklardan sağlanır. Geliştirici bu içeriklerin doğruluğu için makul özeni gösterir; ancak kaynaktan gelen metin hatalarından sorumlu değildir. Fark ettiğiniz hataları cebeci.zafer@gmail.com adresine bildirmeniz rica olunur.
+3.3. Kur'an-ı Kerim meali/tefsiri, hadis ve dua içerikleri üçüncü taraf kaynaklardan sağlanır. Geliştirici bu içeriklerin doğruluğu için makul özeni gösterir; ancak kaynaktan gelen metin hatalarından sorumlu değildir. Fark ettiğiniz hataları shahiddestek@gmail.com adresine bildirmeniz rica olunur.
 3.4. Bu maddedeki sorumluluk sınırlamaları; Geliştiricinin kast veya ağır ihmalinden doğan sorumluluğu, yürürlükteki mevzuat uyarınca sınırlandırılamayan haller ve tüketicinin kanundan doğan emredici hakları bakımından uygulanmaz.
 
 4. HATİM KARDEŞLİĞİ VE KULLANICI İÇERİKLERİ
@@ -31,7 +31,7 @@ SON KULLANICI LİSANS SÖZLEŞMESİ (EULA) VE SORUMLULUK REDDİ — ZaiC Ezan & 
  e) Başkalarının kişisel verilerini, iletişim bilgilerini veya özel bilgilerini izinsiz paylaşmak;
  f) Başkalarının telif ve diğer fikri haklarını ihlal eden içerikler;
  g) Başka bir kişiyi veya kurumu taklit etmek ya da kendini yanıltıcı biçimde tanıtmak.
-4.3. Kullanıcılar, bu kurallara aykırı içerik veya kullanıcıları uygulama içindeki bildirme işleviyle ya da cebeci.zafer@gmail.com adresi üzerinden bildirebilir ve diğer kullanıcıları engelleyebilir. Geliştirici, bildirimleri makul süre içinde inceler.
+4.3. Kullanıcılar, bu kurallara aykırı içerik veya kullanıcıları uygulama içindeki bildirme işleviyle ya da shahiddestek@gmail.com adresi üzerinden bildirebilir ve diğer kullanıcıları engelleyebilir. Geliştirici, bildirimleri makul süre içinde inceler.
 4.4. Geliştirici, bu Sözleşmeye aykırı içerikleri önceden bildirimde bulunmaksızın kaldırma, ilgili Kullanıcının bu özelliklere erişimini kısıtlama veya hesabını kapatma hakkına sahiptir.
 4.5. Kullanıcı, paylaştığı içeriklerin Uygulama içinde saklanması ve diğer grup üyelerine gösterilmesi için, yalnızca hizmetin sunulmasıyla sınırlı, ücretsiz ve münhasır olmayan bir kullanım iznini Geliştiriciye verir.
 
@@ -40,7 +40,7 @@ SON KULLANICI LİSANS SÖZLEŞMESİ (EULA) VE SORUMLULUK REDDİ — ZaiC Ezan & 
 5.2. Hatim Kardeşliği gibi çevrim içi özellikleri kullanmanız halinde, bu özelliklerin çalışması için gereken veriler (ör. kullanıcı adı, grup üyelikleri, hatim/cüz ilerlemesi ve paylaştığınız içerikler) Geliştirici adına hizmet veren altyapı sağlayıcılarında (ör. Supabase, Cloudflare) saklanır. Bu veriler bakımından veri sorumlusu Geliştiricidir. Bu özellikleri kullanmak isteğe bağlıdır.
 5.3. Reklam (Google AdMob) ve satın alma (Google Play) hizmetleri; reklam kimliği, cihaz ve kullanım bilgileri gibi verileri kendi gizlilik politikaları çerçevesinde işleyebilir.
 5.4. Hangi verilerin hangi amaçla işlendiği, kimlere ve hangi ülkelere aktarıldığı, saklama süreleri ve 6698 sayılı Kişisel Verilerin Korunması Kanunu kapsamındaki haklarınız Gizlilik Politikası ve KVKK Aydınlatma Metninde açıklanmıştır: https://cebeci1.github.io/ezan/gizlilik.txt
-5.5. Çevrim içi özellikler için oluşturulan hesabınızın ve ilgili verilerinizin silinmesini Uygulama içinden veya cebeci.zafer@gmail.com adresi üzerinden talep edebilirsiniz.
+5.5. Çevrim içi özellikler için oluşturulan hesabınızın ve ilgili verilerinizin silinmesini Uygulama içinden veya shahiddestek@gmail.com adresi üzerinden talep edebilirsiniz.
 
 6. LİSANS VE FİKRİ HAKLAR
 6.1. Geliştirici, Kullanıcıya Uygulamayı bu Sözleşmeye uygun olarak kişisel cihazlarında kullanmak üzere kişisel, ticari olmayan, devredilemez, münhasır olmayan ve geri alınabilir bir lisans verir.
@@ -72,7 +72,7 @@ Geliştirici bu Sözleşmeyi güncelleyebilir. Güncel sürüm her zaman Uygulam
 Bu Sözleşme Türkçe, İngilizce ve Arapça olarak sunulmuştur. Metinler arasında farklılık olması halinde Türkçe metin esas alınır.
 
 12. İLETİŞİM
-Sözleşme, gizlilik, içerik bildirimi ve diğer tüm konular için: cebeci.zafer@gmail.com
+Sözleşme, gizlilik, içerik bildirimi ve diğer tüm konular için: shahiddestek@gmail.com
 
 GELİŞTİRİCİDEN NOT
 (Bu bölüm sözleşme hükmü değildir.)
@@ -101,7 +101,7 @@ END USER LICENSE AGREEMENT (EULA) AND DISCLAIMER — ZaiC Ezan & Vakit & Shahid
 3. LIMITATION OF LIABILITY
 3.1. The App is provided "as is" and "as available"; no guarantee is given that it will operate uninterrupted, error-free or fit for a particular purpose.
 3.2. The Developer shall not be liable for errors in prayer times, Qibla direction or notifications, or their consequences, arising from delayed or missing notifications, device restrictions (battery optimization, manufacturer software, silent mode, etc.), internet outages or disruptions in third-party services (Diyanet, AlAdhan, Supabase, Cloudflare, Google AdMob, Google Play, etc.).
-3.3. Quran translation/tafsir, hadith and dua content is provided from third-party sources. The Developer takes reasonable care regarding the accuracy of this content but is not liable for textual errors originating from the source. Please report any errors you notice to cebeci.zafer@gmail.com.
+3.3. Quran translation/tafsir, hadith and dua content is provided from third-party sources. The Developer takes reasonable care regarding the accuracy of this content but is not liable for textual errors originating from the source. Please report any errors you notice to shahiddestek@gmail.com.
 3.4. The limitations in this section do not apply to liability arising from the Developer's intent or gross negligence, to cases where liability cannot be limited under applicable law, or to the mandatory statutory rights of consumers.
 
 4. KHATM BROTHERHOOD AND USER CONTENT
@@ -114,7 +114,7 @@ END USER LICENSE AGREEMENT (EULA) AND DISCLAIMER — ZaiC Ezan & Vakit & Shahid
  e) Sharing other people's personal data, contact details or private information without permission;
  f) Content that infringes others' copyrights or other intellectual property rights;
  g) Impersonating another person or organization, or misrepresenting oneself.
-4.3. Users can report content or users that violate these rules through the in-app reporting function or by email to cebeci.zafer@gmail.com, and can block other users. The Developer reviews reports within a reasonable time.
+4.3. Users can report content or users that violate these rules through the in-app reporting function or by email to shahiddestek@gmail.com, and can block other users. The Developer reviews reports within a reasonable time.
 4.4. The Developer may, without prior notice, remove content that violates this Agreement, restrict the relevant User's access to these features or close their account.
 4.5. The User grants the Developer a free, non-exclusive permission, limited solely to providing the service, to store the content they share within the App and display it to other group members.
 
@@ -123,7 +123,7 @@ END USER LICENSE AGREEMENT (EULA) AND DISCLAIMER — ZaiC Ezan & Vakit & Shahid
 5.2. If you use online features such as Khatm Brotherhood, the data needed for these features to work (e.g. username, group memberships, khatm/juz progress and content you share) is stored with infrastructure providers acting on behalf of the Developer (e.g. Supabase, Cloudflare). The Developer is the data controller for this data. Using these features is optional.
 5.3. Advertising (Google AdMob) and purchase (Google Play) services may process data such as the advertising ID, device and usage information under their own privacy policies.
 5.4. Which data is processed and for what purposes, to whom and to which countries it is transferred, retention periods and your rights under the Turkish Personal Data Protection Law No. 6698 (KVKK) are explained in the Privacy Policy: https://cebeci1.github.io/ezan/gizlilik.txt
-5.5. You can request deletion of your account and related data created for online features from within the App or by email to cebeci.zafer@gmail.com.
+5.5. You can request deletion of your account and related data created for online features from within the App or by email to shahiddestek@gmail.com.
 
 6. LICENSE AND INTELLECTUAL PROPERTY
 6.1. The Developer grants the User a personal, non-commercial, non-transferable, non-exclusive and revocable license to use the App on their personal devices in accordance with this Agreement.
@@ -155,7 +155,7 @@ The Developer may update this Agreement. The current version is always accessibl
 This Agreement is provided in Turkish, English and Arabic. In case of any discrepancy between the texts, the Turkish text shall prevail.
 
 12. CONTACT
-For questions about this Agreement, privacy, content reports and all other matters: cebeci.zafer@gmail.com
+For questions about this Agreement, privacy, content reports and all other matters: shahiddestek@gmail.com
 
 A NOTE FROM THE DEVELOPER
 (This section is not a contractual term.)
@@ -184,7 +184,7 @@ Last updated: October 2026 (Version 2026-10-12)
 3. تحديد المسؤولية
 3.1. يُقدَّم التطبيق "كما هو" و"حسب توفّره"؛ ولا يُضمن عمله دون انقطاع أو خلوّه من الأخطاء أو ملاءمته لغرض معيّن.
 3.2. لا يتحمّل المطوِّر المسؤولية عن أخطاء المواقيت أو اتجاه القبلة أو الإشعارات أو عن نتائجها، الناشئة عن تأخّر الإشعارات أو عدم وصولها، أو قيود الجهاز (تحسين البطارية، برمجيات الشركة المصنِّعة، الوضع الصامت وغيرها)، أو انقطاع الإنترنت، أو الأعطال في خدمات الجهات الخارجية (Diyanet، AlAdhan، Supabase، Cloudflare، Google AdMob، Google Play وغيرها).
-3.3. تُقدَّم محتويات ترجمة معاني القرآن الكريم وتفسيره والأحاديث والأدعية من مصادر خارجية. ويبذل المطوِّر العناية المعقولة بشأن صحة هذه المحتويات، لكنه غير مسؤول عن الأخطاء النصية الواردة من المصدر. نرجو الإبلاغ عن أي خطأ تلاحظونه عبر البريد الإلكتروني: cebeci.zafer@gmail.com
+3.3. تُقدَّم محتويات ترجمة معاني القرآن الكريم وتفسيره والأحاديث والأدعية من مصادر خارجية. ويبذل المطوِّر العناية المعقولة بشأن صحة هذه المحتويات، لكنه غير مسؤول عن الأخطاء النصية الواردة من المصدر. نرجو الإبلاغ عن أي خطأ تلاحظونه عبر البريد الإلكتروني: shahiddestek@gmail.com
 3.4. لا تسري حدود المسؤولية الواردة في هذا البند على المسؤولية الناشئة عن عمد المطوِّر أو إهماله الجسيم، ولا على الحالات التي لا يجوز فيها تحديد المسؤولية بموجب القانون النافذ، ولا على الحقوق القانونية الآمرة للمستهلك.
 
 4. «ختم القرآن الجماعي» (Hatim Kardeşliği) ومحتوى المستخدمين
@@ -197,7 +197,7 @@ Last updated: October 2026 (Version 2026-10-12)
  هـ) نشر البيانات الشخصية للآخرين أو بيانات الاتصال بهم أو معلوماتهم الخاصة دون إذن؛
  و) المحتوى الذي ينتهك حقوق النشر أو غيرها من حقوق الملكية الفكرية للآخرين؛
  ز) انتحال شخصية شخص أو جهة أخرى، أو تقديم النفس بصورة مضلِّلة.
-4.3. يمكن للمستخدمين الإبلاغ عن المحتوى أو المستخدمين المخالفين لهذه القواعد عبر وظيفة الإبلاغ داخل التطبيق أو عبر البريد الإلكتروني (cebeci.zafer@gmail.com)، كما يمكنهم حظر المستخدمين الآخرين. ويراجع المطوِّر البلاغات خلال مدة معقولة.
+4.3. يمكن للمستخدمين الإبلاغ عن المحتوى أو المستخدمين المخالفين لهذه القواعد عبر وظيفة الإبلاغ داخل التطبيق أو عبر البريد الإلكتروني (shahiddestek@gmail.com)، كما يمكنهم حظر المستخدمين الآخرين. ويراجع المطوِّر البلاغات خلال مدة معقولة.
 4.4. يحق للمطوِّر، دون إشعار مسبق، إزالة المحتوى المخالف لهذه الاتفاقية، أو تقييد وصول المستخدم المعني إلى هذه الميزات، أو إغلاق حسابه.
 4.5. يمنح المستخدمُ المطوِّرَ إذناً مجانياً وغير حصري، مقصوراً على تقديم الخدمة فقط، لتخزين المحتوى الذي يشاركه داخل التطبيق وعرضه على أعضاء المجموعة الآخرين.
 
@@ -207,7 +207,7 @@ Last updated: October 2026 (Version 2026-10-12)
 5.3. قد تعالج خدمات الإعلانات (Google AdMob) والشراء (Google Play) بيانات مثل معرّف الإعلانات ومعلومات الجهاز والاستخدام وفق سياسات الخصوصية الخاصة بها.
 5.4. تُبيَّن في سياسة الخصوصية البياناتُ التي تُعالَج وأغراضُ معالجتها، والجهاتُ والدولُ التي تُنقل إليها، ومددُ الاحتفاظ بها، وحقوقُك بموجب قانون حماية البيانات الشخصية التركي رقم 6698 (KVKK):
 https://cebeci1.github.io/ezan/gizlilik.txt
-5.5. يمكنك طلب حذف حسابك وبياناتك المرتبطة بالميزات عبر الإنترنت من داخل التطبيق أو عبر البريد الإلكتروني (cebeci.zafer@gmail.com).
+5.5. يمكنك طلب حذف حسابك وبياناتك المرتبطة بالميزات عبر الإنترنت من داخل التطبيق أو عبر البريد الإلكتروني (shahiddestek@gmail.com).
 
 6. الترخيص والملكية الفكرية
 6.1. يمنح المطوِّر المستخدمَ ترخيصاً شخصياً وغير تجاري وغير قابل للتنازل وغير حصري وقابلاً للإلغاء، لاستخدام التطبيق على أجهزته الشخصية وفقاً لهذه الاتفاقية.
@@ -240,7 +240,7 @@ https://cebeci1.github.io/ezan/gizlilik.txt
 
 12. التواصل
 للاستفسارات المتعلقة بهذه الاتفاقية والخصوصية والإبلاغ عن المحتوى وسائر المسائل:
-cebeci.zafer@gmail.com
+shahiddestek@gmail.com
 
 كلمة من المطوِّر
 (هذا القسم ليس من أحكام الاتفاقية.)

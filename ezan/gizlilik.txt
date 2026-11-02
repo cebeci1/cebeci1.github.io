@@ -6,7 +6,7 @@ GİZLİLİK POLİTİKASI VE KVKK AYDINLATMA METNİ — ZaiC Ezan & Vakit & Shahi
 
 1. VERİ SORUMLUSU
 6698 sayılı Kişisel Verilerin Korunması Kanunu ("KVKK") kapsamında veri sorumlusu, ZaiC Ezan & Vakit uygulamasını ("Uygulama") "ZaiC Design & Studio" adı altında geliştiren ve yayınlayan Zafer Cebeci'dir ("Geliştirici").
-İletişim: cebeci.zafer@gmail.com
+İletişim: shahiddestek@gmail.com
 
 2. İŞLENEN VERİLER VE AMAÇLARI
 2.1. Cihazdaki tercihler: Tema, dil, il/ilçe seçimi ve bildirim ayarları yalnızca cihazınızda saklanır ve Geliştiriciye iletilmez.
@@ -27,13 +27,13 @@ Kişisel verileriniz satılmaz. Veriler yalnızca hizmetin sunulması için şu 
 Bu sağlayıcıların sunucuları Türkiye dışında bulunabilir; bu nedenle verileriniz yurt dışına aktarılabilir. Kanunen yetkili kurumların talebi halinde mevzuat gereği paylaşım yapılabilir.
 
 5. SAKLAMA SÜRESİ VE SİLME
-Cihazdaki tercihler Uygulamayı kaldırdığınızda silinir. Hatim Kardeşliği verileri hesabınız silinene kadar saklanır. Hesabınızın ve ilgili verilerinizin silinmesini Uygulama içinden veya cebeci.zafer@gmail.com adresine yazarak isteyebilirsiniz; talebiniz en geç 30 gün içinde sonuçlandırılır.
+Cihazdaki tercihler Uygulamayı kaldırdığınızda silinir. Hatim Kardeşliği verileri hesabınız silinene kadar saklanır. Hesabınızın ve ilgili verilerinizin silinmesini Uygulama içinden veya shahiddestek@gmail.com adresine yazarak isteyebilirsiniz; talebiniz en geç 30 gün içinde sonuçlandırılır.
 
 6. GÜVENLİK
 Verileriniz şifreli bağlantı (HTTPS) üzerinden iletilir ve makul teknik ve idari güvenlik önlemleri alınır.
 
 7. HAKLARINIZ (KVKK md. 11)
-Verilerinizin işlenip işlenmediğini öğrenme, bilgi talep etme, işleme amacını ve amaca uygun kullanılıp kullanılmadığını öğrenme, aktarıldığı üçüncü kişileri bilme, eksik veya yanlış işlenmişse düzeltilmesini, silinmesini veya yok edilmesini isteme, bu işlemlerin aktarılan kişilere bildirilmesini isteme, otomatik analiz sonucu aleyhinize çıkan sonuca itiraz etme ve kanuna aykırı işleme nedeniyle zararın giderilmesini talep etme haklarına sahipsiniz. Başvurularınızı cebeci.zafer@gmail.com adresine iletebilirsiniz.
+Verilerinizin işlenip işlenmediğini öğrenme, bilgi talep etme, işleme amacını ve amaca uygun kullanılıp kullanılmadığını öğrenme, aktarıldığı üçüncü kişileri bilme, eksik veya yanlış işlenmişse düzeltilmesini, silinmesini veya yok edilmesini isteme, bu işlemlerin aktarılan kişilere bildirilmesini isteme, otomatik analiz sonucu aleyhinize çıkan sonuca itiraz etme ve kanuna aykırı işleme nedeniyle zararın giderilmesini talep etme haklarına sahipsiniz. Başvurularınızı shahiddestek@gmail.com adresine iletebilirsiniz.
 
 8. DEĞİŞİKLİKLER
 Bu politika güncellenebilir; güncel sürüm bu adreste yayınlanır. Önemli değişiklikler Uygulama içinden bildirilir.
@@ -49,7 +49,7 @@ PRIVACY POLICY — ZaiC Ezan & Vakit & Shahid
 
 1. DATA CONTROLLER
 The data controller under the Turkish Personal Data Protection Law No. 6698 ("KVKK") is Zafer Cebeci, who develops and publishes the ZaiC Ezan & Vakit application ("App") under the name "ZaiC Design & Studio" ("Developer").
-Contact: cebeci.zafer@gmail.com
+Contact: shahiddestek@gmail.com
 
 2. DATA WE PROCESS AND WHY
 2.1. Device preferences: Theme, language, province/district selection and notification settings are stored only on your device and are not sent to the Developer.
@@ -70,13 +70,13 @@ Your personal data is never sold. It is shared only with the following service p
 These providers' servers may be located outside Türkiye, so your data may be transferred abroad. Data may also be disclosed where required by law at the request of authorized authorities.
 
 5. RETENTION AND DELETION
-Device preferences are deleted when you uninstall the App. Khatm Brotherhood data is kept until your account is deleted. You can request deletion of your account and related data from within the App or by email to cebeci.zafer@gmail.com; requests are completed within 30 days at the latest.
+Device preferences are deleted when you uninstall the App. Khatm Brotherhood data is kept until your account is deleted. You can request deletion of your account and related data from within the App or by email to shahiddestek@gmail.com; requests are completed within 30 days at the latest.
 
 6. SECURITY
 Your data is transmitted over encrypted connections (HTTPS), and reasonable technical and organizational security measures are applied.
 
 7. YOUR RIGHTS (KVKK Art. 11)
-You have the right to learn whether your data is processed, request information about it, learn the purpose of processing and whether it is used accordingly, know the third parties it is transferred to, request correction of incomplete or inaccurate data, request its deletion or destruction, request that these actions be notified to recipients, object to an outcome against you resulting from automated analysis, and claim compensation for damage caused by unlawful processing. Send your requests to cebeci.zafer@gmail.com.
+You have the right to learn whether your data is processed, request information about it, learn the purpose of processing and whether it is used accordingly, know the third parties it is transferred to, request correction of incomplete or inaccurate data, request its deletion or destruction, request that these actions be notified to recipients, object to an outcome against you resulting from automated analysis, and claim compensation for damage caused by unlawful processing. Send your requests to shahiddestek@gmail.com.
 
 8. CHANGES
 This policy may be updated; the current version is published at this address. Significant changes will be announced within the App.
